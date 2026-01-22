@@ -56,6 +56,9 @@
 						"svelte"
 			],
 			"dependencies": {
-						"@sveltejs/adapter-node": "^5.4.0"
+						"@sveltejs/adapter-node": "^5.4.0",
+						"drizzle-kit": "^0.31.8",
+						"drizzle-orm": "^0.45.1",
+						"postgres": "^3.4.8"
 			}
 }
