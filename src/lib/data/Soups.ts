@@ -24,7 +24,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'broth', 'chicken', 'comfort food', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '320 calories, 8g fat, 30g carbs, 28g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 2,
@@ -45,7 +47,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'broth', 'japanese', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '120 calories, 4g fat, 10g carbs, 10g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 3,
@@ -69,7 +73,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'broth', 'beef', 'hearty', 'economic', 'easy'],
 		nutrition: '390 calories, 14g fat, 32g carbs, 32g protein',
-		time: 75
+		time: 75,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 4,
@@ -93,7 +99,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'broth', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '150 calories, 5g fat, 22g carbs, 4g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 5,
@@ -117,7 +125,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'broth', 'chicken', 'vietnamese', 'gluten-free', 'economic', 'easy'],
 		nutrition: '370 calories, 8g fat, 45g carbs, 30g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 6,
@@ -141,7 +151,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'asian', 'broth', 'spicy', 'vegetarian', 'gluten-free', 'fast', 'easy'],
 		nutrition: '160 calories, 6g fat, 14g carbs, 10g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 7,
@@ -161,7 +173,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'broth', 'italian', 'meatballs', 'economic', 'easy'],
 		nutrition: '420 calories, 18g fat, 36g carbs, 28g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 8,
@@ -185,7 +199,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'thai', 'broth', 'spicy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '190 calories, 5g fat, 10g carbs, 26g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 9,
@@ -215,7 +231,9 @@ export const Soups: Recipe[] = [
 			'easy'
 		],
 		nutrition: '310 calories, 9g fat, 42g carbs, 18g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 10,
@@ -237,7 +255,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'broth', 'japanese', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '340 calories, 7g fat, 58g carbs, 10g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 11,
@@ -260,7 +280,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'broth', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '140 calories, 4g fat, 20g carbs, 5g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 12,
@@ -283,7 +305,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'vietnamese', 'broth', 'beef', 'gluten-free', 'gluten-free', 'economic', 'easy'],
 		nutrition: '410 calories, 10g fat, 45g carbs, 32g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 13,
@@ -314,7 +338,9 @@ export const Soups: Recipe[] = [
 			'easy'
 		],
 		nutrition: '110 calories, 4g fat, 10g carbs, 6g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 14,
@@ -335,7 +361,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'chinese', 'broth', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '280 calories, 9g fat, 28g carbs, 20g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 15,
@@ -367,7 +395,9 @@ export const Soups: Recipe[] = [
 			'easy'
 		],
 		nutrition: '260 calories, 6g fat, 35g carbs, 14g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 16,
@@ -393,7 +423,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'beef', 'hearty', 'gluten-free'],
 		nutrition: '450 calories, 18g fat, 30g carbs, 38g protein',
-		time: 90
+		time: 90,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 17,
@@ -420,7 +452,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'chicken', 'comfort food', 'economic'],
 		nutrition: '420 calories, 15g fat, 35g carbs, 32g protein',
-		time: 60
+		time: 60,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 18,
@@ -444,7 +478,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'lamb', 'hearty', 'gluten-free', 'easy'],
 		nutrition: '380 calories, 16g fat, 28g carbs, 32g protein',
-		time: 60
+		time: 60,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 19,
@@ -470,7 +506,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'healthy', 'vegetarian', 'gluten-free', 'fast', 'easy'],
 		nutrition: '280 calories, 7g fat, 40g carbs, 12g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 20,
@@ -498,7 +536,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'seafood', 'hearty', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '300 calories, 8g fat, 15g carbs, 40g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 21,
@@ -524,7 +564,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'beef', 'irish', 'hearty', 'gluten-free', 'easy'],
 		nutrition: '470 calories, 20g fat, 25g carbs, 38g protein',
-		time: 90
+		time: 90,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 22,
@@ -552,7 +594,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'moroccan', 'vegetarian', 'gluten-free', 'fast', 'easy'],
 		nutrition: '290 calories, 8g fat, 45g carbs, 12g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 23,
@@ -577,7 +621,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'beef', 'hungarian', 'hearty', 'gluten-free', 'easy'],
 		nutrition: '440 calories, 16g fat, 30g carbs, 38g protein',
-		time: 80
+		time: 80,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 24,
@@ -602,7 +648,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'lamb', 'irish', 'hearty', 'gluten-free', 'easy'],
 		nutrition: '460 calories, 20g fat, 28g carbs, 38g protein',
-		time: 90
+		time: 90,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 25,
@@ -627,7 +675,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'healthy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '250 calories, 6g fat, 35g carbs, 14g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 26,
@@ -651,7 +701,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'healthy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '270 calories, 6g fat, 45g carbs, 12g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 27,
@@ -677,7 +729,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'seafood', 'hearty', 'vegetarian', 'gluten-free', 'fast', 'easy'],
 		nutrition: '320 calories, 10g fat, 12g carbs, 38g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 28,
@@ -702,7 +756,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'pork', 'hearty', 'gluten-free'],
 		nutrition: '420 calories, 18g fat, 28g carbs, 36g protein',
-		time: 75
+		time: 75,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 29,
@@ -727,7 +783,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'turkey', 'gluten-free', 'healthy', 'easy'],
 		nutrition: '350 calories, 12g fat, 28g carbs, 32g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 30,
@@ -751,7 +809,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['stew', 'hearty', 'vegetarian', 'gluten-free', 'economic', 'easy'],
 		nutrition: '260 calories, 6g fat, 45g carbs, 10g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 31,
@@ -775,7 +835,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['chowder', 'seafood', 'creamy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '420 calories, 22g fat, 28g carbs, 20g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 32,
@@ -798,7 +860,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['chowder', 'creamy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '300 calories, 12g fat, 40g carbs, 6g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 33,
@@ -822,7 +886,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['bisque', 'seafood', 'creamy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '380 calories, 22g fat, 12g carbs, 28g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 34,
@@ -844,7 +910,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['chowder', 'creamy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '280 calories, 12g fat, 38g carbs, 6g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 35,
@@ -868,7 +936,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['chowder', 'seafood', 'creamy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '380 calories, 18g fat, 25g carbs, 28g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 36,
@@ -891,7 +961,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['bisque', 'creamy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '250 calories, 10g fat, 28g carbs, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 37,
@@ -914,7 +986,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['chowder', 'seafood', 'creamy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '340 calories, 16g fat, 25g carbs, 22g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 38,
@@ -936,7 +1010,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['bisque', 'creamy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '290 calories, 14g fat, 20g carbs, 6g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 39,
@@ -959,7 +1035,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['chowder', 'creamy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '310 calories, 14g fat, 40g carbs, 5g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 40,
@@ -982,7 +1060,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['chowder', 'seafood', 'creamy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '360 calories, 16g fat, 28g carbs, 28g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 41,
@@ -1004,7 +1084,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['bisque', 'seafood', 'creamy', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '320 calories, 16g fat, 25g carbs, 14g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 42,
@@ -1026,7 +1108,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['bisque', 'creamy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '280 calories, 14g fat, 28g carbs, 4g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 43,
@@ -1048,7 +1132,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['chowder', 'seafood', 'creamy', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '330 calories, 16g fat, 20g carbs, 24g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 44,
@@ -1070,7 +1156,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['bisque', 'creamy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '260 calories, 12g fat, 30g carbs, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 45,
@@ -1093,7 +1181,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['bisque', 'seafood', 'creamy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '360 calories, 18g fat, 15g carbs, 28g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 46,
@@ -1116,7 +1206,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['chowder', 'seafood', 'creamy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '370 calories, 18g fat, 25g carbs, 28g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 47,
@@ -1138,7 +1230,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['bisque', 'creamy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '270 calories, 12g fat, 32g carbs, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 48,
@@ -1161,7 +1255,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['chowder', 'seafood', 'creamy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '400 calories, 20g fat, 28g carbs, 22g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 49,
@@ -1184,7 +1280,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['bisque', 'creamy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '290 calories, 14g fat, 30g carbs, 4g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 50,
@@ -1208,7 +1306,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['chowder', 'seafood', 'creamy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '420 calories, 20g fat, 32g carbs, 22g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 51,
@@ -1231,7 +1331,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'gourmet', 'vegetarian', 'gluten-free', 'economic', 'easy'],
 		nutrition: '280 calories, 14g fat, 30g carbs, 4g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 52,
@@ -1254,7 +1356,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'beef', 'gourmet', 'easy'],
 		nutrition: '380 calories, 18g fat, 40g carbs, 12g protein',
-		time: 60
+		time: 60,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 53,
@@ -1278,7 +1382,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'seafood', 'gourmet', 'creamy'],
 		nutrition: '420 calories, 22g fat, 12g carbs, 30g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 54,
@@ -1300,7 +1406,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'vegetarian', 'gourmet', 'asian', 'easy', 'fast'],
 		nutrition: '220 calories, 5g fat, 35g carbs, 8g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 55,
@@ -1322,7 +1430,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'gourmet', 'vegetarian', 'gluten-free', 'easy'],
 		nutrition: '260 calories, 14g fat, 25g carbs, 6g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 56,
@@ -1345,7 +1455,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'creamy', 'gourmet', 'vegetarian', 'gluten-free', 'fast'],
 		nutrition: '270 calories, 12g fat, 28g carbs, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 57,
@@ -1368,7 +1480,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'creamy', 'gourmet', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '250 calories, 12g fat, 30g carbs, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 58,
@@ -1391,7 +1505,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'gourmet', 'creamy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '280 calories, 14g fat, 15g carbs, 6g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 59,
@@ -1413,7 +1529,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'gourmet', 'creamy', 'vegetarian', 'gluten-free', 'fast', 'easy'],
 		nutrition: '230 calories, 10g fat, 30g carbs, 6g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 60,
@@ -1436,7 +1554,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'gourmet', 'creamy', 'vegetarian', 'gluten-free', 'economic', 'easy'],
 		nutrition: '260 calories, 12g fat, 32g carbs, 4g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 61,
@@ -1459,7 +1579,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'gourmet', 'creamy', 'vegetarian', 'gluten-free', 'fast', 'easy'],
 		nutrition: '270 calories, 12g fat, 32g carbs, 3g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 62,
@@ -1482,7 +1604,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'creamy', 'gourmet', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '270 calories, 12g fat, 28g carbs, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 63,
@@ -1505,7 +1629,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'gourmet', 'creamy', 'vegetarian', 'gluten-free', 'fast', 'easy'],
 		nutrition: '290 calories, 14g fat, 22g carbs, 6g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 64,
@@ -1527,7 +1653,9 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'gourmet', 'creamy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '220 calories, 10g fat, 18g carbs, 6g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	},
 	{
 		id: 65,
@@ -1549,6 +1677,8 @@ export const Soups: Recipe[] = [
 		],
 		tags: ['soup', 'gourmet', 'creamy', 'vegetarian', 'gluten-free', 'fast', 'easy'],
 		nutrition: '280 calories, 14g fat, 28g carbs, 8g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Soup'
 	}
 ];

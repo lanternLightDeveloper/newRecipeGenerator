@@ -31,7 +31,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '290 calories, 40g carbs, 7g fat, 15g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 2,
@@ -62,7 +64,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '260 calories, 32g carbs, 10g fat, 6g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 3,
@@ -92,7 +96,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '310 calories, 42g carbs, 9g fat, 12g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 4,
@@ -120,7 +126,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '340 calories, 45g carbs, 10g fat, 13g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 5,
@@ -149,7 +157,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 38g carbs, 9g fat, 11g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 6,
@@ -177,7 +187,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '260 calories, 36g carbs, 6g fat, 12g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 7,
@@ -207,7 +219,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '310 calories, 34g carbs, 8g fat, 14g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 8,
@@ -235,7 +249,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '330 calories, 35g carbs, 12g fat, 16g protein',
-		time: 8
+		time: 8,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 9,
@@ -261,7 +277,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '250 calories, 28g carbs, 9g fat, 9g protein',
-		time: 8
+		time: 8,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 10,
@@ -290,7 +308,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 42g carbs, 8g fat, 10g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 11,
@@ -319,7 +339,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '380 calories, 34g carbs, 18g fat, 15g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 12,
@@ -347,7 +369,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '240 calories, 30g carbs, 7g fat, 10g protein',
-		time: 8
+		time: 8,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 13,
@@ -373,7 +397,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '310 calories, 35g carbs, 11g fat, 12g protein',
-		time: 8
+		time: 8,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 14,
@@ -399,7 +425,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '330 calories, 40g carbs, 10g fat, 13g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 15,
@@ -426,7 +454,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '370 calories, 44g carbs, 12g fat, 14g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 
 	{
@@ -460,7 +490,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 40g carbs, 6g fat, 22g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 17,
@@ -491,7 +523,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '250 calories, 38g carbs, 8g fat, 8g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 18,
@@ -524,7 +558,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '350 calories, 35g carbs, 14g fat, 20g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 19,
@@ -552,7 +588,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '260 calories, 32g carbs, 9g fat, 12g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 20,
@@ -583,7 +621,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 34g carbs, 10g fat, 12g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 21,
@@ -614,7 +654,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '240 calories, 38g carbs, 5g fat, 10g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 22,
@@ -646,7 +688,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '290 calories, 38g carbs, 7g fat, 20g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 23,
@@ -678,7 +722,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '260 calories, 35g carbs, 6g fat, 12g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 24,
@@ -709,7 +755,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 38g carbs, 5g fat, 15g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 25,
@@ -736,7 +784,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '330 calories, 34g carbs, 12g fat, 20g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 26,
@@ -767,7 +817,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '250 calories, 36g carbs, 5g fat, 12g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 27,
@@ -798,7 +850,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 38g carbs, 6g fat, 22g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 28,
@@ -829,7 +883,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '240 calories, 30g carbs, 5g fat, 12g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 29,
@@ -861,7 +917,9 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 32g carbs, 6g fat, 15g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	},
 	{
 		id: 30,
@@ -883,6 +941,8 @@ export const ParfaitShakes: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '220 calories, 36g carbs, 5g fat, 10g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Blended Drinks'
 	}
 ];

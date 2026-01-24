@@ -35,7 +35,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '210 calories, 28g carbs, 9g fat, 3g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 2,
@@ -55,7 +57,9 @@ export const BreakTater: Recipe[] = [
 		],
 		tags: ['breakfast', 'potato', 'crispy', 'pan-fried', 'vegetarian', 'gluten-free', 'easy'],
 		nutrition: '180 calories, 22g carbs, 9g fat, 2g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 3,
@@ -88,7 +92,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '210 calories, 30g carbs, 8g fat, 4g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 4,
@@ -118,7 +124,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '260 calories, 29g carbs, 13g fat, 6g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 5,
@@ -149,7 +157,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '220 calories, 26g carbs, 11g fat, 3g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 6,
@@ -169,7 +179,9 @@ export const BreakTater: Recipe[] = [
 		],
 		tags: ['loaded', 'hearty', 'brunch', 'bacon', 'cheese', 'fast', 'easy', 'gluten-free'],
 		nutrition: '380 calories, 27g carbs, 22g fat, 15g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 7,
@@ -198,7 +210,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '190 calories, 27g carbs, 8g fat, 3g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 8,
@@ -229,7 +243,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '310 calories, 22g carbs, 18g fat, 18g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 9,
@@ -249,7 +265,9 @@ export const BreakTater: Recipe[] = [
 		],
 		tags: ['crispy', 'baked', 'cheesy', 'easy', 'vegetarian', 'economic', 'easy', 'gluten-free'],
 		nutrition: '230 calories, 30g carbs, 9g fat, 5g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 10,
@@ -279,7 +297,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 22g carbs, 14g fat, 12g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 11,
@@ -299,7 +319,9 @@ export const BreakTater: Recipe[] = [
 		],
 		tags: ['spiced', 'roasted', 'easy', 'vegetarian', 'economic', 'easy', 'gluten-free'],
 		nutrition: '200 calories, 27g carbs, 8g fat, 3g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 12,
@@ -329,7 +351,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '210 calories, 25g carbs, 9g fat, 3g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 13,
@@ -357,7 +381,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '350 calories, 26g carbs, 18g fat, 17g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 14,
@@ -389,7 +415,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '200 calories, 27g carbs, 8g fat, 3g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 15,
@@ -419,7 +447,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '380 calories, 25g carbs, 24g fat, 14g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 16,
@@ -443,7 +473,9 @@ export const BreakTater: Recipe[] = [
 		],
 		tags: ['fancy', 'potato', 'roasted', 'truffle', 'brunch', 'vegetarian', 'easy', 'gluten-free'],
 		nutrition: '230 calories, 26g carbs, 11g fat, 4g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 17,
@@ -477,7 +509,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '290 calories, 22g carbs, 17g fat, 12g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 18,
@@ -499,7 +533,9 @@ export const BreakTater: Recipe[] = [
 		],
 		tags: ['fancy', 'potato', 'duck fat', 'french', 'brunch', 'economic', 'easy', 'gluten-free'],
 		nutrition: '250 calories, 27g carbs, 12g fat, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 19,
@@ -522,7 +558,9 @@ export const BreakTater: Recipe[] = [
 		],
 		tags: ['fancy', 'gratin', 'cheesy', 'brunch', 'easy', 'gluten-free'],
 		nutrition: '310 calories, 24g carbs, 18g fat, 10g protein',
-		time: 55
+		time: 55,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 20,
@@ -546,7 +584,9 @@ export const BreakTater: Recipe[] = [
 		],
 		tags: ['fancy', 'sweet potato', 'hash', 'brunch', 'economic', 'fast', 'easy', 'gluten-free'],
 		nutrition: '340 calories, 29g carbs, 19g fat, 9g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 21,
@@ -573,7 +613,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '180 calories, 30g carbs, 6g fat, 4g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 22,
@@ -605,7 +647,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 25g carbs, 14g fat, 9g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 23,
@@ -628,7 +672,9 @@ export const BreakTater: Recipe[] = [
 		],
 		tags: ['grits', 'seafood', 'southern', 'bacon', 'brunch', 'easy', 'gluten-free'],
 		nutrition: '320 calories, 28g carbs, 15g fat, 20g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 24,
@@ -659,7 +705,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '260 calories, 44g carbs, 6g fat, 8g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 25,
@@ -690,7 +738,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '290 calories, 25g carbs, 14g fat, 13g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 26,
@@ -721,7 +771,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '240 calories, 40g carbs, 7g fat, 7g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 27,
@@ -753,7 +805,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '300 calories, 26g carbs, 15g fat, 10g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 28,
@@ -784,7 +838,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '270 calories, 46g carbs, 6g fat, 8g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 29,
@@ -815,7 +871,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '340 calories, 29g carbs, 18g fat, 15g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 30,
@@ -846,7 +904,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '310 calories, 45g carbs, 11g fat, 9g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 31,
@@ -877,7 +937,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '250 calories, 28g carbs, 10g fat, 6g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 32,
@@ -908,7 +970,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 48g carbs, 6g fat, 8g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 33,
@@ -929,7 +993,9 @@ export const BreakTater: Recipe[] = [
 		],
 		tags: ['grits', 'savory', 'bacon', 'cheesy', 'southern', 'fast', 'easy', 'gluten-free'],
 		nutrition: '330 calories, 27g carbs, 18g fat, 13g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 34,
@@ -960,7 +1026,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '260 calories, 44g carbs, 6g fat, 8g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 35,
@@ -992,7 +1060,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '420 calories, 29g carbs, 25g fat, 18g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 36,
@@ -1022,7 +1092,9 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '250 calories, 42g carbs, 6g fat, 8g protein',
-		time: 8
+		time: 8,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 37,
@@ -1043,7 +1115,9 @@ export const BreakTater: Recipe[] = [
 		],
 		tags: ['grits', 'savory', 'vegetarian', 'feta', 'brunch', 'fast', 'easy', 'gluten-free'],
 		nutrition: '260 calories, 23g carbs, 12g fat, 9g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 38,
@@ -1062,7 +1136,9 @@ export const BreakTater: Recipe[] = [
 		],
 		tags: ['oatmeal', 'tropical', 'sweet', 'fruit', 'vegetarian', 'fast', 'easy', 'gluten-free'],
 		nutrition: '290 calories, 43g carbs, 9g fat, 7g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 39,
@@ -1083,7 +1159,9 @@ export const BreakTater: Recipe[] = [
 		],
 		tags: ['grits', 'casserole', 'brunch', 'savory', 'cheesy', 'economic', 'easy', 'gluten-free'],
 		nutrition: '390 calories, 28g carbs, 20g fat, 18g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	},
 	{
 		id: 40,
@@ -1113,6 +1191,8 @@ export const BreakTater: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '330 calories, 42g carbs, 12g fat, 10g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Breakfast Tater'
 	}
 ];

@@ -1,12 +1,13 @@
-import { pgTable, serial, text, integer } from 'drizzle-orm/pg-core';
-
 export const recipes = pgTable('recipes', {
-	id: serial('id').primaryKey(),
+	key_id: serial('key_id').primaryKey(),
+	id: integer('id').notNull(), // your original category-specific ID
 	name: text('name').notNull(),
-	servings: text('servings'),
-	ingredients: text('ingredients').array().notNull(),
-	instructions: text('instructions').array().notNull(),
+	servings: Number(recipe.servings),
+	ingredients: text('ingredients').array(),
+	instructions: text('instructions').array(),
 	tags: text('tags').array(),
 	nutrition: text('nutrition'),
-	time: integer('time')
+	time: integer('time'),
+	creator: text('creator').default('Unknown'),
+	category: text('category').notNull()
 });

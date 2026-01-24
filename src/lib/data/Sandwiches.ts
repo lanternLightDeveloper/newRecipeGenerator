@@ -33,7 +33,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '680 calories, 38g fat, 40g carbs, 45g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 2,
@@ -61,7 +63,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '480 calories, 30g fat, 36g carbs, 15g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 3,
@@ -82,7 +86,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'grilled', 'turkey', 'avocado', 'bacon', 'gluten-free', 'easy'],
 		nutrition: '610 calories, 38g fat, 32g carbs, 32g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 4,
@@ -103,7 +109,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'panini', 'italian', 'grilled', 'vegetarian', 'gluten-free', 'fast'],
 		nutrition: '540 calories, 28g fat, 38g carbs, 25g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 5,
@@ -128,7 +136,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'grilled', 'pork', 'ham', 'classic', 'gluten-free'],
 		nutrition: '590 calories, 28g fat, 42g carbs, 38g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 6,
@@ -159,7 +169,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '470 calories, 25g fat, 32g carbs, 30g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 7,
@@ -180,7 +192,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'grilled', 'beef', 'savory'],
 		nutrition: '560 calories, 32g fat, 34g carbs, 30g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 8,
@@ -200,7 +214,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'chicken', 'grilled', 'italian', 'panini', 'gluten-free', 'fast', 'easy'],
 		nutrition: '520 calories, 27g fat, 35g carbs, 32g protein',
-		time: 18
+		time: 18,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 9,
@@ -221,7 +237,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'vegetarian', 'mushroom', 'grilled', 'savory', 'economic'],
 		nutrition: '450 calories, 24g fat, 38g carbs, 18g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 10,
@@ -241,7 +259,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'grilled', 'ham', 'cheese', 'french', 'fast', 'easy'],
 		nutrition: '530 calories, 26g fat, 42g carbs, 28g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 11,
@@ -260,7 +280,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'barbecue', 'pork', 'toasted', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '610 calories, 28g fat, 45g carbs, 35g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 12,
@@ -289,7 +311,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '510 calories, 24g fat, 40g carbs, 22g protein',
-		time: 18
+		time: 18,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 13,
@@ -310,7 +334,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'grilled', 'beef', 'classic', 'reuben', 'easy'],
 		nutrition: '640 calories, 35g fat, 42g carbs, 34g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 14,
@@ -340,7 +366,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '580 calories, 36g fat, 40g carbs, 20g protein',
-		time: 18
+		time: 18,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 15,
@@ -360,7 +388,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'chicken', 'grilled', 'spicy', 'easy'],
 		nutrition: '610 calories, 35g fat, 40g carbs, 35g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 16,
@@ -381,7 +411,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'seafood', 'grilled', 'brunch', 'gluten-free', 'fast', 'easy'],
 		nutrition: '520 calories, 30g fat, 32g carbs, 28g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 17,
@@ -409,7 +441,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '470 calories, 24g fat, 42g carbs, 14g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 18,
@@ -431,7 +465,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'cold', 'vegetarian', 'italian', 'caprese', 'fast', 'easy'],
 		nutrition: '480 calories, 26g fat, 34g carbs, 22g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 19,
@@ -463,7 +499,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '420 calories, 18g fat, 45g carbs, 16g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 20,
@@ -497,7 +535,9 @@ export const Sandwiches: Recipe[] = [
 			'vegetarian'
 		],
 		nutrition: '390 calories, 14g fat, 48g carbs, 15g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 21,
@@ -520,7 +560,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'cold', 'vegetarian', 'club', 'avocado', 'gluten-free', 'easy'],
 		nutrition: '610 calories, 32g fat, 52g carbs, 28g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 22,
@@ -544,7 +586,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'cold', 'vegetarian', 'egg', 'classic', 'easy'],
 		nutrition: '440 calories, 27g fat, 28g carbs, 19g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 23,
@@ -566,7 +610,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'cold', 'vegetarian', 'mediterranean', 'meal prep', 'gluten-free'],
 		nutrition: '520 calories, 22g fat, 58g carbs, 16g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 24,
@@ -588,7 +634,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'cold', 'vegan', 'tofu', 'crunchy', 'gluten-free', 'easy', 'vegetarian'],
 		nutrition: '410 calories, 17g fat, 45g carbs, 19g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 25,
@@ -619,7 +667,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '320 calories, 14g fat, 36g carbs, 10g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 26,
@@ -642,7 +692,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'cold', 'high protein', 'chicken', 'healthy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '430 calories, 12g fat, 40g carbs, 38g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 27,
@@ -674,7 +726,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '400 calories, 18g fat, 42g carbs, 13g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 28,
@@ -694,7 +748,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'cold', 'vegetarian', 'italian', 'pesto', 'gluten-free', 'fast', 'easy'],
 		nutrition: '510 calories, 24g fat, 52g carbs, 20g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 29,
@@ -716,7 +772,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'cold', 'tuna', 'lunch', 'protein', 'gluten-free', 'fast', 'easy'],
 		nutrition: '450 calories, 21g fat, 38g carbs, 31g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 30,
@@ -749,7 +807,9 @@ export const Sandwiches: Recipe[] = [
 			'vegetarian'
 		],
 		nutrition: '380 calories, 12g fat, 50g carbs, 15g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 31,
@@ -779,7 +839,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '440 calories, 20g fat, 46g carbs, 19g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 32,
@@ -799,7 +861,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'cold', 'vegetarian', 'cheese', 'avocado', 'gluten-free', 'fast', 'easy'],
 		nutrition: '480 calories, 23g fat, 45g carbs, 21g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 33,
@@ -830,7 +894,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '520 calories, 32g fat, 36g carbs, 24g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 34,
@@ -851,7 +917,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'toasted', 'turkey', 'club', 'holiday', 'gluten-free', 'economic', 'easy'],
 		nutrition: '650 calories, 34g fat, 48g carbs, 38g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 35,
@@ -871,7 +939,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'toasted', 'beef', 'melt', 'savory', 'fast', 'easy'],
 		nutrition: '580 calories, 28g fat, 40g carbs, 36g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 36,
@@ -893,7 +963,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'cold', 'italian', 'ham', 'deli', 'fast', 'easy'],
 		nutrition: '610 calories, 31g fat, 42g carbs, 40g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 37,
@@ -913,7 +985,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'toasted', 'ham', 'cheese', 'comfort food', 'fast', 'easy'],
 		nutrition: '490 calories, 25g fat, 40g carbs, 28g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 38,
@@ -933,7 +1007,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'toasted', 'pastrami', 'deli', 'reuben-style', 'fast', 'easy'],
 		nutrition: '580 calories, 27g fat, 44g carbs, 35g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 39,
@@ -963,7 +1039,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '470 calories, 20g fat, 38g carbs, 36g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 40,
@@ -992,7 +1070,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '620 calories, 28g fat, 52g carbs, 40g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 41,
@@ -1022,7 +1102,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '540 calories, 26g fat, 40g carbs, 34g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 42,
@@ -1044,7 +1126,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'toasted', 'pork', 'cuban', 'grilled', 'gluten-free', 'fast', 'easy'],
 		nutrition: '680 calories, 34g fat, 44g carbs, 48g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 43,
@@ -1073,7 +1157,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '610 calories, 30g fat, 42g carbs, 40g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 44,
@@ -1093,7 +1179,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'cold', 'steak', 'gourmet', 'balsamic'],
 		nutrition: '570 calories, 25g fat, 36g carbs, 44g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 45,
@@ -1125,7 +1213,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '510 calories, 22g fat, 42g carbs, 34g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 46,
@@ -1145,7 +1235,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'cold', 'turkey', 'brie', 'fancy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '520 calories, 24g fat, 40g carbs, 34g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 47,
@@ -1165,7 +1257,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'cold', 'beef', 'cheddar', 'deli', 'gluten-free', 'fast', 'easy'],
 		nutrition: '600 calories, 28g fat, 44g carbs, 40g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 48,
@@ -1187,7 +1281,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'chicken', 'fancy', 'lunch', 'gluten-free', 'fast', 'easy'],
 		nutrition: '520 calories, 22g fat, 38g carbs, 42g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 49,
@@ -1208,7 +1304,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'turkey', 'bacon', 'classic', 'gluten-free', 'fast', 'easy'],
 		nutrition: '480 calories, 20g fat, 35g carbs, 38g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 50,
@@ -1229,7 +1327,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'chicken', 'spicy', 'ranch', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '550 calories, 26g fat, 40g carbs, 38g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 51,
@@ -1250,7 +1350,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'chicken', 'salad', 'caesar', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '490 calories, 22g fat, 35g carbs, 36g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 52,
@@ -1270,7 +1372,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'beef', 'swiss', 'deli', 'gluten-free', 'fast', 'easy'],
 		nutrition: '560 calories, 27g fat, 36g carbs, 42g protein',
-		time: 8
+		time: 8,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 53,
@@ -1293,7 +1397,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'italian', 'meat', 'provolone', 'gluten-free', 'fast', 'easy'],
 		nutrition: '600 calories, 30g fat, 38g carbs, 44g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 54,
@@ -1315,7 +1421,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'chicken', 'greek', 'tzatziki', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '500 calories, 20g fat, 42g carbs, 38g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 55,
@@ -1335,7 +1443,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'pork', 'bbq', 'southern', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '610 calories, 25g fat, 45g carbs, 42g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 56,
@@ -1355,7 +1465,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'ham', 'swiss', 'ranch', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '470 calories, 18g fat, 35g carbs, 38g protein',
-		time: 8
+		time: 8,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 57,
@@ -1377,7 +1489,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'steak', 'southwest', 'spicy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '590 calories, 24g fat, 44g carbs, 46g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 58,
@@ -1398,7 +1512,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'chicken', 'bacon', 'ranch', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '540 calories, 25g fat, 38g carbs, 41g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 59,
@@ -1419,7 +1535,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'pastrami', 'swiss', 'deli', 'gluten-free', 'fast', 'easy'],
 		nutrition: '560 calories, 28g fat, 36g carbs, 42g protein',
-		time: 8
+		time: 8,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 60,
@@ -1440,7 +1558,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'chicken', 'pesto', 'italian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '530 calories, 23g fat, 38g carbs, 39g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 61,
@@ -1460,7 +1580,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'tuna', 'seafood', 'lunch', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '490 calories, 22g fat, 34g carbs, 36g protein',
-		time: 8
+		time: 8,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 62,
@@ -1480,7 +1602,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'turkey', 'sweet-savory', 'holiday', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '460 calories, 17g fat, 38g carbs, 34g protein',
-		time: 8
+		time: 8,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 63,
@@ -1501,7 +1625,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'chicken', 'italian', 'provolone', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '510 calories, 21g fat, 40g carbs, 37g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 64,
@@ -1522,7 +1648,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['wrap', 'pork', 'ham', 'swiss', 'cuban', 'gluten-free', 'fast', 'easy'],
 		nutrition: '580 calories, 26g fat, 38g carbs, 41g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 65,
@@ -1543,7 +1671,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'gourmet', 'salmon', 'cold', 'brunch', 'gluten-free', 'fast', 'easy'],
 		nutrition: '520 calories, 28g fat, 38g carbs, 28g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 66,
@@ -1565,7 +1695,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'vegetarian', 'brie', 'apple', 'fancy', 'gluten-free', 'fast', 'easy'],
 		nutrition: '610 calories, 29g fat, 54g carbs, 24g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 67,
@@ -1595,7 +1727,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '640 calories, 31g fat, 52g carbs, 32g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 68,
@@ -1625,7 +1759,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '580 calories, 26g fat, 56g carbs, 28g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 69,
@@ -1646,7 +1782,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'steak', 'blue cheese', 'gourmet', 'hot', 'gluten-free'],
 		nutrition: '700 calories, 35g fat, 45g carbs, 48g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 70,
@@ -1667,7 +1805,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'seafood', 'lobster', 'gourmet', 'brunch', 'gluten-free', 'fast'],
 		nutrition: '620 calories, 32g fat, 42g carbs, 38g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 71,
@@ -1687,7 +1827,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'duck', 'fancy', 'sweet-savory', 'gourmet', 'gluten-free', 'fast'],
 		nutrition: '720 calories, 38g fat, 44g carbs, 46g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 72,
@@ -1707,7 +1849,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'vegetarian', 'mushroom', 'truffle', 'melt', 'gluten-free', 'fast'],
 		nutrition: '640 calories, 34g fat, 44g carbs, 28g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 73,
@@ -1727,7 +1871,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'lamb', 'gourmet', 'flatbread', 'fusion', 'gluten-free', 'fast'],
 		nutrition: '620 calories, 28g fat, 42g carbs, 44g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 74,
@@ -1756,7 +1902,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '780 calories, 38g fat, 60g carbs, 46g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 75,
@@ -1786,7 +1934,9 @@ export const Sandwiches: Recipe[] = [
 			'easy'
 		],
 		nutrition: '550 calories, 22g fat, 58g carbs, 22g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 76,
@@ -1806,7 +1956,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'seafood', 'crab', 'gourmet', 'brunch', 'gluten-free', 'fast', 'easy'],
 		nutrition: '580 calories, 30g fat, 40g carbs, 36g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 77,
@@ -1826,7 +1978,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'beef', 'short rib', 'melt', 'gourmet'],
 		nutrition: '740 calories, 38g fat, 44g carbs, 48g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 78,
@@ -1846,7 +2000,9 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'turkey', 'brie', 'croissant', 'holiday', 'gluten-free', 'fast', 'easy'],
 		nutrition: '610 calories, 32g fat, 40g carbs, 34g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	},
 	{
 		id: 79,
@@ -1866,6 +2022,8 @@ export const Sandwiches: Recipe[] = [
 		],
 		tags: ['sandwich', 'shrimp', 'southern', 'fried', 'gourmet', 'gluten-free', 'economic'],
 		nutrition: '720 calories, 36g fat, 54g carbs, 44g protein',
-		time: 18
+		time: 18,
+		creator: 'Generated',
+		category: 'Wraps, Sandwiches & Flatbreads'
 	}
 ];

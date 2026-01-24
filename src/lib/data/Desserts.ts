@@ -25,7 +25,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['vanilla', 'classic', 'dessert', 'cake', 'economic', 'vegetarian'],
 		nutrition: '320 calories, 45g carbs, 12g fat, 5g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 2,
@@ -53,7 +55,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['chocolate', 'fudge', 'dessert', 'cake', 'vegetarian'],
 		nutrition: '400 calories, 60g carbs, 15g fat, 6g protein',
-		time: 55
+		time: 55,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 3,
@@ -82,7 +86,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['carrot', 'dessert', 'cake', 'classic', 'vegetarian'],
 		nutrition: '420 calories, 60g carbs, 18g fat, 6g protein',
-		time: 60
+		time: 60,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 4,
@@ -108,7 +114,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['lemon', 'dessert', 'cake', 'citrus', 'economic', 'vegetarian'],
 		nutrition: '300 calories, 42g carbs, 12g fat, 5g protein',
-		time: 65
+		time: 65,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 5,
@@ -136,7 +144,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['red velvet', 'dessert', 'cake', 'classic', 'vegetarian'],
 		nutrition: '380 calories, 55g carbs, 15g fat, 6g protein',
-		time: 60
+		time: 60,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 6,
@@ -162,7 +172,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['banana', 'dessert', 'cake', 'moist', 'vegetarian', 'economic'],
 		nutrition: '360 calories, 52g carbs, 14g fat, 5g protein',
-		time: 55
+		time: 55,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 7,
@@ -189,7 +201,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['coffee', 'walnut', 'dessert', 'cake', 'vegetarian'],
 		nutrition: '380 calories, 48g carbs, 16g fat, 6g protein',
-		time: 55
+		time: 55,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 8,
@@ -215,7 +229,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['coconut', 'dessert', 'cake', 'tropical', 'vegetarian'],
 		nutrition: '380 calories, 52g carbs, 14g fat, 5g protein',
-		time: 60
+		time: 60,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 9,
@@ -242,7 +258,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['pineapple', 'dessert', 'cake', 'tropical', 'vegetarian', 'economic'],
 		nutrition: '360 calories, 55g carbs, 12g fat, 4g protein',
-		time: 55
+		time: 55,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 10,
@@ -266,7 +284,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['strawberry', 'dessert', 'cake', 'shortcake', 'vegetarian'],
 		nutrition: '300 calories, 45g carbs, 12g fat, 5g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 11,
@@ -290,7 +310,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['chocolate', 'molten', 'dessert', 'cake', 'vegetarian'],
 		nutrition: '410 calories, 40g carbs, 25g fat, 6g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 12,
@@ -315,7 +337,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['marble', 'chocolate', 'vanilla', 'dessert', 'cake', 'vegetarian'],
 		nutrition: '350 calories, 50g carbs, 14g fat, 5g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 13,
@@ -342,7 +366,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['pumpkin', 'spice', 'dessert', 'cake', 'fall', 'vegetarian'],
 		nutrition: '320 calories, 45g carbs, 12g fat, 5g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 14,
@@ -366,7 +392,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['almond', 'dessert', 'cake', 'nutty', 'vegetarian', 'economic'],
 		nutrition: '350 calories, 28g carbs, 20g fat, 10g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 15,
@@ -389,7 +417,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['apple', 'baked', 'dessert', 'fruit', 'vegetarian', 'economic'],
 		nutrition: '280 calories, 55g carbs, 10g fat, 2g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 16,
@@ -402,7 +432,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['berry', 'no-bake', 'dessert', 'fruit', 'vegetarian', 'economic', 'fast', 'gluten-free'],
 		nutrition: '200 calories, 30g carbs, 5g fat, 6g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 17,
@@ -427,7 +459,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['peach', 'baked', 'dessert', 'fruit', 'vegetarian'],
 		nutrition: '300 calories, 55g carbs, 10g fat, 4g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 18,
@@ -458,7 +492,9 @@ export const Desserts: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '180 calories, 35g carbs, 2g fat, 4g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 18,
@@ -477,7 +513,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['strawberry', 'quick', 'dessert', 'fruit', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '220 calories, 30g carbs, 8g fat, 4g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 19,
@@ -503,7 +541,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['blueberry', 'baked', 'dessert', 'fruit', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '200 calories, 32g carbs, 6g fat, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 20,
@@ -528,7 +568,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['pineapple', 'mini', 'dessert', 'fruit', 'vegetarian', 'fast'],
 		nutrition: '180 calories, 28g carbs, 7g fat, 2g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 21,
@@ -547,7 +589,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['raspberry', 'baked', 'dessert', 'fruit', 'vegetarian', 'fast'],
 		nutrition: '210 calories, 32g carbs, 8g fat, 4g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 22,
@@ -565,7 +609,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['peach', 'frozen', 'dessert', 'fruit', 'sorbet', 'vegetarian', 'easy', 'gluten-free'],
 		nutrition: '100 calories, 25g carbs, 0g fat, 1g protein',
-		time: 70
+		time: 70,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 23,
@@ -587,7 +633,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['berry', 'baked', 'dessert', 'fruit', 'pavlova', 'vegetarian', 'gluten-free'],
 		nutrition: '220 calories, 40g carbs, 8g fat, 3g protein',
-		time: 70
+		time: 70,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 24,
@@ -615,7 +663,9 @@ export const Desserts: Recipe[] = [
 			'easy'
 		],
 		nutrition: '250 calories, 45g carbs, 8g fat, 4g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 25,
@@ -638,7 +688,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['cherry', 'baked', 'dessert', 'fruit', 'french', 'vegetarian'],
 		nutrition: '230 calories, 35g carbs, 8g fat, 6g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 26,
@@ -669,7 +721,9 @@ export const Desserts: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 55g carbs, 7g fat, 4g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 27,
@@ -699,7 +753,9 @@ export const Desserts: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '150 calories, 35g carbs, 0g fat, 2g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 28,
@@ -724,7 +780,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['orange', 'almond', 'dessert', 'cake', 'fruit', 'vegetarian'],
 		nutrition: '320 calories, 45g carbs, 12g fat, 6g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 29,
@@ -744,7 +802,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['pear', 'almond', 'baked', 'dessert', 'fruit', 'economic'],
 		nutrition: '260 calories, 35g carbs, 12g fat, 4g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 30,
@@ -766,7 +826,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['classic', 'baked', 'dessert', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '450 calories, 32g fat, 30g carbs, 8g protein',
-		time: 300
+		time: 300,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 31,
@@ -788,7 +850,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['strawberry', 'swirl', 'baked', 'dessert', 'fruit', 'vegetarian', 'easy'],
 		nutrition: '420 calories, 28g fat, 32g carbs, 7g protein',
-		time: 270
+		time: 270,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 32,
@@ -810,7 +874,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['chocolate', 'ganache', 'baked', 'dessert', 'vegetarian'],
 		nutrition: '520 calories, 35g fat, 40g carbs, 9g protein',
-		time: 300
+		time: 300,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 33,
@@ -833,7 +899,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['lemon', 'citrus', 'baked', 'dessert', 'vegetarian', 'economic', 'easy'],
 		nutrition: '400 calories, 28g fat, 30g carbs, 7g protein',
-		time: 270
+		time: 270,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 34,
@@ -856,7 +924,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['pumpkin', 'spice', 'baked', 'dessert', 'fall', 'vegetarian', 'economic'],
 		nutrition: '460 calories, 30g fat, 36g carbs, 8g protein',
-		time: 300
+		time: 300,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 35,
@@ -878,7 +948,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['blueberry', 'swirl', 'baked', 'dessert', 'fruit', 'vegetarian', 'economic', 'easy'],
 		nutrition: '410 calories, 28g fat, 32g carbs, 7g protein',
-		time: 270
+		time: 270,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 36,
@@ -901,7 +973,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['caramel', 'baked', 'dessert', 'vegetarian', 'economic'],
 		nutrition: '500 calories, 33g fat, 40g carbs, 9g protein',
-		time: 300
+		time: 300,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 37,
@@ -924,7 +998,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['chocolate', 'raspberry', 'baked', 'dessert', 'vegetarian', 'easy'],
 		nutrition: '480 calories, 32g fat, 38g carbs, 8g protein',
-		time: 270
+		time: 270,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 38,
@@ -946,7 +1022,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['lemon', 'no-bake', 'dessert', 'vegetarian', 'economic', 'easy'],
 		nutrition: '360 calories, 24g fat, 28g carbs, 6g protein',
-		time: 270
+		time: 270,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 39,
@@ -968,7 +1046,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['oreo', 'no-bake', 'dessert', 'vegetarian', 'economic', 'easy', 'cookies'],
 		nutrition: '420 calories, 26g fat, 36g carbs, 7g protein',
-		time: 270
+		time: 270,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 40,
@@ -990,7 +1070,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['mango', 'fruit', 'baked', 'dessert', 'vegetarian', 'easy'],
 		nutrition: '420 calories, 28g fat, 32g carbs, 7g protein',
-		time: 270
+		time: 270,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 41,
@@ -1012,7 +1094,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['peanut butter', 'baked', 'dessert', 'vegetarian', 'easy'],
 		nutrition: '480 calories, 32g fat, 36g carbs, 8g protein',
-		time: 270
+		time: 270,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 42,
@@ -1034,7 +1118,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['cherry', 'fruit', 'baked', 'dessert', 'vegetarian', 'easy'],
 		nutrition: '410 calories, 28g fat, 32g carbs, 7g protein',
-		time: 270
+		time: 270,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 43,
@@ -1057,7 +1143,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['white chocolate', 'raspberry', 'baked', 'dessert', 'vegetarian', 'easy'],
 		nutrition: '470 calories, 30g fat, 36g carbs, 8g protein',
-		time: 270
+		time: 270,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 44,
@@ -1080,7 +1168,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['pistachio', 'rosewater', 'baked', 'dessert', 'gourmet', 'vegetarian'],
 		nutrition: '460 calories, 30g fat, 34g carbs, 8g protein',
-		time: 300
+		time: 300,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 45,
@@ -1102,7 +1192,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['matcha', 'white chocolate', 'baked', 'dessert', 'gourmet', 'vegetarian'],
 		nutrition: '480 calories, 32g fat, 36g carbs, 8g protein',
-		time: 270
+		time: 270,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 46,
@@ -1126,7 +1218,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['chocolate', 'caramel', 'layered', 'dessert', 'gourmet', 'vegetarian'],
 		nutrition: '520 calories, 34g fat, 42g carbs, 9g protein',
-		time: 300
+		time: 300,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 47,
@@ -1149,7 +1243,9 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['raspberry', 'liqueur', 'baked', 'dessert', 'gourmet', 'vegetarian'],
 		nutrition: '450 calories, 30g fat, 34g carbs, 8g protein',
-		time: 270
+		time: 270,
+		creator: 'Generated',
+		category: 'Dessert'
 	},
 	{
 		id: 48,
@@ -1173,6 +1269,8 @@ export const Desserts: Recipe[] = [
 		],
 		tags: ['tiramisu', 'coffee', 'baked', 'dessert', 'gourmet', 'vegetarian'],
 		nutrition: '470 calories, 31g fat, 36g carbs, 8g protein',
-		time: 270
+		time: 270,
+		creator: 'Generated',
+		category: 'Dessert'
 	}
 ];

@@ -35,7 +35,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '180 calories, 3g carbs, 12g fat, 15g protein per muffin',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 2,
@@ -71,7 +73,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '250 calories, 12g carbs, 14g fat, 16g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 3,
@@ -103,7 +107,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '320 calories, 30g carbs, 18g fat, 16g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 4,
@@ -140,7 +146,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '210 calories, 4g carbs, 14g fat, 18g protein per serving',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 5,
@@ -172,7 +180,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '70 calories, 1g carbs, 5g fat, 6g protein per egg half',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 6,
@@ -204,7 +214,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '210 calories, 4g carbs, 14g fat, 16g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 7,
@@ -235,7 +247,9 @@ export const Eggs: Recipe[] = [
 			'easy'
 		],
 		nutrition: '350 calories, 28g carbs, 18g fat, 20g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 8,
@@ -268,7 +282,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '250 calories, 10g carbs, 18g fat, 12g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 9,
@@ -298,7 +314,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '300 calories, 28g carbs, 12g fat, 20g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 10,
@@ -332,7 +350,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '220 calories, 15g carbs, 14g fat, 14g protein per serving',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 11,
@@ -365,7 +385,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '270 calories, 2g carbs, 20g fat, 18g protein',
-		time: 8
+		time: 8,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 12,
@@ -397,7 +419,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 4g carbs, 18g fat, 20g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 13,
@@ -430,7 +454,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '270 calories, 3g carbs, 18g fat, 18g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 14,
@@ -463,7 +489,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '300 calories, 5g carbs, 20g fat, 22g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 15,
@@ -497,7 +525,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '260 calories, 3g carbs, 18g fat, 18g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 16,
@@ -529,7 +559,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '300 calories, 2g carbs, 20g fat, 22g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 17,
@@ -563,7 +595,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 4g carbs, 18g fat, 20g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 18,
@@ -595,7 +629,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '320 calories, 2g carbs, 22g fat, 22g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 19,
@@ -628,7 +664,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '270 calories, 3g carbs, 18g fat, 20g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 20,
@@ -662,7 +700,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 5g carbs, 18g fat, 20g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 21,
@@ -694,7 +734,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '270 calories, 5g carbs, 18g fat, 18g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 22,
@@ -729,7 +771,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '290 calories, 8g carbs, 18g fat, 20g protein',
-		time: 12
+		time: 12,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 23,
@@ -750,7 +794,9 @@ export const Eggs: Recipe[] = [
 		],
 		tags: ['omelette', 'turkey', 'Swiss', 'protein', 'breakfast', 'fast', 'easy', 'gluten-free'],
 		nutrition: '300 calories, 2g carbs, 20g fat, 22g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 24,
@@ -783,7 +829,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '250 calories, 2g carbs, 18g fat, 18g protein',
-		time: 8
+		time: 8,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 25,
@@ -818,7 +866,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '290 calories, 6g carbs, 18g fat, 20g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 
 	{
@@ -854,7 +904,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '230 calories, 5g carbs, 16g fat, 18g protein per serving',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 27,
@@ -887,7 +939,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 3g carbs, 20g fat, 22g protein per serving',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 28,
@@ -924,7 +978,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '210 calories, 6g carbs, 14g fat, 18g protein per serving',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 29,
@@ -958,7 +1014,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '270 calories, 3g carbs, 18g fat, 22g protein per serving',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 
 	{
@@ -993,7 +1051,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '220 calories, 4g carbs, 14g fat, 18g protein per serving',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 31,
@@ -1020,7 +1080,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '200 calories, 2g carbs, 14g fat, 14g protein',
-		time: 7
+		time: 7,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 32,
@@ -1046,7 +1108,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '180 calories, 1g carbs, 14g fat, 12g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 33,
@@ -1072,7 +1136,9 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '180 calories, 1g carbs, 14g fat, 12g protein',
-		time: 6
+		time: 6,
+		creator: 'Generated',
+		category: 'Eggs'
 	},
 	{
 		id: 34,
@@ -1106,6 +1172,8 @@ export const Eggs: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '270 calories, 2g carbs, 20g fat, 18g protein',
-		time: 8
+		time: 8,
+		creator: 'Generated',
+		category: 'Eggs'
 	}
 ];

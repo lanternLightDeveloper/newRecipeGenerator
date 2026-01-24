@@ -35,7 +35,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '240 calories, 32g carbs, 9g fat, 7g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 2,
@@ -70,7 +72,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '260 calories, 36g carbs, 8g fat, 6g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 3,
@@ -105,7 +109,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '290 calories, 38g carbs, 11g fat, 7g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 4,
@@ -130,7 +136,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['fruit', 'banana', 'natural-sweet', 'easy', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '210 calories, 30g carbs, 7g fat, 6g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 5,
@@ -166,7 +174,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '250 calories, 28g carbs, 9g fat, 9g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 6,
@@ -199,7 +209,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '230 calories, 31g carbs, 7g fat, 8g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 7,
@@ -226,7 +238,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['pumpkin', 'fall', 'spiced', 'seasonal', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '240 calories, 33g carbs, 8g fat, 6g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 8,
@@ -247,7 +261,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['high-protein', 'healthy', 'fitness', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '280 calories, 25g carbs, 9g fat, 23g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 9,
@@ -282,7 +298,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '320 calories, 42g carbs, 11g fat, 8g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 10,
@@ -317,7 +335,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '250 calories, 35g carbs, 8g fat, 7g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 11,
@@ -349,7 +369,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '220 calories, 31g carbs, 7g fat, 6g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 12,
@@ -381,7 +403,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '260 calories, 32g carbs, 10g fat, 6g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 13,
@@ -414,7 +438,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '210 calories, 8g carbs, 16g fat, 9g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 14,
@@ -447,7 +473,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '280 calories, 36g carbs, 10g fat, 7g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 15,
@@ -472,7 +500,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'herb', 'brunch', 'unique', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '230 calories, 28g carbs, 9g fat, 8g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 16,
@@ -507,7 +537,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '310 calories, 35g carbs, 14g fat, 8g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 17,
@@ -530,7 +562,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['Belgian', 'sweet', 'caramelized', 'european', 'gourmet'],
 		nutrition: '400 calories, 40g carbs, 20g fat, 8g protein',
-		time: 90
+		time: 90,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 18,
@@ -554,7 +588,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'cheese', 'brunch', 'comfort', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '320 calories, 28g carbs, 16g fat, 10g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 19,
@@ -588,7 +624,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '330 calories, 38g carbs, 13g fat, 8g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 20,
@@ -621,7 +659,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '290 calories, 35g carbs, 10g fat, 8g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 21,
@@ -644,7 +684,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['dessert', 'chocolate', 'sweet', 'brunch', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '330 calories, 40g carbs, 12g fat, 8g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 22,
@@ -676,7 +718,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '270 calories, 33g carbs, 9g fat, 7g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 23,
@@ -710,7 +754,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '350 calories, 32g carbs, 17g fat, 11g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 24,
@@ -743,7 +789,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '280 calories, 33g carbs, 11g fat, 6g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 25,
@@ -775,7 +823,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '220 calories, 25g carbs, 9g fat, 8g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 26,
@@ -808,7 +858,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '300 calories, 36g carbs, 12g fat, 8g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 27,
@@ -831,7 +883,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['matcha', 'asian', 'green-tea', 'light', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '260 calories, 33g carbs, 10g fat, 7g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 28,
@@ -863,7 +917,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '230 calories, 26g carbs, 9g fat, 8g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 29,
@@ -887,7 +943,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['carrot', 'spiced', 'sweet', 'brunch', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '280 calories, 36g carbs, 9g fat, 7g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 30,
@@ -920,7 +978,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '310 calories, 37g carbs, 12g fat, 9g protein',
-		time: 480
+		time: 480,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 31,
@@ -955,7 +1015,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '150 calories, 16g carbs, 6g fat, 5g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 32,
@@ -979,7 +1041,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '280 calories, 36g carbs, 12g fat, 4g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 33,
@@ -1000,7 +1064,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'brunch', 'greek', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '210 calories, 14g carbs, 10g fat, 12g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 34,
@@ -1019,7 +1085,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['sweet', 'fruit', 'dessert', 'light', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '180 calories, 22g carbs, 8g fat, 3g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 35,
@@ -1038,7 +1106,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'ham', 'cheese', 'brunch', 'french', 'economic', 'fast', 'easy'],
 		nutrition: '260 calories, 18g carbs, 14g fat, 16g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 36,
@@ -1068,7 +1138,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '190 calories, 27g carbs, 6g fat, 4g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 37,
@@ -1089,7 +1161,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'mushroom', 'brunch', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '220 calories, 15g carbs, 11g fat, 10g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 38,
@@ -1113,7 +1187,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '200 calories, 26g carbs, 8g fat, 3g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 39,
@@ -1133,7 +1209,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'seafood', 'brunch', 'french', 'economic', 'fast', 'easy'],
 		nutrition: '240 calories, 12g carbs, 14g fat, 16g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 40,
@@ -1153,7 +1231,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['sweet', 'fruit', 'cinnamon', 'autumn', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '210 calories, 30g carbs, 8g fat, 3g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 41,
@@ -1183,7 +1263,9 @@ export const Pancakes: Recipe[] = [
 			'easy'
 		],
 		nutrition: '280 calories, 18g carbs, 12g fat, 20g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 42,
@@ -1202,7 +1284,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['sweet', 'chocolate', 'dessert', 'brunch', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '270 calories, 34g carbs, 13g fat, 4g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 43,
@@ -1216,7 +1300,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['sweet', 'fruit', 'ricotta', 'brunch', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '200 calories, 25g carbs, 7g fat, 6g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 44,
@@ -1236,7 +1322,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['sweet', 'fruit', 'pear', 'autumn', 'brunch', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '210 calories, 29g carbs, 9g fat, 3g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 45,
@@ -1254,7 +1342,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'breakfast', 'eggs', 'bacon', 'brunch', 'economic', 'fast', 'easy'],
 		nutrition: '320 calories, 18g carbs, 20g fat, 18g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 46,
@@ -1276,7 +1366,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['bread', 'southern', 'classic', 'brunch', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '190 calories, 22g carbs, 9g fat, 3g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 47,
@@ -1297,7 +1389,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'southern', 'comfort', 'gravy', 'brunch', 'economic', 'fast', 'easy'],
 		nutrition: '420 calories, 25g carbs, 26g fat, 18g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 48,
@@ -1319,7 +1413,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'cheese', 'bread', 'brunch', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '210 calories, 20g carbs, 11g fat, 6g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 49,
@@ -1329,7 +1425,9 @@ export const Pancakes: Recipe[] = [
 		instructions: ['Mix melted butter and honey.', 'Brush over warm biscuits before serving.'],
 		tags: ['sweet', 'honey', 'brunch', 'easy', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '160 calories, 19g carbs, 8g fat, 3g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 50,
@@ -1347,7 +1445,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'breakfast sandwich', 'bacon', 'brunch', 'economic', 'fast', 'easy'],
 		nutrition: '420 calories, 28g carbs, 24g fat, 20g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 51,
@@ -1357,7 +1457,9 @@ export const Pancakes: Recipe[] = [
 		instructions: ['Split warm biscuits and spread with jam.', 'Serve immediately.'],
 		tags: ['sweet', 'fruit', 'easy', 'brunch', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '210 calories, 30g carbs, 7g fat, 3g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 52,
@@ -1371,7 +1473,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'southern', 'ham', 'quick', 'economic', 'fast', 'easy'],
 		nutrition: '270 calories, 22g carbs, 13g fat, 14g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 53,
@@ -1394,7 +1498,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['sweet', 'fruit', 'brunch', 'baked', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '220 calories, 29g carbs, 10g fat, 3g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 54,
@@ -1407,7 +1513,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'stuffed', 'baked', 'economic', 'fast', 'easy'],
 		nutrition: '250 calories, 20g carbs, 14g fat, 10g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 55,
@@ -1420,7 +1528,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['sweet', 'maple', 'brunch', 'simple', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '180 calories, 20g carbs, 9g fat, 2g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 56,
@@ -1438,7 +1548,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'southern', 'chicken', 'brunch', 'economic', 'fast', 'easy'],
 		nutrition: '450 calories, 32g carbs, 22g fat, 25g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 57,
@@ -1459,7 +1571,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['sweet', 'southern', 'dessert', 'brunch', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '320 calories, 45g carbs, 12g fat, 4g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 58,
@@ -1469,7 +1583,9 @@ export const Pancakes: Recipe[] = [
 		instructions: ['Split biscuits and spread with pimento cheese.', 'Serve warm.'],
 		tags: ['savory', 'southern', 'cheese', 'easy', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '240 calories, 18g carbs, 14g fat, 6g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 59,
@@ -1479,7 +1595,9 @@ export const Pancakes: Recipe[] = [
 		instructions: ['Spread apple butter over split biscuits.', 'Serve warm.'],
 		tags: ['sweet', 'fruit', 'fall', 'brunch', 'economic', 'fast', 'easy'],
 		nutrition: '190 calories, 26g carbs, 7g fat, 3g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 60,
@@ -1499,7 +1617,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'gravy', 'bacon', 'southern', 'economic', 'fast', 'easy'],
 		nutrition: '430 calories, 27g carbs, 28g fat, 17g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 61,
@@ -1519,7 +1639,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'cheese', 'garlic', 'bread', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '200 calories, 19g carbs, 10g fat, 5g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 62,
@@ -1532,7 +1654,9 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'sandwich', 'sausage', 'brunch', 'economic', 'fast', 'easy'],
 		nutrition: '410 calories, 27g carbs, 22g fat, 18g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 63,
@@ -1542,7 +1666,9 @@ export const Pancakes: Recipe[] = [
 		instructions: ['Brush biscuits with melted butter.', 'Sprinkle with cinnamon sugar and serve.'],
 		tags: ['sweet', 'spiced', 'easy', 'brunch', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '180 calories, 23g carbs, 8g fat, 3g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 64,
@@ -1556,7 +1682,9 @@ export const Pancakes: Recipe[] = [
 		instructions: ['Mix herbs into cream cheese.', 'Spread on warm biscuits and serve.'],
 		tags: ['savory', 'herb', 'spread', 'brunch', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '210 calories, 18g carbs, 10g fat, 5g protein',
-		time: 5
+		time: 5,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	},
 	{
 		id: 65,
@@ -1569,6 +1697,8 @@ export const Pancakes: Recipe[] = [
 		],
 		tags: ['savory', 'brunch', 'comfort', 'egg', 'gravy', 'economic', 'fast', 'easy'],
 		nutrition: '480 calories, 30g carbs, 28g fat, 22g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Bready breakfast'
 	}
 ];

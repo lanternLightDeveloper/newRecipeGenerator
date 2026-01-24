@@ -22,7 +22,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['baked', 'buttery', 'savory', 'main', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '310 calories, 24g fat, 0g carbs, 23g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 2,
@@ -43,7 +45,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['stovetop', 'sweet-savory', 'quick', 'main', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '290 calories, 8g fat, 18g carbs, 36g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 3,
@@ -65,7 +69,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['roasted', 'herbed', 'classic', 'main', 'gluten-free', 'economic', 'easy'],
 		nutrition: '380 calories, 25g fat, 0g carbs, 38g protein',
-		time: 90
+		time: 90,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 4,
@@ -97,7 +103,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '640 calories, 32g fat, 45g carbs, 42g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 5,
@@ -118,7 +126,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['baked', 'crispy', 'kid-friendly', 'main', 'economic', 'fast', 'easy'],
 		nutrition: '310 calories, 9g fat, 22g carbs, 33g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 6,
@@ -149,7 +159,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '280 calories, 10g fat, 12g carbs, 32g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 7,
@@ -169,7 +181,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['grilled', 'bbq', 'summer', 'main', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '330 calories, 15g fat, 18g carbs, 34g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 8,
@@ -190,7 +204,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['italian', 'sautéed', 'wine sauce', 'main', 'fast'],
 		nutrition: '420 calories, 22g fat, 14g carbs, 35g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 9,
@@ -222,7 +238,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '460 calories, 29g fat, 10g carbs, 38g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 10,
@@ -253,7 +271,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '390 calories, 14g fat, 32g carbs, 32g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 11,
@@ -277,7 +297,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['wrap', 'spicy', 'easy', 'main', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '310 calories, 12g fat, 25g carbs, 25g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 12,
@@ -298,7 +320,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['creamy', 'italian', 'rich', 'main', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '480 calories, 30g fat, 10g carbs, 42g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 13,
@@ -327,7 +351,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '280 calories, 10g fat, 12g carbs, 34g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 14,
@@ -348,7 +374,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['baked', 'comfort', 'classic', 'main', 'vegetarian', 'economic'],
 		nutrition: '430 calories, 22g fat, 34g carbs, 25g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 15,
@@ -378,7 +406,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '480 calories, 15g fat, 52g carbs, 32g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 16,
@@ -416,7 +446,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '620 calories, 32g fat, 38g carbs, 42g protein',
-		time: 60
+		time: 60,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 17,
@@ -452,7 +484,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '540 calories, 27g fat, 36g carbs, 38g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 18,
@@ -475,7 +509,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['grilled', 'american', 'classic', 'main', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '520 calories, 28g fat, 28g carbs, 34g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 19,
@@ -498,7 +534,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['mexican', 'quick', 'spicy', 'main', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '410 calories, 22g fat, 25g carbs, 29g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 20,
@@ -532,7 +570,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '360 calories, 18g fat, 18g carbs, 32g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 21,
@@ -565,7 +605,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '430 calories, 23g fat, 28g carbs, 29g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 22,
@@ -587,7 +629,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['spicy', 'hearty', 'one-pot', 'main', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '390 calories, 15g fat, 26g carbs, 32g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 23,
@@ -619,7 +663,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '460 calories, 25g fat, 28g carbs, 32g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 24,
@@ -640,7 +686,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['italian', 'simmered', 'comfort', 'main', 'economic', 'fast', 'easy'],
 		nutrition: '420 calories, 26g fat, 10g carbs, 34g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 25,
@@ -661,7 +709,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['asian', 'sweet-savory', 'quick', 'main', 'gluten-free', 'fast', 'easy'],
 		nutrition: '430 calories, 17g fat, 38g carbs, 31g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 26,
@@ -691,7 +741,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '480 calories, 16g fat, 52g carbs, 32g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 27,
@@ -722,7 +774,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '420 calories, 21g fat, 22g carbs, 33g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 28,
@@ -743,7 +797,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['burger', 'grilled', 'savory', 'main', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '480 calories, 25g fat, 28g carbs, 34g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 29,
@@ -764,7 +820,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['asian', 'noodle', 'quick', 'main', 'economic', 'fast', 'easy'],
 		nutrition: '460 calories, 20g fat, 38g carbs, 33g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 30,
@@ -786,7 +844,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['baked', 'classic', 'comfort', 'main', 'economic', 'easy'],
 		nutrition: '480 calories, 27g fat, 22g carbs, 34g protein',
-		time: 60
+		time: 60,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 31,
@@ -810,7 +870,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['shrimp', 'seafood', 'quick', 'garlic', 'dinner', 'gluten-free', 'fast', 'easy'],
 		nutrition: '310 calories, 2g carbs, 22g fat, 24g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 32,
@@ -832,7 +894,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['salmon', 'healthy', 'baked', 'omega-3', 'quick', 'gluten-free', 'fast', 'easy'],
 		nutrition: '365 calories, 0g carbs, 23g fat, 34g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 33,
@@ -862,7 +926,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['spanish', 'rice', 'seafood', 'one-pan', 'saffron', 'gluten-free', 'fast'],
 		nutrition: '540 calories, 58g carbs, 18g fat, 30g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 34,
@@ -900,7 +966,9 @@ export const Mains: Recipe[] = [
 			'fast'
 		],
 		nutrition: '420 calories, 10g carbs, 30g fat, 26g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 35,
@@ -936,7 +1004,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '385 calories, 30g carbs, 16g fat, 28g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 36,
@@ -958,7 +1028,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['cod', 'baked', 'crispy', 'healthy', 'easy', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '290 calories, 10g carbs, 14g fat, 28g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 37,
@@ -979,7 +1051,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['tuna', 'asian', 'quick', 'low-carb', 'grilled', 'gluten-free', 'economic', 'fast'],
 		nutrition: '320 calories, 2g carbs, 20g fat, 32g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 38,
@@ -1014,7 +1088,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '520 calories, 62g carbs, 16g fat, 28g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 39,
@@ -1043,7 +1119,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '310 calories, 2g carbs, 22g fat, 26g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 40,
@@ -1076,7 +1154,9 @@ export const Mains: Recipe[] = [
 			'economic'
 		],
 		nutrition: '420 calories, 14g carbs, 28g fat, 26g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 41,
@@ -1108,7 +1188,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '410 calories, 20g carbs, 22g fat, 32g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 42,
@@ -1131,7 +1213,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['lobster', 'comfort food', 'cheesy', 'baked', 'rich', 'gluten-free', 'easy'],
 		nutrition: '640 calories, 55g carbs, 32g fat, 35g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 43,
@@ -1163,7 +1247,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '390 calories, 9g carbs, 23g fat, 30g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 44,
@@ -1195,7 +1281,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '480 calories, 62g carbs, 12g fat, 26g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 45,
@@ -1217,7 +1305,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['scallops', 'elegant', 'quick', 'buttery', 'date night', 'gluten-free', 'fast', 'easy'],
 		nutrition: '330 calories, 4g carbs, 20g fat, 32g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 46,
@@ -1239,7 +1329,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['british', 'fried', 'classic', 'crispy', 'comfort food', 'economic', 'fast', 'easy'],
 		nutrition: '720 calories, 68g carbs, 36g fat, 34g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 47,
@@ -1265,7 +1357,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['beef', 'french', 'holiday', 'main', 'luxury', 'gluten-free', 'easy'],
 		nutrition: '850 calories, 25g carbs, 45g fat, 60g protein',
-		time: 90
+		time: 90,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 48,
@@ -1289,7 +1383,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['seafood', 'french', 'elegant', 'main', 'gluten-free'],
 		nutrition: '720 calories, 12g carbs, 48g fat, 55g protein',
-		time: 60
+		time: 60,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 49,
@@ -1313,7 +1409,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['duck', 'french', 'classic', 'main', 'holiday', 'gluten-free'],
 		nutrition: '880 calories, 15g carbs, 65g fat, 55g protein',
-		time: 120
+		time: 120,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 50,
@@ -1336,7 +1434,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['seafood', 'gourmet', 'fine dining', 'main', 'gluten-free', 'fast'],
 		nutrition: '600 calories, 10g carbs, 45g fat, 32g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 51,
@@ -1358,7 +1458,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['lamb', 'french', 'holiday', 'main', 'gluten-free'],
 		nutrition: '780 calories, 5g carbs, 55g fat, 60g protein',
-		time: 60
+		time: 60,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 52,
@@ -1388,7 +1490,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '100 calories, 6g fat, 8g carbs, 4g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 53,
@@ -1410,7 +1514,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['beef', 'luxury', 'fine dining', 'main'],
 		nutrition: '950 calories, 8g carbs, 70g fat, 65g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 54,
@@ -1433,7 +1539,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['pasta', 'seafood', 'italian', 'fine dining'],
 		nutrition: '780 calories, 55g carbs, 42g fat, 38g protein',
-		time: 60
+		time: 60,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 55,
@@ -1455,7 +1563,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['italian', 'Waygu', 'pasta', 'fine dining', 'gluten-free'],
 		nutrition: '720 calories, 65g carbs, 28g fat, 40g protein',
-		time: 90
+		time: 90,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 56,
@@ -1478,7 +1588,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['seafood', 'healthy', 'french', 'fine dining', 'fast', 'easy'],
 		nutrition: '420 calories, 12g carbs, 24g fat, 35g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 57,
@@ -1502,7 +1614,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['italian', 'veal', 'stew', 'fine dining'],
 		nutrition: '640 calories, 22g carbs, 38g fat, 52g protein',
-		time: 120
+		time: 120,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 58,
@@ -1532,7 +1646,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '510 calories, 14g carbs, 32g fat, 38g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 59,
@@ -1554,7 +1670,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['game', 'fine dining', 'european', 'main', 'gluten-free', 'easy'],
 		nutrition: '690 calories, 22g carbs, 32g fat, 58g protein',
-		time: 60
+		time: 60,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 60,
@@ -1576,7 +1694,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['seafood', 'french', 'luxury', 'fine dining', 'gluten-free', 'economic', 'fast'],
 		nutrition: '520 calories, 5g carbs, 34g fat, 45g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 61,
@@ -1599,7 +1719,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['french', 'chicken', 'classic', 'fine dining'],
 		nutrition: '630 calories, 14g carbs, 38g fat, 55g protein',
-		time: 75
+		time: 75,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 62,
@@ -1620,7 +1742,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['beef', 'fine dining', 'luxury', 'main'],
 		nutrition: '890 calories, 10g carbs, 62g fat, 70g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 63,
@@ -1652,7 +1776,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '280 calories, 15g fat, 25g carbs, 10g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 64,
@@ -1677,7 +1803,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['stir-fry', 'tofu', 'quick', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '260 calories, 12g fat, 18g carbs, 20g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 65,
@@ -1700,7 +1828,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['curry', 'chickpea', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy', 'one-pot'],
 		nutrition: '310 calories, 14g fat, 30g carbs, 12g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 66,
@@ -1721,7 +1851,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['mexican', 'cheese', 'quick', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '320 calories, 18g fat, 28g carbs, 12g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 67,
@@ -1741,7 +1873,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['baked', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '290 calories, 9g fat, 38g carbs, 12g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 68,
@@ -1762,7 +1896,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['pasta', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '380 calories, 14g fat, 50g carbs, 10g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 69,
@@ -1783,7 +1919,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['rice', 'stir-fry', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '310 calories, 10g fat, 45g carbs, 10g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 70,
@@ -1804,7 +1942,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['mexican', 'taco', 'quick', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '270 calories, 9g fat, 35g carbs, 11g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 71,
@@ -1824,7 +1964,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['pasta', 'baked', 'italian', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '340 calories, 12g fat, 42g carbs, 14g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 72,
@@ -1844,7 +1986,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['chili', 'one-pot', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '280 calories, 5g fat, 48g carbs, 12g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 73,
@@ -1864,7 +2008,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['baked', 'mushroom', 'italian', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '230 calories, 13g fat, 10g carbs, 14g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 74,
@@ -1883,7 +2029,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['baked', 'mexican', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '310 calories, 9g fat, 48g carbs, 11g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 75,
@@ -1904,7 +2052,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['eggs', 'baked', 'breakfast', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '290 calories, 20g fat, 6g carbs, 20g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 76,
@@ -1937,7 +2087,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '400 calories, 14g fat, 50g carbs, 15g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 77,
@@ -1963,7 +2115,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['risotto', 'italian', 'fancy', 'vegetarian', 'gourmet', 'vegetarian', 'gluten-free'],
 		nutrition: '460 calories, 17g fat, 55g carbs, 12g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 78,
@@ -1983,7 +2137,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['italian', 'pasta', 'fancy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '410 calories, 18g fat, 48g carbs, 12g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 79,
@@ -2013,7 +2169,9 @@ export const Mains: Recipe[] = [
 			'fast'
 		],
 		nutrition: '320 calories, 20g fat, 18g carbs, 16g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 80,
@@ -2034,7 +2192,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['fancy', 'baked', 'vegetarian', 'wellington', 'holiday'],
 		nutrition: '420 calories, 22g fat, 38g carbs, 12g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 81,
@@ -2054,7 +2214,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['vegan', 'fancy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '230 calories, 16g fat, 18g carbs, 5g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 82,
@@ -2075,7 +2237,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['greek', 'baked', 'fancy', 'vegetarian', 'fast'],
 		nutrition: '340 calories, 20g fat, 30g carbs, 10g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 83,
@@ -2096,7 +2260,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['italian', 'pasta', 'fancy', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '390 calories, 18g fat, 42g carbs, 14g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 84,
@@ -2117,7 +2283,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['fancy', 'italian', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '330 calories, 14g fat, 36g carbs, 10g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 85,
@@ -2137,7 +2305,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['baked', 'fancy', 'tart', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '380 calories, 23g fat, 30g carbs, 9g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 86,
@@ -2159,7 +2329,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['french', 'baked', 'fancy', 'vegan', 'vegetarian', 'gluten-free', 'economic'],
 		nutrition: '220 calories, 14g fat, 18g carbs, 4g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 87,
@@ -2182,7 +2354,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['risotto', 'italian', 'fancy', 'spring', 'vegetarian', 'gluten-free', 'economic'],
 		nutrition: '420 calories, 15g fat, 55g carbs, 12g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 88,
@@ -2213,7 +2387,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '310 calories, 14g fat, 30g carbs, 12g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 89,
@@ -2234,7 +2410,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['french', 'souffle', 'baked', 'fancy', 'vegetarian'],
 		nutrition: '290 calories, 18g fat, 16g carbs, 14g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 90,
@@ -2254,7 +2432,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['french', 'fancy', 'crepe', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '360 calories, 19g fat, 32g carbs, 13g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 91,
@@ -2285,7 +2465,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '410 calories, 18g fat, 45g carbs, 17g protein',
-		time: 55
+		time: 55,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 92,
@@ -2305,7 +2487,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['baked', 'fancy', 'tart', 'gourmet', 'vegetarian', 'economic', 'fast', 'easy'],
 		nutrition: '370 calories, 21g fat, 32g carbs, 10g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 93,
@@ -2326,7 +2510,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['pasta', 'fancy', 'baked', 'vegetarian', 'gluten-free', 'economic', 'fast'],
 		nutrition: '420 calories, 19g fat, 45g carbs, 18g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 94,
@@ -2355,7 +2541,9 @@ export const Mains: Recipe[] = [
 			'easy'
 		],
 		nutrition: '360 calories, 24g fat, 10g carbs, 22g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 95,
@@ -2378,7 +2566,9 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['pasta', 'comfort food', 'fancy', 'vegetarian', 'gluten-free', 'fast', 'easy'],
 		nutrition: '540 calories, 28g fat, 48g carbs, 19g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Main'
 	},
 	{
 		id: 96,
@@ -2400,6 +2590,8 @@ export const Mains: Recipe[] = [
 		],
 		tags: ['baked', 'comfort food', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '350 calories, 8g fat, 55g carbs, 16g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Main'
 	}
 ];

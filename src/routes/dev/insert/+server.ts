@@ -32,3 +32,58 @@
 // }
 
 // Working on bugs
+
+//////////////////////////////
+// src/routes/dev/import/+server.ts
+import { db } from '$lib/db';
+import { recipes } from '$lib/db/schema';
+import { json } from '@sveltejs/kit';
+
+import { BreakTater } from '$lib/data/BreakTater';
+import { Eggs } from '$lib/data/Eggs';
+import { ParfaitShakes } from '$lib/data/Parfait-Shakes';
+import { Pancakes } from '$lib/data/Pancakes';
+import { Starch } from '$lib/data/Starch';
+import { Vegetables } from '$lib/data/Vegetables';
+import { Sandwiches } from '$lib/data/Sandwiches';
+import { Soups } from '$lib/data/Soups';
+import { Mains } from '$lib/data/Mains';
+import { Desserts } from '$lib/data/Desserts';
+
+export async function GET() {
+	const groups = [
+		{ data: BreakTater, category: 'BreakTater' },
+		{ data: Eggs, category: 'Eggs' },
+		{ data: Pancakes, category: 'Pancakes' },
+		{ data: Soups, category: 'Soup' },
+		{ data: Sandwiches, category: 'Sandwich' },
+		{ data: ParfaitShakes, category: 'Parfait-Shakes' },
+		{ data: Starch, category: 'Starch' },
+		{ data: Vegetables, category: 'Vegetables' },
+		{ data: Mains, category: 'Mains' },
+		{ data: Desserts, category: 'Dessert' }
+	];
+
+	let inserted = 0;
+
+	for (const group of groups) {
+		for (const recipe of group.data) {
+			await db.insert(recipes).values({
+				id: recipe.id,
+				name: recipe.name,
+				servings: Number(recipe.servings),
+				ingredients: recipe.ingredients,
+				instructions: recipe.instructions,
+				tags: recipe.tags,
+				nutrition: recipe.nutrition,
+				time: recipe.time,
+				creator: recipe.creator ?? 'Unknown',
+				category: group.category
+			});
+
+			inserted++;
+		}
+	}
+
+	return json({ status: 'ok', inserted });
+}

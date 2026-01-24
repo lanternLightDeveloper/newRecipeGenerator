@@ -4,12 +4,17 @@
 
 <h1>Recipes</h1>
 
-<ul>
-	{#each data.recipes as recipe}
-		<li>{recipe.name}</li>
+{#each data.recipes as recipe}
+	<h1>{recipe.name}</h1>
+	<ul>
+		<li>{recipe.id}</li>
 		<li>{recipe.servings}</li>
 		<li>{recipe.ingredients}</li>
 		<li>{recipe.instructions}</li>
 		<li>{recipe.tags}</li>
-	{/each}
-</ul>
+		<li>{recipe.nutrition}</li>
+		<li>{recipe.time}</li>
+		<li>{recipe.creator}</li>
+		<li>{recipe.category}</li>
+	</ul>
+{/each}

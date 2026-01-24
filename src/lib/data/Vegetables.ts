@@ -27,7 +27,9 @@ export const Vegetables: Recipe[] = [
 			'easy'
 		],
 		nutrition: '180 calories, 22g carbs, 9g fat, 1g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 2,
@@ -46,7 +48,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'carrot', 'ginger', 'puree', 'smooth', 'vegetarian', 'gluten-free', 'fast'],
 		nutrition: '140 calories, 12g carbs, 9g fat, 2g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 3,
@@ -75,7 +79,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['carrot', 'couscous', 'spiced', 'side', 'quick', 'vegetarian', 'gluten-free', 'fast'],
 		nutrition: '230 calories, 38g carbs, 7g fat, 4g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 4,
@@ -112,7 +118,9 @@ export const Vegetables: Recipe[] = [
 			'fast'
 		],
 		nutrition: '120 calories, 15g carbs, 6g fat, 1g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 5,
@@ -140,7 +148,9 @@ export const Vegetables: Recipe[] = [
 			'easy'
 		],
 		nutrition: '160 calories, 18g carbs, 8g fat, 2g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 6,
@@ -172,7 +182,9 @@ export const Vegetables: Recipe[] = [
 			'easy'
 		],
 		nutrition: '110 calories, 8g fat, 8g carbs, 4g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 7,
@@ -196,7 +208,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['baked', 'cheesy', 'comfort food', 'side', 'vegetarian'],
 		nutrition: '210 calories, 12g fat, 10g carbs, 15g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 8,
@@ -217,7 +231,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['stovetop', 'buttery', 'nutty', 'quick', 'vegetarian', 'gluten-free', 'fast', 'easy'],
 		nutrition: '130 calories, 9g fat, 8g carbs, 4g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 9,
@@ -236,7 +252,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['quick', 'cheesy', 'vegetarian', 'easy'],
 		nutrition: '120 calories, 9g fat, 6g carbs, 4g protein',
-		time: 10
+		time: 10,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 10,
@@ -258,7 +276,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['cold', 'salad', 'sweet-savory', 'make-ahead', 'fast'],
 		nutrition: '230 calories, 17g fat, 12g carbs, 6g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 11,
@@ -279,7 +299,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['soup', 'creamy', 'comfort', 'vegetarian', 'gluten-free', 'fast'],
 		nutrition: '160 calories, 8g fat, 15g carbs, 6g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 12,
@@ -301,7 +323,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['stovetop', 'vegan', 'garlic', 'healthy', 'fast'],
 		nutrition: '140 calories, 9g fat, 11g carbs, 5g protein',
-		time: 15
+		time: 15,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 13,
@@ -331,7 +355,9 @@ export const Vegetables: Recipe[] = [
 			'fast'
 		],
 		nutrition: '210 calories, 4g carbs, 16g fat, 12g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 14,
@@ -362,7 +388,9 @@ export const Vegetables: Recipe[] = [
 			'fast'
 		],
 		nutrition: '260 calories, 14g carbs, 20g fat, 5g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 15,
@@ -383,7 +411,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['carrots', 'glazed', 'honey', 'refined', 'vegetarian', 'gluten-free', 'fast'],
 		nutrition: '180 calories, 22g carbs, 9g fat, 2g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 16,
@@ -415,7 +445,9 @@ export const Vegetables: Recipe[] = [
 			'fast'
 		],
 		nutrition: '290 calories, 10g carbs, 26g fat, 6g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 17,
@@ -437,7 +469,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['artichoke', 'grilled', 'fancy', 'appetizer', 'aioli'],
 		nutrition: '240 calories, 10g carbs, 18g fat, 5g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 18,
@@ -468,7 +502,9 @@ export const Vegetables: Recipe[] = [
 			'easy'
 		],
 		nutrition: '260 calories, 14g carbs, 20g fat, 7g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 19,
@@ -491,7 +527,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'roasted', 'fast'],
 		nutrition: '150 calories, 9g fat, 18g carbs, 5g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 20,
@@ -513,7 +551,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'roasted', 'sweet'],
 		nutrition: '170 calories, 6g fat, 30g carbs, 2g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 21,
@@ -533,7 +573,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'sautéed', 'vegetarian', 'gluten-free', 'economic', 'fast'],
 		nutrition: '180 calories, 12g fat, 12g carbs, 6g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 22,
@@ -555,7 +597,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'roasted', 'mediterranean'],
 		nutrition: '160 calories, 10g fat, 18g carbs, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 23,
@@ -579,7 +623,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'stir-fried', 'gluten-free', 'fast'],
 		nutrition: '140 calories, 7g fat, 18g carbs, 4g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 24,
@@ -599,7 +645,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'roasted', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '150 calories, 7g fat, 18g carbs, 5g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 25,
@@ -622,7 +670,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'roasted', 'french'],
 		nutrition: '160 calories, 10g fat, 18g carbs, 4g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 26,
@@ -643,7 +693,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'sautéed', 'asian-inspired', 'easy', 'fast'],
 		nutrition: '160 calories, 7g fat, 22g carbs, 4g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 27,
@@ -674,7 +726,9 @@ export const Vegetables: Recipe[] = [
 			'easy'
 		],
 		nutrition: '150 calories, 10g fat, 18g carbs, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 28,
@@ -695,7 +749,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'roasted', 'sweet', 'fast', 'easy'],
 		nutrition: '180 calories, 7g fat, 30g carbs, 2g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 29,
@@ -717,7 +773,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'sautéed', 'fast'],
 		nutrition: '140 calories, 7g fat, 15g carbs, 3g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 30,
@@ -740,7 +798,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'sautéed', 'french', 'fast'],
 		nutrition: '160 calories, 10g fat, 18g carbs, 4g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 31,
@@ -762,7 +822,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'roasted', 'fast'],
 		nutrition: '160 calories, 9g fat, 18g carbs, 5g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 32,
@@ -786,7 +848,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'stir-fried', 'gluten-free', 'fast'],
 		nutrition: '150 calories, 7g fat, 18g carbs, 4g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 33,
@@ -808,7 +872,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'roasted', 'fast', 'easy'],
 		nutrition: '160 calories, 10g fat, 18g carbs, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 34,
@@ -830,7 +896,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'gourmet', 'roasted', 'easy'],
 		nutrition: '180 calories, 7g fat, 32g carbs, 3g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 35,
@@ -852,7 +920,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'gourmet', 'spicy', 'easy'],
 		nutrition: '150 calories, 8g fat, 18g carbs, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 36,
@@ -873,7 +943,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'gourmet', 'roasted'],
 		nutrition: '160 calories, 10g fat, 18g carbs, 5g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 37,
@@ -893,7 +965,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'gourmet', 'sautéed', 'fast'],
 		nutrition: '150 calories, 9g fat, 15g carbs, 4g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 38,
@@ -916,7 +990,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'gourmet', 'french', 'vegetarian', 'gluten-free'],
 		nutrition: '140 calories, 7g fat, 18g carbs, 3g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 39,
@@ -938,7 +1014,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'gourmet', 'asian-inspired', 'vegetarian', 'gluten-free', 'fast', 'easy'],
 		nutrition: '160 calories, 9g fat, 18g carbs, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 40,
@@ -958,7 +1036,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'gourmet', 'poached', 'vegetarian', 'gluten-free', 'economic', 'fast', 'easy'],
 		nutrition: '180 calories, 12g fat, 12g carbs, 4g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 41,
@@ -980,7 +1060,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'gourmet', 'grilled', 'vegetarian', 'gluten-free', 'fast', 'easy'],
 		nutrition: '140 calories, 7g fat, 20g carbs, 3g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 42,
@@ -1001,7 +1083,9 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'gourmet', 'roasted', 'vegetarian', 'gluten-free', 'fast'],
 		nutrition: '170 calories, 7g fat, 28g carbs, 3g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Vegetables'
 	},
 	{
 		id: 43,
@@ -1024,6 +1108,8 @@ export const Vegetables: Recipe[] = [
 		],
 		tags: ['side', 'gourmet', 'french', 'vegetarian', 'gluten-free', 'fast'],
 		nutrition: '150 calories, 8g fat, 18g carbs, 4g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Vegetables'
 	}
 ];

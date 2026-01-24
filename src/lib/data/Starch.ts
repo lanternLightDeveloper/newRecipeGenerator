@@ -36,7 +36,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '210 calories, 28g carbs, 9g fat, 3g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 2,
@@ -71,7 +73,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '290 calories, 34g carbs, 14g fat, 5g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 3,
@@ -105,7 +109,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '240 calories, 31g carbs, 10g fat, 6g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 4,
@@ -130,7 +136,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'comfort', 'bacon', 'cheese', 'casserole', 'easy', 'gluten-free'],
 		nutrition: '340 calories, 29g carbs, 18g fat, 11g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 5,
@@ -165,7 +173,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '210 calories, 27g carbs, 9g fat, 4g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 6,
@@ -200,7 +210,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '190 calories, 25g carbs, 8g fat, 3g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 7,
@@ -223,7 +235,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['grilled', 'spicy', 'bbq', 'side', 'easy', 'vegetarian', 'fast', 'easy', 'gluten-free'],
 		nutrition: '175 calories, 24g carbs, 6g fat, 3g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 8,
@@ -248,7 +262,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['cheese', 'creamy', 'baked', 'comfort', 'side', 'vegetarian', 'economic', 'easy'],
 		nutrition: '360 calories, 33g carbs, 21g fat, 9g protein',
-		time: 70
+		time: 70,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 9,
@@ -281,7 +297,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '200 calories, 27g carbs, 8g fat, 3g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 10,
@@ -305,7 +323,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['french', 'baked', 'gratin', 'cheese', 'side', 'vegetarian', 'easy', 'gluten-free'],
 		nutrition: '390 calories, 30g carbs, 23g fat, 9g protein',
-		time: 65
+		time: 65,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 11,
@@ -330,7 +350,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['rice', 'garlic', 'butter', 'easy', 'side', 'fast', 'easy', 'gluten-free'],
 		nutrition: '310 calories, 52g carbs, 9g fat, 6g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 12,
@@ -363,7 +385,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '285 calories, 46g carbs, 8g fat, 4g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 13,
@@ -391,7 +415,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['rice', 'spanish', 'tomato', 'pepper', 'side', 'vegetarian', 'fast', 'gluten-free'],
 		nutrition: '270 calories, 48g carbs, 6g fat, 5g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 14,
@@ -426,7 +452,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '250 calories, 45g carbs, 6g fat, 5g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 15,
@@ -462,7 +490,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '330 calories, 52g carbs, 10g fat, 8g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 16,
@@ -497,7 +527,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '240 calories, 45g carbs, 5g fat, 4g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 17,
@@ -532,7 +564,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '260 calories, 44g carbs, 8g fat, 5g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 18,
@@ -564,7 +598,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '290 calories, 46g carbs, 9g fat, 5g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 19,
@@ -586,7 +622,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['rice', 'parmesan', 'herb', 'cheese', 'side', 'fast', 'easy', 'gluten-free'],
 		nutrition: '320 calories, 47g carbs, 9g fat, 8g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 20,
@@ -620,7 +658,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '275 calories, 43g carbs, 9g fat, 5g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 21,
@@ -652,7 +692,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '360 calories, 32g carbs, 22g fat, 6g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 23,
@@ -677,7 +719,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['risotto', 'mushroom', 'italian', 'creamy', 'luxury', 'vegetarian', 'gluten-free'],
 		nutrition: '480 calories, 56g carbs, 20g fat, 12g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 24,
@@ -708,7 +752,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '280 calories, 28g carbs, 14g fat, 6g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 25,
@@ -730,7 +776,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['french', 'leek', 'gratin', 'cheese', 'luxury', 'vegetarian', 'easy', 'gluten-free'],
 		nutrition: '380 calories, 14g carbs, 32g fat, 9g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 26,
@@ -753,7 +801,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['italian', 'luxury', 'main', 'vegetarian', 'gluten-free'],
 		nutrition: '540 calories, 65g carbs, 20g fat, 12g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 27,
@@ -784,7 +834,9 @@ export const Starch: Recipe[] = [
 			'gluten-free'
 		],
 		nutrition: '230 calories, 8g fat, 30g carbs, 6g protein',
-		time: 20
+		time: 20,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 28,
@@ -804,7 +856,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'mashed', 'potatoes', 'vegetarian', 'economic', 'fast', 'easy', 'gluten-free'],
 		nutrition: '210 calories, 9g fat, 32g carbs, 4g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 29,
@@ -824,7 +878,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'roasted', 'potatoes', 'vegetarian', 'easy', 'gluten-free'],
 		nutrition: '180 calories, 9g fat, 24g carbs, 4g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 30,
@@ -844,7 +900,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'creamy', 'italian', 'vegetarian', 'fast', 'easy', 'gluten-free'],
 		nutrition: '220 calories, 9g fat, 30g carbs, 8g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 31,
@@ -867,7 +925,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'creamy', 'gourmet', 'pasta', 'vegetarian', 'fast'],
 		nutrition: '480 calories, 25g fat, 50g carbs, 20g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 32,
@@ -888,7 +948,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'rice', 'pilaf', 'vegetarian', 'fast', 'gluten-free'],
 		nutrition: '220 calories, 7g fat, 36g carbs, 4g protein',
-		time: 30
+		time: 30,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 33,
@@ -910,7 +972,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'risotto', 'italian', 'vegetarian', 'fast', 'gluten-free'],
 		nutrition: '280 calories, 10g fat, 42g carbs, 10g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 34,
@@ -930,7 +994,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'baked', 'creamy', 'vegetarian', 'fast', 'easy', 'gluten-free'],
 		nutrition: '320 calories, 18g fat, 35g carbs, 8g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 35,
@@ -950,7 +1016,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'roasted', 'potatoes', 'vegetarian', 'economic', 'fast', 'easy', 'gluten-free'],
 		nutrition: '200 calories, 10g fat, 25g carbs, 6g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 36,
@@ -971,7 +1039,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'pilaf'],
 		nutrition: '210 calories, 7g fat, 35g carbs, 5g protein',
-		time: 40
+		time: 40,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 37,
@@ -991,7 +1061,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free option', 'baked', 'cornmeal'],
 		nutrition: '200 calories, 9g fat, 28g carbs, 6g protein',
-		time: 50
+		time: 50,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 38,
@@ -1013,7 +1085,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'roasted', 'potatoes'],
 		nutrition: '180 calories, 8g fat, 25g carbs, 4g protein',
-		time: 45
+		time: 45,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 39,
@@ -1032,7 +1106,9 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'vegetarian', 'gluten-free', 'mashed', 'gourmet', 'fast', 'easy'],
 		nutrition: '220 calories, 10g fat, 32g carbs, 3g protein',
-		time: 35
+		time: 35,
+		creator: 'Generated',
+		category: 'Starch'
 	},
 	{
 		id: 40,
@@ -1052,6 +1128,8 @@ export const Starch: Recipe[] = [
 		],
 		tags: ['side', 'creamy', 'gourmet', 'pasta', 'vegetarian', 'fast', 'easy', 'gluten-free'],
 		nutrition: '360 calories, 18g fat, 45g carbs, 10g protein',
-		time: 25
+		time: 25,
+		creator: 'Generated',
+		category: 'Starch'
 	}
 ];
