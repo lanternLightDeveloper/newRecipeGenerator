@@ -9,10 +9,6 @@ RUN npm install
 # Copy source
 COPY . .
 
-# Run database migrations
-# RUN npx drizzle-kit push 
-RUN npx drizzle-kit migrate
-
 # Build SvelteKit
 RUN npm run build
 
