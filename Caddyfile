@@ -1,0 +1,22 @@
+{
+  # Global options block
+  order forward_auth before reverse_proxy
+}
+
+(auth) {
+  forward_auth authelia:9091 {
+    uri /api/verify
+    copy_headers Remote-User Remote-Groups Remote-Name Remote-Email
+  }
+}
+
+auth.lanternlightdevelopment.com {
+  reverse_proxy authelia:9091
+}
+
+
+tester.lanternlightdevelopment.com {
+  import auth
+  reverse_proxy sveltekit-app:3000
+}
+
