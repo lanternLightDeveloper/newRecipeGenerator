@@ -22,7 +22,12 @@ function verifySession(cookieValue: string | undefined) {
 
 export const handle: Handle = async ({ event, resolve }) => {
 	const raw = event.cookies.get(SESSION_COOKIE_NAME);
+
+	console.log('RAW COOKIE:', raw);
+	console.log('SESSION SECRET PRESENT:', !!process.env.SESSION_SECRET);
+
 	const session = verifySession(raw);
+	console.log('VERIFIED SESSION:', session);
 
 	event.locals.user = session
 		? {
