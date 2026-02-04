@@ -1,39 +1,16 @@
 import type { Handle } from '@sveltejs/kit';
-import crypto from 'crypto';
-
-const SESSION_COOKIE_NAME = process.env.SESSION_COOKIE_NAME ?? 'tt_session';
-const SESSION_SECRET = process.env.SESSION_SECRET!;
-
-function verifySession(cookieValue: string | undefined) {
-	if (!cookieValue) return null;
-
-	const [data, sig] = cookieValue.split('.');
-	if (!data || !sig) return null;
-
-	const expected = crypto.createHmac('sha256', SESSION_SECRET).update(data).digest('base64url');
-	if (!crypto.timingSafeEqual(Buffer.from(sig), Buffer.from(expected))) return null;
-
-	try {
-		return JSON.parse(Buffer.from(data, 'base64url').toString('utf8'));
-	} catch {
-		return null;
-	}
-}
 
 export const handle: Handle = async ({ event, resolve }) => {
-	const raw = event.cookies.get(SESSION_COOKIE_NAME);
+	const headers = event.request.headers;
 
-	console.log('RAW COOKIE:', raw);
-	console.log('SESSION SECRET PRESENT:', !!process.env.SESSION_SECRET);
+	const user = headers.get('x-authentik-username');
 
-	const session = verifySession(raw);
-	console.log('VERIFIED SESSION:', session);
-
-	event.locals.user = session
+	event.locals.user = user
 		? {
-				sub: session.sub,
-				name: session.name,
-				email: session.email
+				username: user,
+				email: headers.get('x-authentik-email'),
+				name: headers.get('x-authentik-name'),
+				groups: headers.get('x-authentik-groups')?.split(',') ?? []
 			}
 		: null;
 
