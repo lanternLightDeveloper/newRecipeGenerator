@@ -13,11 +13,13 @@ export const handle: Handle = async ({ event, resolve }) => {
 
 	const result = await db
 		.select({
-			userId: users.id,
+			id: users.id,
 			email: users.email,
 			name: users.name,
+			role: users.role,
 			expiresAt: sessions.expiresAt
 		})
+
 		.from(sessions)
 		.innerJoin(users, eq(users.id, sessions.userId))
 		.where(eq(sessions.id, sessionId))
@@ -36,9 +38,10 @@ export const handle: Handle = async ({ event, resolve }) => {
 	}
 
 	event.locals.user = {
-		id: session.userId,
+		id: session.id,
 		email: session.email,
-		name: session.name
+		name: session.name,
+		role: session.role
 	};
 
 	return resolve(event);
