@@ -6,7 +6,7 @@ import argon2 from 'argon2';
 import crypto from 'crypto';
 
 const SESSION_COOKIE_NAME = 'tt_session';
-const SESSION_MAX_AGE = 60 * 60 * 24 * 7; // 7 days in seconds
+const SESSION_MAX_AGE = 60 * 60 * 24 * 7;
 
 export const POST = async ({ request, cookies }) => {
 	const { email, password } = await request.json();

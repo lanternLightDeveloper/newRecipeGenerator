@@ -1,10 +1,7 @@
-// src/hooks.server.ts
 import type { Handle } from '@sveltejs/kit';
 import { db } from '$lib/db/index';
 import { users, sessions } from '$lib/db/schema';
 import { eq } from 'drizzle-orm';
-
-// const SESSION_COOKIE_NAME = 'tt_session';
 
 export const handle: Handle = async ({ event, resolve }) => {
 	const sessionId = event.cookies.get('tt_session');

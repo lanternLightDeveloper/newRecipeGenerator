@@ -15,10 +15,11 @@ export const recipes = pgTable('recipes', {
 });
 
 export const users = pgTable('users', {
-	id: text('id').primaryKey(),
+	id: uuid('id').primaryKey(),
 	email: text('email').notNull().unique(),
-	passwordHash: text('password_hash').notNull(),
 	name: text('name'),
+	passwordHash: text('password_hash').notNull(),
+	role: text('role').notNull().default('user'),
 	createdAt: timestamp('created_at').defaultNow()
 });
 

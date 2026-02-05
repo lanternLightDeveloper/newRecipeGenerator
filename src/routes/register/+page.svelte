@@ -18,7 +18,7 @@
 			return;
 		}
 
-		window.location.href = '/login'; // Go to login after signup
+		window.location.href = '/login';
 	}
 </script>
 

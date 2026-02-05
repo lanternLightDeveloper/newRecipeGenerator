@@ -17,7 +17,6 @@
 			return;
 		}
 
-		// On success, redirect to profile
 		window.location.href = '/profile';
 	}
 </script>
