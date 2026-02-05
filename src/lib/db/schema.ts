@@ -1,5 +1,4 @@
-import { pgTable, serial, integer, text } from 'drizzle-orm/pg-core';
-import { varchar } from 'drizzle-orm/pg-core';
+import { pgTable, serial, integer, text, timestamp } from 'drizzle-orm/pg-core';
 
 export const recipes = pgTable('recipes', {
 	key_id: serial('key_id').primaryKey(),
@@ -13,4 +12,20 @@ export const recipes = pgTable('recipes', {
 	time: integer('time'),
 	creator: text('creator').default('Unknown'),
 	category: text('category').notNull()
+});
+
+export const users = pgTable('users', {
+	id: text('id').primaryKey(),
+	email: text('email').notNull().unique(),
+	passwordHash: text('password_hash').notNull(),
+	name: text('name'),
+	createdAt: timestamp('created_at').defaultNow()
+});
+
+export const sessions = pgTable('sessions', {
+	id: text('id').primaryKey(),
+	userId: text('user_id')
+		.notNull()
+		.references(() => users.id, { onDelete: 'cascade' }),
+	expiresAt: timestamp('expires_at').notNull()
 });
