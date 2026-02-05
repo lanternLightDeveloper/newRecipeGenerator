@@ -8,8 +8,11 @@ export function requireUser(locals: App.Locals) {
 }
 
 export function requireAdmin(locals: App.Locals) {
-	if (!locals.user || locals.user.role !== 'admin') {
-		throw redirect(403, '/');
+	const user = requireUser(locals);
+
+	if (user.role !== 'admin') {
+		throw redirect(302, '/profile');
 	}
-	return locals.user;
+
+	return user;
 }

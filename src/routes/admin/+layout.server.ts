@@ -1,7 +1,5 @@
-import { requireAdmin } from '$lib/db/auth';
+import { requireAdmin } from '$lib/server/auth';
 
 export const load = async ({ locals }) => {
 	requireAdmin(locals);
-
-	return {};
 };
