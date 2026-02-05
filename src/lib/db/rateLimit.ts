@@ -1,5 +1,5 @@
 // src/lib/server/rateLimit.ts
-import { db } from '$lib/db';
+import { db } from '$lib/db/index';
 import { rateLimits } from '$lib/db/schema';
 import { eq } from 'drizzle-orm';
 import { error } from '@sveltejs/kit';
