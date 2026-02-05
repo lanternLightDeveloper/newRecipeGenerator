@@ -1,7 +1,0 @@
-access_control:
-  default_policy: deny
-  rules:
-    - domain: "tester.lanternlightdevelopment.com"
-      policy: two_factor
-      subject:
-        - "group:admins"
