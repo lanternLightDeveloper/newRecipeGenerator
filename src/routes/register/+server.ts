@@ -1,16 +1,9 @@
 import { json } from '@sveltejs/kit';
 import { db } from '$lib/db/index';
 import { users } from '$lib/db/schema';
-// import { rateLimit } from '$lib/db/rateLimit';
 import { eq } from 'drizzle-orm';
 import argon2 from 'argon2';
 import crypto from 'crypto';
-
-// await rateLimit({
-// 	key: `register:${ip}`,
-// 	limit: 3,
-// 	windowMs: 60_000 // 3 per minute
-// });
 
 export const POST = async ({ request }) => {
 	const { email, password, name } = await request.json();

@@ -1,3 +1,5 @@
+<!-- login/+page.svelte  -->
+
 <script lang="ts">
 	export let data: {
 		csrfToken: string;
@@ -28,7 +30,6 @@
 </script>
 
 <form on:submit|preventDefault={submitForm}>
-	<input type="hidden" name="csrf" value={data.csrfToken} />
 	{#if error}
 		<p style="color:red">{error}</p>
 	{/if}

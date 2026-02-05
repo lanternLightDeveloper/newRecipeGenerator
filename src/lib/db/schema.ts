@@ -1,3 +1,5 @@
+// $lib/db/schema
+
 import { pgTable, serial, integer, text, timestamp } from 'drizzle-orm/pg-core';
 
 export const recipes = pgTable('recipes', {
@@ -31,10 +33,3 @@ export const sessions = pgTable('sessions', {
 	expiresAt: timestamp('expires_at').notNull(),
 	csrfToken: text('csrf_token').notNull()
 });
-
-// // src/lib/db/schema.ts
-// export const rateLimits = pgTable('rate_limits', {
-// 	key: text('key').primaryKey(), // ip + route
-// 	count: integer('count').notNull(),
-// 	resetAt: timestamp('reset_at').notNull()
-// });

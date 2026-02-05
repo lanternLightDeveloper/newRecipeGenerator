@@ -1,3 +1,5 @@
+// login/+page.server.ts
+
 export const load = async ({ locals }) => {
 	return {
 		csrfToken: locals.csrfToken
