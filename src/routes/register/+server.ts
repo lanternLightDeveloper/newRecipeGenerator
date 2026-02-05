@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit';
-import { db } from '$lib/server/db';
-import { users } from '$lib/server/schema';
+import { db } from '$lib/db/index';
+import { users } from '$lib/db/schema';
 import { eq } from 'drizzle-orm';
 import argon2 from 'argon2';
 import crypto from 'crypto';
