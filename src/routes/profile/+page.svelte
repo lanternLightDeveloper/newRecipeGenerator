@@ -22,3 +22,7 @@
 	</label>
 	<button type="submit">Update Profile</button>
 </form>
+
+<form method="POST" action="/logout">
+	<button type="submit">Log out</button>
+</form>
