@@ -1,4 +1,7 @@
 <script lang="ts">
+	export let data: {
+		csrfToken: string;
+	};
 	let email = '';
 	let password = '';
 	let error = '';
@@ -6,14 +9,17 @@
 	async function submitForm() {
 		const res = await fetch('/login', {
 			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
+			headers: {
+				'Content-Type': 'application/json',
+				'X-CSRF-Token': data.csrfToken
+			},
 			body: JSON.stringify({ email, password })
 		});
 
-		const data = await res.json();
+		const result = await res.json();
 
 		if (!res.ok) {
-			error = data.error;
+			error = result.error;
 			return;
 		}
 
@@ -22,6 +28,7 @@
 </script>
 
 <form on:submit|preventDefault={submitForm}>
+	<input type="hidden" name="csrf" value={data.csrfToken} />
 	{#if error}
 		<p style="color:red">{error}</p>
 	{/if}

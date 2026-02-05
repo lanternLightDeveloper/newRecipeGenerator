@@ -6,43 +6,49 @@ import { eq } from 'drizzle-orm';
 export const handle: Handle = async ({ event, resolve }) => {
 	const sessionId = event.cookies.get('tt_session');
 
+	event.locals.user = null;
+	event.locals.csrfToken = null;
+
 	if (!sessionId) {
-		event.locals.user = null;
 		return resolve(event);
 	}
 
 	const result = await db
 		.select({
-			id: users.id,
+			userId: users.id,
 			email: users.email,
 			name: users.name,
 			role: users.role,
-			expiresAt: sessions.expiresAt
+			expiresAt: sessions.expiresAt,
+			csrfToken: sessions.csrfToken
 		})
-
 		.from(sessions)
 		.innerJoin(users, eq(users.id, sessions.userId))
 		.where(eq(sessions.id, sessionId))
 		.limit(1);
 
 	if (result.length === 0) {
-		event.locals.user = null;
 		return resolve(event);
 	}
 
 	const session = result[0];
 
+	// Expired session → kill it
 	if (session.expiresAt < new Date()) {
-		event.locals.user = null;
+		await db.delete(sessions).where(eq(sessions.id, sessionId));
 		return resolve(event);
 	}
 
+	// ✅ Correct identity
 	event.locals.user = {
-		id: session.id,
+		id: session.userId,
 		email: session.email,
 		name: session.name,
 		role: session.role
 	};
+
+	// ✅ CSRF token lives on the session
+	event.locals.csrfToken = session.csrfToken;
 
 	return resolve(event);
 };

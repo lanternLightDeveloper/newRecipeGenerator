@@ -18,6 +18,12 @@ const SESSION_MAX_AGE = 60 * 60 * 24 * 7;
 // });
 
 export const POST = async ({ request, cookies }) => {
+	const csrf = request.headers.get('x-csrf-token');
+
+	if (!csrf || csrf !== locals.csrfToken) {
+		return json({ error: 'Invalid CSRF token' }, { status: 403 });
+	}
+
 	const { email, password } = await request.json();
 
 	if (!email || !password) {
@@ -41,11 +47,13 @@ export const POST = async ({ request, cookies }) => {
 	// Create session
 	const sessionId = crypto.randomUUID();
 	const expiresAt = new Date(Date.now() + SESSION_MAX_AGE * 1000);
+	const csrfToken = crypto.randomBytes(32).toString('hex');
 
 	await db.insert(sessions).values({
 		id: sessionId,
 		userId: user.id,
-		expiresAt
+		expiresAt,
+		csrfToken
 	});
 
 	// Set cookie

@@ -28,7 +28,8 @@ export const sessions = pgTable('sessions', {
 	userId: text('user_id')
 		.notNull()
 		.references(() => users.id, { onDelete: 'cascade' }),
-	expiresAt: timestamp('expires_at').notNull()
+	expiresAt: timestamp('expires_at').notNull(),
+	csrfToken: text('csrf_token').notNull()
 });
 
 // // src/lib/db/schema.ts
