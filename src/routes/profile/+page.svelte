@@ -1,26 +1,37 @@
 <script lang="ts">
-	export let data;
-	let user = data.user;
+	export let data: { user: any; csrfToken: string };
+	let name = data.user.name;
+	let email = data.user.email;
+	let error = '';
 
-	async function updateProfile() {
-		// Optional: implement PATCH /profile endpoint to update name/email
-		alert('Profile update not implemented yet');
+	async function submitForm() {
+		const res = await fetch('/profile', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+				'X-CSRF-Token': data.csrfToken
+			},
+			body: JSON.stringify({ name, email })
+		});
+
+		const result = await res.json();
+
+		if (!res.ok) {
+			error = result.error;
+			return;
+		}
+
+		alert('Profile updated!');
 	}
 </script>
 
-<h1>Welcome, {user.name}!</h1>
-<p>Email: {user.email}</p>
-
-<form on:submit|preventDefault={updateProfile}>
-	<label>
-		Name
-		<input type="text" bind:value={user.name} />
-	</label>
-	<label>
-		Email
-		<input type="email" bind:value={user.email} />
-	</label>
-	<button type="submit">Update Profile</button>
+<form on:submit|preventDefault={submitForm}>
+	{#if error}
+		<p style="color:red">{error}</p>
+	{/if}
+	<label>Name: <input type="text" bind:value={name} /></label>
+	<label>Email: <input type="email" bind:value={email} /></label>
+	<button type="submit">Update</button>
 </form>
 
 <form method="POST" action="/logout">

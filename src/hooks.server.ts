@@ -1,5 +1,4 @@
-// hooks.server.ts
-
+// src/hooks.server.ts
 import type { Handle } from '@sveltejs/kit';
 import { db } from '$lib/db/index';
 import { users, sessions } from '$lib/db/schema';
@@ -29,9 +28,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 		.where(eq(sessions.id, sessionId))
 		.limit(1);
 
-	if (result.length === 0) {
-		return resolve(event);
-	}
+	if (result.length === 0) return resolve(event);
 
 	const session = result[0];
 

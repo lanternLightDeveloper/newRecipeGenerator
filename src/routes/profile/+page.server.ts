@@ -5,5 +5,5 @@ export const load = async ({ locals }) => {
 		throw redirect(302, '/login');
 	}
 
-	return { user: locals.user };
+	return { user: locals.user, csrfToken: locals.csrfToken };
 };
