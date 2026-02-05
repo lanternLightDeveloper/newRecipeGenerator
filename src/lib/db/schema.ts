@@ -30,3 +30,10 @@ export const sessions = pgTable('sessions', {
 		.references(() => users.id, { onDelete: 'cascade' }),
 	expiresAt: timestamp('expires_at').notNull()
 });
+
+// src/lib/db/schema.ts
+export const rateLimits = pgTable('rate_limits', {
+	key: text('key').primaryKey(), // ip + route
+	count: integer('count').notNull(),
+	resetAt: timestamp('reset_at').notNull()
+});

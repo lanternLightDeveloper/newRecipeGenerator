@@ -8,6 +8,14 @@ import crypto from 'crypto';
 const SESSION_COOKIE_NAME = 'tt_session';
 const SESSION_MAX_AGE = 60 * 60 * 24 * 7;
 
+const ip = request.headers.get('x-forwarded-for') ?? 'unknown';
+
+await rateLimit({
+	key: `login:${ip}`,
+	limit: 5,
+	windowMs: 60_000 // 5 per minute
+});
+
 export const POST = async ({ request, cookies }) => {
 	const { email, password } = await request.json();
 
