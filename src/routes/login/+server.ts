@@ -4,6 +4,7 @@ import { json } from '@sveltejs/kit';
 import { db } from '$lib/db/index';
 import { users, sessions } from '$lib/db/schema';
 // import { checkRateLimit } from '$lib/db/rateLimit';
+import { rateLimit } from '$lib/db/rateLimit';
 import { eq } from 'drizzle-orm';
 import argon2 from 'argon2';
 import crypto from 'crypto';
@@ -12,6 +13,12 @@ const SESSION_COOKIE_NAME = 'tt_session';
 const SESSION_MAX_AGE = 60 * 60 * 24 * 7;
 
 export const POST = async ({ request, cookies }) => {
+	const ip =
+		request.headers.get('cf-connecting-ip') ?? request.headers.get('x-forwarded-for') ?? 'unknown';
+
+	if (!rateLimit(`login:${ip}`, 5, 60_000)) {
+		return json({ error: 'Too many login attempts. Try again later.' }, { status: 429 });
+	}
 	// const ip = request.headers.get('x-forwarded-for') || 'unknown';
 
 	// const allowed = await checkRateLimit(`login:${ip}`, 5, 60); // 5 attempts per 60 sec
