@@ -5,7 +5,7 @@ import { users } from '$lib/db/schema';
 import { eq } from 'drizzle-orm';
 import argon2 from 'argon2';
 import crypto from 'crypto';
-import { checkRateLimit } from '$lib/server/rateLimit';
+import { checkRateLimit } from '$lib/db/rateLimit';
 
 export const POST = async ({ request }) => {
 	const ip = request.headers.get('x-forwarded-for') || 'unknown';
