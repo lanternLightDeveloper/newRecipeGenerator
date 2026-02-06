@@ -14,7 +14,9 @@ export const POST = async ({ request, locals }) => {
 	if (!email) return json({ error: 'Email required' }, { status: 400 });
 
 	const [user] = await db.select().from(users).where(eq(users.email, email));
-	if (!user) return json({ ok: true }); // Do not leak existence
+	if (!user) {
+		return json({ error: 'User not found' }, { status: 400 });
+	}
 
 	const token = crypto.randomBytes(32).toString('hex');
 	const expiresAt = new Date(Date.now() + 60 * 60 * 1000); // 1 hour
