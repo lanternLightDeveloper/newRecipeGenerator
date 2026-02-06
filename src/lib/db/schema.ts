@@ -34,9 +34,9 @@ export const sessions = pgTable('sessions', {
 	csrfToken: text('csrf_token').notNull()
 });
 
-// export const rate_limits = pgTable('rate_limits', {
-// 	id: text('id').primaryKey(),
-// 	key: text('key').notNull(),
-// 	count: integer('count').notNull().default(1),
-// 	resetAt: timestamp('reset_at').notNull()
-// });
+export const rate_limits = pgTable('rate_limits', {
+	id: text('id').primaryKey(),
+	key: text('key').notNull(),
+	count: integer('count').notNull().default(1),
+	resetAt: timestamp('reset_at').notNull()
+});
