@@ -19,7 +19,8 @@
 			error = result.error;
 			return;
 		}
-		success = 'If that email exists, a password reset link has been sent.';
+		success =
+			'A request to reset your password has been sent. I will get back to you soon. This website does not have email password reset enabled.';
 		error = '';
 	}
 </script>
