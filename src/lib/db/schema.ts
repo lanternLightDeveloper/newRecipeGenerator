@@ -1,6 +1,6 @@
 // $lib/db/schema
 
-import { pgTable, serial, integer, text, timestamp } from 'drizzle-orm/pg-core';
+import { pgTable, serial, integer, text, timestamp, boolean } from 'drizzle-orm/pg-core';
 
 export const recipes = pgTable('recipes', {
 	key_id: serial('key_id').primaryKey(),
@@ -41,5 +41,5 @@ export const password_resets = pgTable('password_resets', {
 		.references(() => users.id, { onDelete: 'cascade' }),
 	token: text('token').notNull().unique(),
 	expiresAt: timestamp('expires_at').notNull(),
-	used: text('used').notNull().default('false')
+	used: boolean('used').notNull().default(false)
 });
