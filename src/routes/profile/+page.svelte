@@ -27,7 +27,7 @@
 
 <h1>Welcome, {data.user.name}!</h1>
 <p>Email: {data.user.email}</p>
-<p>Email: {data.user.role}</p>
+<p>Role: {data.user.role}</p>
 
 <form on:submit|preventDefault={submitForm}>
 	{#if error}

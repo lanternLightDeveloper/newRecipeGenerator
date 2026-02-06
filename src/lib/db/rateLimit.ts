@@ -1,50 +1,35 @@
-// // src/lib/server/rateLimit.ts
-// import { db } from '$lib/db/index';
-// import { rateLimits } from '$lib/db/schema';
-// import { eq } from 'drizzle-orm';
-// import { error } from '@sveltejs/kit';
+// $lib/server/rateLimit.ts
+import { db } from '$lib/db/index';
+import { rate_limits } from '$lib/db/schema';
+import { eq, gt } from 'drizzle-orm';
 
-// export async function rateLimit({
-// 	key,
-// 	limit,
-// 	windowMs
-// }: {
-// 	key: string;
-// 	limit: number;
-// 	windowMs: number;
-// }) {
-// 	const now = new Date();
+export async function checkRateLimit(key: string, limit: number, windowSec: number) {
+	const now = new Date();
+	const [entry] = await db.select().from(rate_limits).where(eq(rate_limits.key, key));
 
-// 	const existing = await db.select().from(rateLimits).where(eq(rateLimits.key, key)).limit(1);
+	if (!entry) {
+		// first request → insert
+		const resetAt = new Date(Date.now() + windowSec * 1000);
+		await db.insert(rate_limits).values({ id: crypto.randomUUID(), key, count: 1, resetAt });
+		return true;
+	}
 
-// 	if (existing.length === 0) {
-// 		await db.insert(rateLimits).values({
-// 			key,
-// 			count: 1,
-// 			resetAt: new Date(now.getTime() + windowMs)
-// 		});
-// 		return;
-// 	}
+	if (entry.resetAt < now) {
+		// window expired → reset count
+		const resetAt = new Date(Date.now() + windowSec * 1000);
+		await db.update(rate_limits).set({ count: 1, resetAt }).where(eq(rate_limits.id, entry.id));
+		return true;
+	}
 
-// 	const entry = existing[0];
+	if (entry.count >= limit) {
+		return false; // blocked
+	}
 
-// 	if (entry.resetAt < now) {
-// 		await db
-// 			.update(rateLimits)
-// 			.set({
-// 				count: 1,
-// 				resetAt: new Date(now.getTime() + windowMs)
-// 			})
-// 			.where(eq(rateLimits.key, key));
-// 		return;
-// 	}
+	// increment
+	await db
+		.update(rate_limits)
+		.set({ count: entry.count + 1 })
+		.where(eq(rate_limits.id, entry.id));
 
-// 	if (entry.count >= limit) {
-// 		throw error(429, 'Too many requests');
-// 	}
-
-// 	await db
-// 		.update(rateLimits)
-// 		.set({ count: entry.count + 1 })
-// 		.where(eq(rateLimits.key, key));
-// }
+	return true;
+}
