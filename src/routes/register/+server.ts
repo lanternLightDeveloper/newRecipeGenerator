@@ -5,11 +5,11 @@ import { users } from '$lib/db/schema';
 import { eq } from 'drizzle-orm';
 import argon2 from 'argon2';
 import crypto from 'crypto';
-import { checkRateLimit } from '$lib/db/rateLimit';
+// import { checkRateLimit } from '$lib/db/rateLimit';
 
 export const POST = async ({ request }) => {
-	const ip = request.headers.get('x-forwarded-for') || 'unknown';
-	const allowed = await checkRateLimit(`register:${ip}`, 3, 3600); // 3 per hour
+	// const ip = request.headers.get('x-forwarded-for') || 'unknown';
+	// const allowed = await checkRateLimit(`register:${ip}`, 3, 3600); // 3 per hour
 	if (!allowed)
 		return json({ error: 'Too many registration attempts. Try again later.' }, { status: 429 });
 
