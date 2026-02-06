@@ -34,9 +34,12 @@ export const sessions = pgTable('sessions', {
 	csrfToken: text('csrf_token').notNull()
 });
 
-// export const rate_limits = pgTable('rate_limits', {
-// 	id: text('id').primaryKey(),
-// 	key: text('key').notNull(),
-// 	count: integer('count').notNull().default(1),
-// 	resetAt: timestamp('reset_at').notNull()
-// });
+export const password_resets = pgTable('password_resets', {
+	id: text('id').primaryKey(),
+	userId: text('user_id')
+		.notNull()
+		.references(() => users.id, { onDelete: 'cascade' }),
+	token: text('token').notNull().unique(),
+	expiresAt: timestamp('expires_at').notNull(),
+	used: text('used').notNull().default('false')
+});
