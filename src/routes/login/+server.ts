@@ -3,10 +3,9 @@
 import { json } from '@sveltejs/kit';
 import { db } from '$lib/db/index';
 import { users, sessions } from '$lib/db/schema';
+import { checkRateLimit } from '$lib/db/rateLimit';
 import { eq } from 'drizzle-orm';
 import argon2 from 'argon2';
-// login/+server.ts (add at top)
-import { checkRateLimit } from '$lib/db/rateLimit';
 import crypto from 'crypto';
 
 const SESSION_COOKIE_NAME = 'tt_session';
