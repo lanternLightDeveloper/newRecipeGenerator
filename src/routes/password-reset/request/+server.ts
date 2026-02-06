@@ -29,10 +29,5 @@ export const POST = async ({ request, locals }) => {
 		used: 'false'
 	});
 
-	// Send email with token
-	console.log(
-		`Password reset link: https://lanternlightdevelopment.com/password-reset/confirm?token=${token}`
-	);
-
 	return json({ ok: true });
 };
