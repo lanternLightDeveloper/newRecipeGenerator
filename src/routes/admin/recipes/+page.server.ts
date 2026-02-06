@@ -1,7 +1,7 @@
-import { requireAdmin } from '$lib/db/auth';
+import { db } from '$lib/db';
+import { recipes } from '$lib/db/schema';
 
-export const load = async ({ locals }) => {
-	requireAdmin(locals);
-
-	return {};
-};
+export async function load() {
+	const all = await db.select().from(recipes);
+	return { recipes: all };
+}
