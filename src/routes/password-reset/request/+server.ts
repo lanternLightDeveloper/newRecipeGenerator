@@ -4,10 +4,6 @@ import { users, password_resets } from '$lib/db/schema';
 import { eq } from 'drizzle-orm';
 import crypto from 'crypto';
 
-export const load = async ({ locals }) => {
-	return { csrfToken: locals.csrfToken }; // expose CSRF
-};
-
 export const POST = async ({ request, locals }) => {
 	const csrf = request.headers.get('x-csrf-token');
 	if (!csrf || csrf !== locals.csrfToken) {

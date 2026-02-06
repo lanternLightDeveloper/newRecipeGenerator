@@ -4,13 +4,6 @@ import { users, password_resets } from '$lib/db/schema';
 import { eq } from 'drizzle-orm';
 import argon2 from 'argon2';
 
-export const load = async ({ url, locals }) => {
-	return {
-		csrfToken: locals.csrfToken,
-		token: url.searchParams.get('token') || ''
-	};
-};
-
 export const POST = async ({ request, locals }) => {
 	const csrf = request.headers.get('x-csrf-token');
 	if (!csrf || csrf !== locals.csrfToken) {
