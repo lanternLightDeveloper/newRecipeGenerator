@@ -1,15 +1,15 @@
 // src/routes/admin/recipes/+page.server.ts
-
 import { db } from '$lib/db';
 import { recipes } from '$lib/db/schema';
-
-export async function load() {
-	const all = await db.select().from(recipes);
-	return { recipes: all };
-}
-
 import { requireEditor } from '$lib/db/auth';
 
-export const load = ({ locals }) => {
+export async function load({ locals }) {
+	// 1. Protect the route
 	requireEditor(locals);
-};
+
+	// 2. Load the data
+	const all = await db.select().from(recipes);
+
+	// 3. Return it to the page
+	return { recipes: all };
+}
