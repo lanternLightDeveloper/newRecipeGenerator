@@ -9,6 +9,7 @@ node_modules
 /build
 /dist
 /Extra
+/scripts
 
 # OS
 .DS_Store
@@ -16,9 +17,12 @@ Thumbs.db
 
 # Env
 .env
+.env.local
 .env.*
+.env.local*
 !.env.example
-!.env.test
+!.env.local.example
+!.env.local.test
 
 # Vite
 vite.config.js.timestamp-*

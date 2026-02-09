@@ -1,10 +1,10 @@
 // $lib/db/schema
 
-import { pgTable, serial, integer, text, timestamp, boolean } from 'drizzle-orm/pg-core';
+import { pgTable, pgEnum, serial, integer, text, timestamp, boolean } from 'drizzle-orm/pg-core';
 
 export const recipes = pgTable('recipes', {
 	key_id: serial('key_id').primaryKey(),
-	id: integer('id').notNull(), // your original category-specific ID
+	id: integer('id').notNull(),
 	name: text('name').notNull(),
 	servings: integer('servings'),
 	ingredients: text('ingredients').array(),
@@ -16,13 +16,15 @@ export const recipes = pgTable('recipes', {
 	category: text('category').notNull()
 });
 
+export const userRole = pgEnum('user_role', ['user', 'author', 'editor', 'admin']);
+
 export const users = pgTable('users', {
 	id: text('id').primaryKey(),
 	email: text('email').notNull().unique(),
 	passwordHash: text('password_hash').notNull(),
 	name: text('name'),
 	createdAt: timestamp('created_at').defaultNow(),
-	role: text('role').notNull().default('user')
+	role: userRole('role').notNull().default('user')
 });
 
 export const sessions = pgTable('sessions', {
@@ -32,6 +34,17 @@ export const sessions = pgTable('sessions', {
 		.references(() => users.id, { onDelete: 'cascade' }),
 	expiresAt: timestamp('expires_at').notNull(),
 	csrfToken: text('csrf_token').notNull()
+});
+
+export const authorApplications = pgTable('author_applications', {
+	id: serial('id').primaryKey(),
+	userId: text('user_id')
+		.notNull()
+		.references(() => users.id, { onDelete: 'cascade' }),
+	status: text('status').notNull().default('pending'), // pending | approved | rejected
+	createdAt: timestamp('created_at').defaultNow(),
+	reviewedAt: timestamp('reviewed_at'),
+	reviewerId: text('reviewer_id').references(() => users.id)
 });
 
 export const password_resets = pgTable('password_resets', {

@@ -1,7 +1,6 @@
+// admin/+layout.server.ts
 import { requireAdmin } from '$lib/db/auth';
 
-export const load = async ({ locals }) => {
+export const load = ({ locals }) => {
 	requireAdmin(locals);
-
-	return {};
 };

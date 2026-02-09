@@ -19,12 +19,6 @@ export const POST = async ({ request, cookies }) => {
 	if (!rateLimit(`login:${ip}`, 5, 60_000)) {
 		return json({ error: 'Too many login attempts. Try again later.' }, { status: 429 });
 	}
-	// const ip = request.headers.get('x-forwarded-for') || 'unknown';
-
-	// const allowed = await checkRateLimit(`login:${ip}`, 5, 60); // 5 attempts per 60 sec
-	// if (!allowed) {
-	// 	return json({ error: 'Too many login attempts. Try again later.' }, { status: 429 });
-	// }
 
 	const { email, password } = await request.json();
 

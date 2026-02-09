@@ -1,4 +1,4 @@
-// src/lib/auth.ts
+// src/lib/auth/guards.ts
 import { redirect, error } from '@sveltejs/kit';
 
 export function requireUser(locals) {

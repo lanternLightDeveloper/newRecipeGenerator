@@ -35,7 +35,7 @@
 
 //////////////////////////////
 // src/routes/dev/import/+server.ts
-// import { db } from '$lib/db';
+// import { db } from '$lib/db/index';
 // import { recipes } from '$lib/db/schema';
 // import { json } from '@sveltejs/kit';
 
@@ -69,14 +69,14 @@
 // 	for (const group of groups) {
 // 		for (const recipe of group.data) {
 // 			await db.insert(recipes).values({
-// 				id: recipe.id,
+// 				id: Number(recipe.id),
 // 				name: recipe.name,
 // 				servings: Number(recipe.servings),
 // 				ingredients: recipe.ingredients,
 // 				instructions: recipe.instructions,
 // 				tags: recipe.tags,
-// 				nutrition: recipe.nutrition,
-// 				time: recipe.time,
+// 				nutrition: String(recipe.nutrition),
+// 				time: Number(recipe.time),
 // 				creator: recipe.creator ?? 'Unknown',
 // 				category: group.category
 // 			});

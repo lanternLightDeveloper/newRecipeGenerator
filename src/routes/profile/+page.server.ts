@@ -1,9 +1,7 @@
-import { redirect } from '@sveltejs/kit';
+// profile/+page.server.ts
+import { requireUser } from '$lib/db/auth';
 
-export const load = async ({ locals }) => {
-	if (!locals.user) {
-		throw redirect(302, '/login');
-	}
-
-	return { user: locals.user, csrfToken: locals.csrfToken };
+export const load = ({ locals }) => {
+	requireUser(locals);
+	return { user: locals.user };
 };
