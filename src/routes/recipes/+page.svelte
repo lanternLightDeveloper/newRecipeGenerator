@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 	export let data;
 
-	// Track which recipe is currently open
+	import FavoriteButton from '$lib/FavoriteButton.svelte';
+
 	let openRecipeId = null;
 
-	// Toggle the open state
 	function toggle(id) {
 		openRecipeId = openRecipeId === id ? null : id;
 	}
@@ -14,13 +14,11 @@
 
 {#each data.recipes as recipe}
 	<article class="card">
-		<!-- Header: clickable to toggle -->
 		<h2 on:click={() => toggle(recipe.id)}>
 			{recipe.name}
 			<span class="arrow">{openRecipeId === recipe.id ? '▲' : '▼'}</span>
 		</h2>
 
-		<!-- Content: show only if open -->
 		{#if openRecipeId === recipe.id}
 			<div class="content">
 				<p><strong>ID:</strong> {recipe.id}</p>
@@ -36,6 +34,7 @@
 
 				<p><strong>Creator:</strong> {recipe.creator}</p>
 				<p><strong>Category:</strong> {recipe.category}</p>
+				<FavoriteButton recipeId={recipe.key_id} isFavorite={recipe.isFavorite} />
 			</div>
 		{/if}
 	</article>

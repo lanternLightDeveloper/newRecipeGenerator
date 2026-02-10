@@ -1,3 +1,5 @@
+<!-- profile/+page.svelte  -->
+
 <script lang="ts">
 	export let data: { user: any; csrfToken: string };
 	let name = data.user.name;

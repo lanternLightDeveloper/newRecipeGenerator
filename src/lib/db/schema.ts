@@ -16,6 +16,28 @@ export const recipes = pgTable('recipes', {
 	category: text('category').notNull()
 });
 
+export const favoriteRecipes = pgTable('favorite_recipes', {
+	id: serial('id').primaryKey(),
+	userId: text('user_id')
+		.notNull()
+		.references(() => users.id, { onDelete: 'cascade' }),
+	recipeId: integer('recipe_id')
+		.notNull()
+		.references(() => recipes.key_id, { onDelete: 'cascade' }),
+	createdAt: timestamp('created_at').defaultNow()
+});
+
+export const userRole = pgEnum('user_role', ['user', 'author', 'editor', 'admin']);
+
+export const users = pgTable('users', {
+	id: serial('id').primaryKey(),
+	email: text('email').notNull().unique(),
+	passwordHash: text('password_hash').notNull(),
+	name: text('name'),
+	createdAt: timestamp('created_at').defaultNow(),
+	role: userRole('role').notNull().default('user')
+});
+
 export const recipes2 = pgTable('recipes', {
 	key_id: serial('key_id').primaryKey(),
 	id: integer('id').notNull(),
@@ -28,17 +50,6 @@ export const recipes2 = pgTable('recipes', {
 	time: integer('time'),
 	creator: text('creator').default('Unknown'),
 	category: text('category').notNull()
-});
-
-export const userRole = pgEnum('user_role', ['user', 'author', 'editor', 'admin']);
-
-export const users = pgTable('users', {
-	id: text('id').primaryKey(),
-	email: text('email').notNull().unique(),
-	passwordHash: text('password_hash').notNull(),
-	name: text('name'),
-	createdAt: timestamp('created_at').defaultNow(),
-	role: userRole('role').notNull().default('user')
 });
 
 export const sessions = pgTable('sessions', {
