@@ -1,3 +1,4 @@
+<!-- // admin/recipes//[id]/+page.svelte -->
 <script lang="ts">
 	const { data } = $props<{
 		data: {
@@ -23,7 +24,7 @@
 	}
 </script>
 
-<h1>Recipes</h1>
+// <h1>Recipes</h1>
 
 {#each data.recipes as recipe}
 	<article class="card">

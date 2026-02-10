@@ -1,8 +1,9 @@
-// <!-- // +page.server.ts -->
+// <!-- // admin/recipes//[id]/+page.server.ts -->
 import { db } from '$lib/db';
 import { recipes } from '$lib/db/schema';
 import { requireEditor } from '$lib/db/auth';
 import { eq } from 'drizzle-orm';
+import { error } from '@sveltejs/kit';
 
 export async function load({ locals, params }) {
 	requireEditor(locals);
@@ -38,7 +39,17 @@ export const actions = {
 
 		await db
 			.update(recipes)
-			.set({ name, servings, ingredients, instructions, tags, nutrition, time, creator, category })
+			.set({
+				name,
+				servings,
+				ingredients,
+				instructions,
+				tags,
+				nutrition,
+				time,
+				creator,
+				category
+			})
 			.where(eq(recipes.id, id));
 
 		return { success: true };
