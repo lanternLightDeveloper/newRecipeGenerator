@@ -2,29 +2,26 @@
 	const { data } = $props<{
 		data: {
 			recipes: Array<{
-				key_id: string;
+				key_id: number;
 				name: string;
-				servings: number;
+				servings: number | null;
 				ingredients: string[];
 				instructions: string[];
 				tags: string[];
-
-				nutrition: string;
-				time: string;
+				nutrition: string | null;
+				time: number | null;
 				creator: string;
 				category: string;
 			}>;
 		};
 	}>();
 
-	let openRecipeId = $state<string | null>(null);
+	let openRecipeId = $state<number | null>(null);
 
-	function toggle(key_id) {
+	function toggle(key_id: number) {
 		openRecipeId = openRecipeId === key_id ? null : key_id;
 	}
 </script>
-
-// <h1>Recipes</h1>
 
 {#each data.recipes as recipe}
 	<article class="card">
@@ -43,26 +40,31 @@
 			</button>
 		</h2>
 
-		<!-- Content: show only if open -->
 		{#if openRecipeId === recipe.key_id}
-			<div
-				id={'recipe-panel-' + recipe.key_id}
-				hidden={openRecipeId !== recipe.key_id}
-				class="content"
-			>
+			<div id={'recipe-panel-' + recipe.key_id} class="content">
 				<p><strong>KEY_ID:</strong> {recipe.key_id}</p>
 				<p><strong>Servings:</strong> {recipe.servings}</p>
 
+				<p><strong>Ingredients:</strong></p>
+				<ul>
+					{#each recipe.ingredients as ing}
+						<li>{ing}</li>
+					{/each}
+				</ul>
+
+				<p><strong>Instructions:</strong></p>
 				<ol>
-					<li><strong>Ingredients:</strong> {recipe.ingredients}</li>
-					<li><strong>Instructions:</strong> {recipe.instructions}</li>
-					<li><strong>Tags:</strong> {recipe.tags}</li>
-					<li><strong>Nutrition:</strong> {recipe.nutrition}</li>
-					<li><strong>Time:</strong> {recipe.time}</li>
+					{#each recipe.instructions as step}
+						<li>{step}</li>
+					{/each}
 				</ol>
 
+				<p><strong>Tags:</strong> {recipe.tags.join(', ')}</p>
+				<p><strong>Nutrition:</strong> {recipe.nutrition}</p>
+				<p><strong>Time:</strong> {recipe.time}</p>
 				<p><strong>Creator:</strong> {recipe.creator}</p>
 				<p><strong>Category:</strong> {recipe.category}</p>
+
 				<a href={`/admin/recipes/${recipe.key_id}`}>Edit recipe</a>
 			</div>
 		{/if}
