@@ -3,14 +3,12 @@
 	import { createEventDispatcher } from 'svelte';
 	const dispatch = createEventDispatcher();
 
-	// Props
-	let { recipeId, isFavorite } = $props<{
+	let { recipeId, isDontLike } = $props<{
 		recipeId: number;
-		isFavorite: boolean | number | null;
+		isDontLike: boolean | number | null;
 	}>();
 
-	// Local reactive state
-	let fav = $state(Boolean(isFavorite));
+	let dont = $state(Boolean(isDontLike));
 
 	async function toggle() {
 		const res = await fetch('/api/dont_like/toggle', {
@@ -21,8 +19,7 @@
 
 		if (res.ok) {
 			const result = await res.json();
-
-			fav = result.status === 'added';
+			dont = result.status === 'added';
 
 			dispatch('toggled', {
 				recipeId,
@@ -33,10 +30,10 @@
 </script>
 
 <button class="favorite-btn" onclick={toggle}>
-	{#if fav}
-		Yuck
+	{#if dont}
+		👎
 	{:else}
-		Meh
+		👍
 	{/if}
 </button>
 

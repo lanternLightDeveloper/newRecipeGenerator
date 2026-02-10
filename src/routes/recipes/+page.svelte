@@ -56,7 +56,7 @@
 				/>
 				<DontLikeButton
 					recipeId={recipe.key_id}
-					isFavorite={recipe.isDontLike}
+					isDontLike={recipe.isDontLike}
 					on:toggled={(e) => handleDontLikeToggle(recipe, e.detail)}
 				/>
 			</div>

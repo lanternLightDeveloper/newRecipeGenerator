@@ -1,11 +1,10 @@
 import { db } from '$lib/db';
-import { recipes, favoriteRecipes } from '$lib/db/schema';
+import { recipes, favoriteRecipes, dontLikeRecipes } from '$lib/db/schema';
 import { eq, and } from 'drizzle-orm';
 import { requireUser } from '$lib/db/auth';
 
 export async function load({ locals }) {
 	requireUser(locals);
-
 	const userId = locals.user.id;
 
 	const all = await db
@@ -21,7 +20,12 @@ export async function load({ locals }) {
 			time: recipes.time,
 			creator: recipes.creator,
 			category: recipes.category,
-			isFavorite: favoriteRecipes.id // null or number
+
+			// FAVORITE JOIN
+			isFavorite: favoriteRecipes.id,
+
+			// DONT LIKE JOIN
+			isDontLike: dontLikeRecipes.id
 		})
 		.from(recipes)
 		.leftJoin(
