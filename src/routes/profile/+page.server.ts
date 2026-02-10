@@ -1,15 +1,14 @@
 // profile/+page.server.ts
-import { requireUser } from '$lib/db/auth';
 import { db } from '$lib/db';
-import { recipes, favoriteRecipes } from '$lib/db/schema';
+import { recipes, favoriteRecipes, dontLikeRecipes } from '$lib/db/schema';
 import { eq, and } from 'drizzle-orm';
+import { requireUser } from '$lib/db/auth';
 
 export async function load({ locals }) {
 	requireUser(locals);
-
 	const userId = locals.user.id;
 
-	const favorites = await db
+	const all = await db
 		.select({
 			key_id: recipes.key_id,
 			id: recipes.id,
@@ -21,14 +20,23 @@ export async function load({ locals }) {
 			nutrition: recipes.nutrition,
 			time: recipes.time,
 			creator: recipes.creator,
-			category: recipes.category
-		})
-		.from(favoriteRecipes)
-		.innerJoin(recipes, eq(favoriteRecipes.recipeId, recipes.key_id))
-		.where(eq(favoriteRecipes.userId, userId));
+			category: recipes.category,
 
-	return {
-		user: locals.user,
-		favorites
-	};
+			// FAVORITE JOIN
+			isFavorite: favoriteRecipes.id,
+
+			// DONT LIKE JOIN
+			isDontLike: dontLikeRecipes.id
+		})
+		.from(recipes)
+		.leftJoin(
+			favoriteRecipes,
+			and(eq(favoriteRecipes.recipeId, recipes.key_id), eq(favoriteRecipes.userId, userId))
+		)
+		.leftJoin(
+			dontLikeRecipes,
+			and(eq(dontLikeRecipes.recipeId, recipes.key_id), eq(dontLikeRecipes.userId, userId))
+		);
+
+	return { recipes: all };
 }

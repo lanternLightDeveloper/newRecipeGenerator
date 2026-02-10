@@ -1,10 +1,21 @@
 <!-- profile/+page.svelte  -->
-
 <script lang="ts">
-	export let data: { user: any; csrfToken: string; favorites: any[] };
-	let name = data.user.name;
-	let email = data.user.email;
-	let error = '';
+	let { data } = $props<{
+		user: any;
+		csrfToken: string;
+		favorites: any[];
+	}>();
+
+	// Local reactive state
+	let name = $state(data.user.name);
+	let email = $state(data.user.email);
+	let error = $state('');
+
+	let openRecipeId = $state<number | null>(null);
+
+	function toggle(id: number) {
+		openRecipeId = openRecipeId === id ? null : id;
+	}
 
 	async function submitForm() {
 		const res = await fetch('/profile', {
@@ -31,7 +42,7 @@
 <p>Email: {data.user.email}</p>
 <p>Role: {data.user.role}</p>
 
-<form on:submit|preventDefault={submitForm}>
+<form onsubmit={submitForm}>
 	{#if error}
 		<p style="color:red">{error}</p>
 	{/if}
@@ -49,19 +60,72 @@
 {#if data.favorites.length === 0}
 	<p>You haven't favorited any recipes yet.</p>
 {:else}
-	<ul>
-		{#each data.favorites as fav}
-			<li>
+	{#each data.favorites as fav}
+		<article class="card">
+			<h2 onclick={() => toggle(fav.key_id)}>
+				{fav.name}
+				<span class="arrow">
+					{openRecipeId === fav.key_id ? '▲' : '▼'}
+				</span>
+			</h2>
+
+			<p>
 				<strong>{fav.name}</strong>
-			</li>
-			<li>Servings: {fav.servings}</li>
-			<li>ingredients: {fav.ingredients}</li>
-			<li>instructions: {fav.instructions}</li>
-			<li>tags: {fav.tags}</li>
-			<li>nutrition: {fav.nutrition}</li>
-			<li>Time: {fav.time}</li>
+			</p>
+			<p>Servings: {fav.servings}</p>
+			<ol>
+				<li>ingredients: {fav.ingredients}</li>
+				<li>instructions: {fav.instructions}</li>
+				<li>tags: {fav.tags}</li>
+				<li>nutrition: {fav.nutrition}</li>
+				<li>Time: {fav.time}</li>
+			</ol>
 			<li>Creator: {fav.creator}</li>
 			<li>Category: {fav.category}</li>
-		{/each}
-	</ul>
+		</article>
+	{/each}
 {/if}
+
+<style>
+	.card {
+		background: var(--bg-2);
+		padding: 1rem 1.5rem;
+		border-radius: 1rem;
+		border: var(--bord);
+		margin: 1rem auto;
+		width: fit-content;
+		max-width: 100%;
+		transition: all 0.3s ease;
+		cursor: pointer;
+	}
+
+	h2 {
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: var(--bord);
+		padding-bottom: 0.5rem;
+	}
+
+	.arrow {
+		font-size: 0.9rem;
+	}
+
+	.content {
+		margin-top: 1rem;
+	}
+
+	p {
+		margin: 0.15rem 0;
+	}
+
+	ol {
+		margin: 0.5rem 0 0.5rem 1.5rem;
+		padding: 0;
+	}
+
+	ol li {
+		margin: 0.25rem 0;
+	}
+</style>
