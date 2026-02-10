@@ -1,34 +1,68 @@
-<script>
-	export let data;
+<script lang="ts">
+	const { data } = $props<{
+		data: {
+			users: Array<{
+				id: string;
+				name: string;
+				email: string;
+				createdAt: string;
+				role: string;
+			}>;
+		};
+	}>();
 
-	// Track which user is currently open
-	let openUserId = null;
+	let openUserId = $state<string | null>(null);
 
-	// Toggle the open state
-	function toggle(id) {
+	function toggle(id: string) {
 		openUserId = openUserId === id ? null : id;
 	}
 </script>
 
 <h1>User management</h1>
 
+{#if data?.success}
+	<p class="success">Role updated!</p>
+{/if}
+
 {#each data.users as user}
 	<article class="card">
-		<!-- Header: clickable to toggle -->
-		<h2 on:click={() => toggle(user.id)}>
-			{user.name}
-			<span class="arrow">{openUserId === user.id ? '▲' : '▼'}</span>
+		<h2>
+			<button
+				type="button"
+				class="user-toggle"
+				aria-expanded={openUserId === user.id}
+				aria-controls={'user-panel-' + user.id}
+				onclick={() => toggle(user.id)}
+			>
+				{user.name}
+				<span class="arrow" aria-hidden="true">
+					{openUserId === user.id ? '▲' : '▼'}
+				</span>
+			</button>
 		</h2>
 
-		<!-- Content: show only if open -->
 		{#if openUserId === user.id}
-			<div class="content">
+			<div id={'user-panel-' + user.id} hidden={openUserId !== user.id}>
 				<p><strong>ID:</strong> {user.id}</p>
-				<p><strong>Email:</strong> {user.email}</p>
 				<p><strong>Email:</strong> {user.email}</p>
 				<p><strong>Username:</strong> {user.name}</p>
 				<p><strong>Created At:</strong> {user.createdAt}</p>
-				<p><strong>Role:</strong> {user.role}</p>
+
+				<form method="POST" action="?/updateRole">
+					<input type="hidden" name="userId" value={user.id} />
+
+					<label>
+						Role:
+						<select name="role" bind:value={user.role}>
+							<option value="user">User</option>
+							<option value="author">Author</option>
+							<option value="editor">Editor</option>
+							<option value="admin">Admin</option>
+						</select>
+					</label>
+
+					<button type="submit">Update Role</button>
+				</form>
 			</div>
 		{/if}
 	</article>
