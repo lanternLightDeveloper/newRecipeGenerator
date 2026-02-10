@@ -58,6 +58,7 @@
 
 				<p><strong>Creator:</strong> {recipe.creator}</p>
 				<p><strong>Category:</strong> {recipe.category}</p>
+				<a href={`/admin/recipes/${recipe.id}`}>Edit recipe</a>
 			</div>
 		{/if}
 	</article>
