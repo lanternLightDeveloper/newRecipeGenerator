@@ -1,14 +1,14 @@
-<!-- // admin/recipes//[id]/+page.svelte -->
 <script lang="ts">
 	const { data } = $props<{
 		data: {
 			recipes: Array<{
-				id: string;
+				key_id: string;
 				name: string;
 				servings: number;
-				ingredients: string;
-				instructions: string;
-				tags: string;
+				ingredients: string[];
+				instructions: string[];
+				tags: string[];
+
 				nutrition: string;
 				time: string;
 				creator: string;
@@ -19,8 +19,8 @@
 
 	let openRecipeId = $state<string | null>(null);
 
-	function toggle(id) {
-		openRecipeId = openRecipeId === id ? null : id;
+	function toggle(key_id) {
+		openRecipeId = openRecipeId === key_id ? null : key_id;
 	}
 </script>
 
@@ -32,21 +32,25 @@
 			<button
 				type="button"
 				class="recipe-toggle"
-				aria-expanded={openRecipeId === recipe.id}
-				aria-controls={'recipe-panel-' + recipe.id}
-				onclick={() => toggle(recipe.id)}
+				aria-expanded={openRecipeId === recipe.key_id}
+				aria-controls={'recipe-panel-' + recipe.key_id}
+				onclick={() => toggle(recipe.key_id)}
 			>
 				{recipe.name}
 				<span class="arrow" aria-hidden="true">
-					{openRecipeId === recipe.id ? '▲' : '▼'}
+					{openRecipeId === recipe.key_id ? '▲' : '▼'}
 				</span>
 			</button>
 		</h2>
 
 		<!-- Content: show only if open -->
-		{#if openRecipeId === recipe.id}
-			<div id={'recipe-panel-' + recipe.id} hidden={openRecipeId !== recipe.id} class="content">
-				<p><strong>ID:</strong> {recipe.id}</p>
+		{#if openRecipeId === recipe.key_id}
+			<div
+				id={'recipe-panel-' + recipe.key_id}
+				hidden={openRecipeId !== recipe.key_id}
+				class="content"
+			>
+				<p><strong>KEY_ID:</strong> {recipe.key_id}</p>
 				<p><strong>Servings:</strong> {recipe.servings}</p>
 
 				<ol>
@@ -59,7 +63,7 @@
 
 				<p><strong>Creator:</strong> {recipe.creator}</p>
 				<p><strong>Category:</strong> {recipe.category}</p>
-				<a href={`/admin/recipes/${recipe.id}`}>Edit recipe</a>
+				<a href={`/admin/recipes/${recipe.key_id}`}>Edit recipe</a>
 			</div>
 		{/if}
 	</article>
