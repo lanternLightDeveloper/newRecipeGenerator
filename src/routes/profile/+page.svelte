@@ -1,7 +1,7 @@
 <!-- profile/+page.svelte  -->
 
 <script lang="ts">
-	export let data: { user: any; csrfToken: string };
+	export let data: { user: any; csrfToken: string; favorites: any[] };
 	let name = data.user.name;
 	let email = data.user.email;
 	let error = '';
@@ -43,3 +43,18 @@
 <form method="POST" action="/logout">
 	<button type="submit">Log out</button>
 </form>
+
+<h2>Your Favorite Recipes</h2>
+
+{#if data.favorites.length === 0}
+	<p>You haven't favorited any recipes yet.</p>
+{:else}
+	<ul>
+		{#each data.favorites as fav}
+			<li>
+				<strong>{fav.name}</strong>
+				<span>({fav.category}, {fav.time} min)</span>
+			</li>
+		{/each}
+	</ul>
+{/if}
