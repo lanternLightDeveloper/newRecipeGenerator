@@ -28,8 +28,18 @@ export const actions = {
 		const id = Number(form.get('id'));
 		const name = form.get('name');
 		const servings = Number(form.get('servings'));
+		const ingredients = form.get('ingredients');
+		const instructions = form.get('instructions');
+		const tags = form.get('tags');
+		const nutrition = form.get('nutrition');
+		const time = Number(form.get('time'));
+		const creator = form.get('creator');
+		const category = form.get('category');
 
-		await db.update(recipes).set({ name, servings }).where(eq(recipes.id, id));
+		await db
+			.update(recipes)
+			.set({ name, servings, ingredients, instructions, tags, nutrition, time, creator, category })
+			.where(eq(recipes.id, id));
 
 		return { success: true };
 	}
