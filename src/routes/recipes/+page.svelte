@@ -4,6 +4,7 @@
 	let { data } = $props();
 
 	import FavoriteButton from '$lib/FavoriteButton.svelte';
+	import DontLikeButton from '$lib/DontLikeButton.svelte';
 
 	let openRecipeId = $state<number | null>(null);
 
@@ -14,6 +15,10 @@
 	function handleFavoriteToggle(recipe, detail) {
 		// Update the recipe's isFavorite value in the parent list
 		recipe.isFavorite = detail.status === 'added';
+	}
+		function handleDontLikeToggle(recipe, detail) {
+		// Update the recipe's isDontLike value in the parent list
+		recipe.isDontLike = detail.status === 'added';
 	}
 </script>
 
@@ -49,6 +54,10 @@
 					isFavorite={recipe.isFavorite}
 					on:toggled={(e) => handleFavoriteToggle(recipe, e.detail)}
 				/>
+				<DontLikeButton
+					recipeId={recipe.key_id}
+					isFavorite={recipe.isDontLike}
+					on:toggled={(e) => handleDontLikeToggle(recipe, e.detail)}
 			</div>
 		{/if}
 	</article>

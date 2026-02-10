@@ -13,7 +13,7 @@
 	let fav = $state(Boolean(isFavorite));
 
 	async function toggle() {
-		const res = await fetch('/api/favorites/toggle', {
+		const res = await fetch('/api/dont_like/toggle', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ recipeId })
@@ -34,9 +34,9 @@
 
 <button class="favorite-btn" onclick={toggle}>
 	{#if fav}
-		❤️
+		Yuck
 	{:else}
-		🤍
+		Meh
 	{/if}
 </button>
 

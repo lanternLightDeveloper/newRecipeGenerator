@@ -27,6 +27,10 @@ export async function load({ locals }) {
 		.leftJoin(
 			favoriteRecipes,
 			and(eq(favoriteRecipes.recipeId, recipes.key_id), eq(favoriteRecipes.userId, userId))
+		)
+		.leftJoin(
+			dontLikeRecipes,
+			and(eq(dontLikeRecipes.recipeId, recipes.key_id), eq(dontLikeRecipes.userId, userId))
 		);
 
 	return { recipes: all };
