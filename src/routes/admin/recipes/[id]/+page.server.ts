@@ -8,11 +8,7 @@ import { error } from '@sveltejs/kit';
 export async function load({ locals, params }) {
 	requireEditor(locals);
 
-	const recipe = await db
-		.select()
-		.from(recipes)
-		.where(eq(recipes.key_id, Number(params.key_id)))
-		.limit(1);
+	const recipe = await db.select().from(recipes).where(eq(recipes.key_id, params.key_id)).limit(1);
 
 	if (recipe.length === 0) {
 		throw error(404, 'Recipe not found');
