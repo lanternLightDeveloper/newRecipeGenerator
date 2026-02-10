@@ -29,9 +29,21 @@ export const actions = {
 		const id = Number(form.get('id'));
 		const name = form.get('name');
 		const servings = Number(form.get('servings'));
-		const ingredients = form.get('ingredients');
-		const instructions = form.get('instructions');
-		const tags = form.get('tags');
+		const ingredients = (form.get('ingredients') as string)
+			.split('\n')
+			.map((s) => s.trim())
+			.filter(Boolean);
+
+		const instructions = (form.get('instructions') as string)
+			.split('\n')
+			.map((s) => s.trim())
+			.filter(Boolean);
+
+		const tags = (form.get('tags') as string)
+			.split(',')
+			.map((s) => s.trim())
+			.filter(Boolean);
+
 		const nutrition = form.get('nutrition');
 		const time = Number(form.get('time'));
 		const creator = form.get('creator');

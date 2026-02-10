@@ -20,17 +20,17 @@
 
 	<label>
 		<p>Ingredients:</p>
-		<textarea name="ingredients">{recipe.ingredients}</textarea>
+		<textarea name="ingredients">{recipe.ingredients.join('\n')}</textarea>
 	</label>
 
 	<label>
 		<p>Instructions:</p>
-		<textarea name="instructions">{recipe.instructions}</textarea>
+		<textarea name="instructions">{recipe.instructions.join('\n')}</textarea>
 	</label>
 
 	<label>
 		<p>Tags:</p>
-		<input name="tags" value={recipe.tags} />
+		<input name="tags" value={recipe.tags.join(', ')} />
 	</label>
 
 	<label>
