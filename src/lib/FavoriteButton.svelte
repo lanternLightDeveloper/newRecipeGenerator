@@ -1,30 +1,54 @@
 <!-- lib/FavoriteButton  -->
-
 <script lang="ts">
-	export let recipeId: number;
-	export let isFavorite: boolean | number | null;
+    import { createEventDispatcher } from 'svelte';
+    const dispatch = createEventDispatcher();
 
-	$: fav = Boolean(isFavorite);
+    // Props
+    let { recipeId, isFavorite } = $props<{
+        recipeId: number;
+        isFavorite: boolean | number | null;
+    }>();
 
-	async function toggle() {
-		const res = await fetch('/api/favorites/toggle', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify({ recipeId })
-		});
-		if (res.ok) {
-			isFavorite = !isFavorite;
-		}
-	}
+    // Local reactive state
+    let fav = $state(Boolean(isFavorite));
+
+    async function toggle() {
+        const res = await fetch('/api/favorites/toggle', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ recipeId })
+        });
+
+        if (res.ok) {
+            const result = await res.json();
+
+            fav = result.status === 'added';
+
+            dispatch('toggled', {
+                recipeId,
+                status: result.status
+            });
+        }
+    }
 </script>
 
 <button class="favorite-btn" on:click={toggle}>
-	{#if fav}
-		❤️
-	{:else}
-		🤍
-	{/if}
+    {#if fav}
+        ❤️
+    {:else}
+        🤍
+    {/if}
 </button>
+
+<style>
+    .favorite-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+</style>
+
 
 <style>
 	.favorite-btn {

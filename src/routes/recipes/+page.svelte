@@ -1,14 +1,19 @@
 <!-- routes/recipes/+page.svelte  -->
 
 <script lang="ts">
-	export let data;
+	let { data } = $props();
 
 	import FavoriteButton from '$lib/FavoriteButton.svelte';
 
-	let openRecipeId = null;
+	let openRecipeId = $state<number | null>(null);
 
-	function toggle(id) {
+	function toggle(id: number) {
 		openRecipeId = openRecipeId === id ? null : id;
+	}
+
+	function handleFavoriteToggle(recipe, detail) {
+		// Update the recipe's isFavorite value in the parent list
+		recipe.isFavorite = detail.status === 'added';
 	}
 </script>
 
@@ -16,12 +21,14 @@
 
 {#each data.recipes as recipe}
 	<article class="card">
-		<h2 on:click={() => toggle(recipe.id)}>
+		<h2 onclick={() => toggle(recipe.key_id)}>
 			{recipe.name}
-			<span class="arrow">{openRecipeId === recipe.id ? '▲' : '▼'}</span>
+			<span class="arrow">
+				{openRecipeId === recipe.key_id ? '▲' : '▼'}
+			</span>
 		</h2>
 
-		{#if openRecipeId === recipe.id}
+		{#if openRecipeId === recipe.key_id}
 			<div class="content">
 				<p><strong>ID:</strong> {recipe.id}</p>
 				<p><strong>Servings:</strong> {recipe.servings}</p>
@@ -36,7 +43,12 @@
 
 				<p><strong>Creator:</strong> {recipe.creator}</p>
 				<p><strong>Category:</strong> {recipe.category}</p>
-				<FavoriteButton recipeId={recipe.key_id} isFavorite={recipe.isFavorite} />
+
+				<FavoriteButton
+					recipeId={recipe.key_id}
+					isFavorite={recipe.isFavorite}
+					on:toggled={(e) => handleFavoriteToggle(recipe, e.detail)}
+				/>
 			</div>
 		{/if}
 	</article>
