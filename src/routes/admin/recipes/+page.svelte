@@ -1,10 +1,23 @@
-<script>
-	export let data;
+<script lang="ts">
+	const { data } = $props<{
+		data: {
+			recipes: Array<{
+				id: string;
+				name: string;
+				servings: number;
+				ingredients: string;
+				instructions: string;
+				tags: string;
+				nutrition: string;
+				time: string;
+				creator: string;
+				category: string;
+			}>;
+		};
+	}>();
 
-	// Track which recipe is currently open
-	let openRecipeId = null;
+	let openRecipeId = $state<string | null>(null);
 
-	// Toggle the open state
 	function toggle(id) {
 		openRecipeId = openRecipeId === id ? null : id;
 	}
@@ -14,15 +27,24 @@
 
 {#each data.recipes as recipe}
 	<article class="card">
-		<!-- Header: clickable to toggle -->
-		<h2 on:click={() => toggle(recipe.id)}>
-			{recipe.name}
-			<span class="arrow">{openRecipeId === recipe.id ? '▲' : '▼'}</span>
+		<h2>
+			<button
+				type="button"
+				class="recipe-toggle"
+				aria-expanded={openRecipeId === recipe.id}
+				aria-controls={'recipe-panel-' + recipe.id}
+				onclick={() => toggle(recipe.id)}
+			>
+				{recipe.name}
+				<span class="arrow" aria-hidden="true">
+					{openRecipeId === recipe.id ? '▲' : '▼'}
+				</span>
+			</button>
 		</h2>
 
 		<!-- Content: show only if open -->
 		{#if openRecipeId === recipe.id}
-			<div class="content">
+			<div id={'recipe-panel-' + recipe.id} hidden={openRecipeId !== recipe.id} class="content">
 				<p><strong>ID:</strong> {recipe.id}</p>
 				<p><strong>Servings:</strong> {recipe.servings}</p>
 

@@ -42,7 +42,7 @@
 		</h2>
 
 		{#if openUserId === user.id}
-			<div id={'user-panel-' + user.id} hidden={openUserId !== user.id}>
+			<div id={'user-panel-' + user.id} hidden={openUserId !== user.id} class="content">
 				<p><strong>ID:</strong> {user.id}</p>
 				<p><strong>Email:</strong> {user.email}</p>
 				<p><strong>Username:</strong> {user.name}</p>
