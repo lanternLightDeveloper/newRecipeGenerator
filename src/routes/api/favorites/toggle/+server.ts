@@ -1,3 +1,5 @@
+// /routes/api/favorites/toggle/+server.ts
+
 import { json } from '@sveltejs/kit';
 import { db } from '$lib/db';
 import { favoriteRecipes } from '$lib/db/schema';

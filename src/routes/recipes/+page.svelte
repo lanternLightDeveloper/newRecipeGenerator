@@ -1,3 +1,5 @@
+<!-- routes/recipes/+page.svelte  -->
+
 <script lang="ts">
 	export let data;
 

@@ -1,6 +1,10 @@
+<!-- lib/FavoriteButton  -->
+
 <script lang="ts">
 	export let recipeId: number;
-	export let isFavorite: boolean;
+	export let isFavorite: boolean | number | null;
+
+	$: fav = Boolean(isFavorite);
 
 	async function toggle() {
 		const res = await fetch('/api/favorites/toggle', {
@@ -15,10 +19,10 @@
 </script>
 
 <button class="favorite-btn" on:click={toggle}>
-	{#if isFavorite}
-		<span>❤️</span>
+	{#if fav}
+		❤️
 	{:else}
-		<span>🤍</span>
+		🤍
 	{/if}
 </button>
 
