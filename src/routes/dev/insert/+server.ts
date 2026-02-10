@@ -36,7 +36,7 @@
 //////////////////////////////
 // src/routes/dev/import/+server.ts
 import { db } from '$lib/db/index';
-import { recipes2 } from '$lib/db/schema';
+import { recipes } from '$lib/db/schema';
 import { json } from '@sveltejs/kit';
 
 import { BreakTater } from '$lib/data/BreakTater';
@@ -68,7 +68,7 @@ export async function GET() {
 
 	for (const group of groups) {
 		for (const recipe of group.data) {
-			await db.insert(recipes2).values({
+			await db.insert(recipes).values({
 				id: Number(recipe.id),
 				name: recipe.name,
 				servings: Number(recipe.servings),
