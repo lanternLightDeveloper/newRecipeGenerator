@@ -14,8 +14,14 @@ export async function load({ locals }) {
 			key_id: recipes.key_id,
 			id: recipes.id,
 			name: recipes.name,
-			category: recipes.category,
-			time: recipes.time
+			servings: recipes.servings,
+			ingredients: recipes.ingredients,
+			instructions: recipes.instructions,
+			tags: recipes.tags,
+			nutrition: recipes.nutrition,
+			time: recipes.time,
+			creator: recipes.creator,
+			category: recipes.category
 		})
 		.from(favoriteRecipes)
 		.innerJoin(recipes, eq(favoriteRecipes.recipeId, recipes.key_id))

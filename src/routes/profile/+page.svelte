@@ -53,8 +53,15 @@
 		{#each data.favorites as fav}
 			<li>
 				<strong>{fav.name}</strong>
-				<span>({fav.category}, {fav.time} min)</span>
 			</li>
+			<li>Servings: {fav.servings}</li>
+			<li>ingredients: {fav.ingredients}</li>
+			<li>instructions: {fav.instructions}</li>
+			<li>tags: {fav.tags}</li>
+			<li>nutrition: {fav.nutrition}</li>
+			<li>Time: {fav.time}</li>
+			<li>Creator: {fav.creator}</li>
+			<li>Category: {fav.category}</li>
 		{/each}
 	</ul>
 {/if}
