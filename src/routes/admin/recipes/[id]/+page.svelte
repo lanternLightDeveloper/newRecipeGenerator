@@ -6,7 +6,7 @@
 <h1>Edit {recipe.name}</h1>
 
 <form method="POST" action="?/update" class="classicForm">
-	<input type="hidden" name="id" value={recipe.id} />
+	<input type="hidden" name="key_id" value={recipe.key_id} />
 
 	<label>
 		<p>Name:</p>

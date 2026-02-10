@@ -11,7 +11,7 @@ export async function load({ locals, params }) {
 	const recipe = await db
 		.select()
 		.from(recipes)
-		.where(eq(recipes.id, Number(params.id)))
+		.where(eq(recipes.key_id, Number(params.key_id)))
 		.limit(1);
 
 	if (recipe.length === 0) {
@@ -26,7 +26,7 @@ export const actions = {
 		requireEditor(locals);
 
 		const form = await request.formData();
-		const id = Number(form.get('id'));
+		const key_id = Number(form.get('key_id'));
 		const name = form.get('name');
 		const servings = Number(form.get('servings'));
 		const ingredients = (form.get('ingredients') as string)
@@ -62,7 +62,7 @@ export const actions = {
 				creator,
 				category
 			})
-			.where(eq(recipes.id, id));
+			.where(eq(recipes.key_id, key_id));
 
 		return { success: true };
 	}
