@@ -22,7 +22,7 @@ export const actions = {
 		requireEditor(locals);
 
 		const form = await request.formData();
-		const key_id = Number(form.get('key_id'));
+		const key_id = form.get('key_id');
 		const name = form.get('name');
 		const servings = Number(form.get('servings'));
 		const ingredients = (form.get('ingredients') as string)
