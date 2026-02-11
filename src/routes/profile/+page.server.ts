@@ -14,8 +14,10 @@ export async function load({ locals }) {
 	requireUser(locals);
 	const userId = locals.user.id;
 
+	// Load all restriction types
 	const allRestrictions = await db.select().from(dietaryRestrictions);
 
+	// Load user's selected restrictions
 	const userRestrictions = await db
 		.select({
 			restrictionId: userDietaryRestrictions.restrictionId
@@ -23,13 +25,8 @@ export async function load({ locals }) {
 		.from(userDietaryRestrictions)
 		.where(eq(userDietaryRestrictions.userId, userId));
 
-	return {
-		user: locals.user,
-		allRestrictions,
-		userRestrictions
-	};
-
-	const all = await db
+	// Load favorite recipes
+	const favorites = await db
 		.select({
 			key_id: recipes.key_id,
 			id: recipes.id,
@@ -42,11 +39,7 @@ export async function load({ locals }) {
 			time: recipes.time,
 			creator: recipes.creator,
 			category: recipes.category,
-
-			// FAVORITE JOIN
 			isFavorite: favoriteRecipes.id,
-
-			// DONT LIKE JOIN
 			isDontLike: dontLikeRecipes.id
 		})
 		.from(recipes)
@@ -57,7 +50,13 @@ export async function load({ locals }) {
 		.leftJoin(
 			dontLikeRecipes,
 			and(eq(dontLikeRecipes.recipeId, recipes.key_id), eq(dontLikeRecipes.userId, userId))
-		);
+		)
+		.where(eq(favoriteRecipes.userId, userId)); // only favorites
 
-	return { recipes: all };
+	return {
+		user: locals.user,
+		allRestrictions,
+		userRestrictions,
+		favorites
+	};
 }
