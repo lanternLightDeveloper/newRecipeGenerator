@@ -1,12 +1,33 @@
 // profile/+page.server.ts
 import { db } from '$lib/db';
-import { recipes, favoriteRecipes, dontLikeRecipes } from '$lib/db/schema';
+import {
+	recipes,
+	favoriteRecipes,
+	dontLikeRecipes,
+	dietaryRestrictions,
+	userDietaryRestrictions
+} from '$lib/db/schema';
 import { eq, and } from 'drizzle-orm';
 import { requireUser } from '$lib/db/auth';
 
 export async function load({ locals }) {
 	requireUser(locals);
 	const userId = locals.user.id;
+
+	const allRestrictions = await db.select().from(dietaryRestrictions);
+
+	const userRestrictions = await db
+		.select({
+			restrictionId: userDietaryRestrictions.restrictionId
+		})
+		.from(userDietaryRestrictions)
+		.where(eq(userDietaryRestrictions.userId, userId));
+
+	return {
+		user: locals.user,
+		allRestrictions,
+		userRestrictions
+	};
 
 	const all = await db
 		.select({

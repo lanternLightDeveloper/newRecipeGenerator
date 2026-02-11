@@ -36,6 +36,29 @@
 
 		alert('Profile updated!');
 	}
+
+	let selected = $state(new Set(data.userRestrictions.map((r) => r.restrictionId)));
+
+	async function toggleRestriction(id: number) {
+		const res = await fetch('/api/dietary/toggle', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({ restrictionId: id })
+		});
+
+		if (res.ok) {
+			const result = await res.json();
+
+			if (result.status === 'added') {
+				selected.add(id);
+			} else {
+				selected.delete(id);
+			}
+
+			// Force reactivity
+			selected = new Set(selected);
+		}
+	}
 </script>
 
 <h1>Welcome, {data.user.name}!</h1>
@@ -54,6 +77,23 @@
 <form method="POST" action="/logout">
 	<button type="submit">Log out</button>
 </form>
+
+<h2>Your Dietary Restrictions</h2>
+
+<ul>
+	{#each data.allRestrictions as r}
+		<li>
+			<label>
+				<input
+					type="checkbox"
+					checked={selected.has(r.id)}
+					onchange={() => toggleRestriction(r.id)}
+				/>
+				{r.name}
+			</label>
+		</li>
+	{/each}
+</ul>
 
 <h2>Your Favorite Recipes</h2>
 
