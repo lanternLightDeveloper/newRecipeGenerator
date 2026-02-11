@@ -37,12 +37,12 @@ export const sessions = pgTable('sessions', {
 });
 
 export const dietaryRestrictions = pgTable('dietary_restrictions', {
-	id: serial('key_id').primaryKey(),
+	id: text('key_id').primaryKey(),
 	name: text('name').notNull().unique()
 });
 
 export const userDietaryRestrictions = pgTable('user_dietary_restrictions', {
-	id: serial('id').primaryKey(),
+	id: text('id').primaryKey(),
 	userId: integer('user_id')
 		.notNull()
 		.references(() => users.id, { onDelete: 'cascade' }),
