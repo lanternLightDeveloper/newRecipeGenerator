@@ -1,54 +1,15 @@
 // recipes/+page.server.ts
+
 import { db } from '$lib/db';
-import {
-	recipes,
-	favoriteRecipes,
-	dontLikeRecipes,
-	dietaryRestrictions,
-	userDietaryRestrictions
-} from '$lib/db/schema';
-import { eq, and, sql } from 'drizzle-orm';
+import { recipes, favoriteRecipes, dontLikeRecipes } from '$lib/db/schema';
+import { eq, and } from 'drizzle-orm';
 import { requireUser } from '$lib/db/auth';
 
 export async function load({ locals }) {
 	requireUser(locals);
 	const userId = locals.user.id;
 
-	// Load user dietary restriction names
-	const userRestrictions = await db
-		.select({ name: dietaryRestrictions.name })
-		.from(userDietaryRestrictions)
-		.innerJoin(
-			dietaryRestrictions,
-			eq(userDietaryRestrictions.restrictionId, dietaryRestrictions.id)
-		)
-		.where(eq(userDietaryRestrictions.userId, userId));
-
-	const restrictionNames = userRestrictions.map((r) => r.name);
-
-	// If user has no restrictions, return all recipes
-	if (restrictionNames.length === 0) {
-		const all = await db
-			.select({
-				key_id: recipes.key_id,
-				id: recipes.id,
-				name: recipes.name,
-				servings: recipes.servings,
-				ingredients: recipes.ingredients,
-				instructions: recipes.instructions,
-				tags: recipes.tags,
-				nutrition: recipes.nutrition,
-				time: recipes.time,
-				creator: recipes.creator,
-				category: recipes.category
-			})
-			.from(recipes);
-
-		return { recipes: all };
-	}
-
-	// Filter recipes by dietary restrictions
-	const filtered = await db
+	const all = await db
 		.select({
 			key_id: recipes.key_id,
 			id: recipes.id,
@@ -61,7 +22,11 @@ export async function load({ locals }) {
 			time: recipes.time,
 			creator: recipes.creator,
 			category: recipes.category,
+
+			// FAVORITE JOIN
 			isFavorite: favoriteRecipes.id,
+
+			// DONT LIKE JOIN
 			isDontLike: dontLikeRecipes.id
 		})
 		.from(recipes)
@@ -72,8 +37,7 @@ export async function load({ locals }) {
 		.leftJoin(
 			dontLikeRecipes,
 			and(eq(dontLikeRecipes.recipeId, recipes.key_id), eq(dontLikeRecipes.userId, userId))
-		)
-		.where(sql`${recipes.tags} && ${sql.array(restrictionNames, 'text')}`);
+		);
 
-	return { recipes: filtered };
+	return { recipes: all };
 }
