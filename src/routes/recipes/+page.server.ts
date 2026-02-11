@@ -40,19 +40,9 @@ export async function load({ locals }) {
 				nutrition: recipes.nutrition,
 				time: recipes.time,
 				creator: recipes.creator,
-				category: recipes.category,
-				isFavorite: favoriteRecipes.id,
-				isDontLike: dontLikeRecipes.id
+				category: recipes.category
 			})
-			.from(recipes)
-			.leftJoin(
-				favoriteRecipes,
-				and(eq(favoriteRecipes.recipeId, recipes.key_id), eq(favoriteRecipes.userId, userId))
-			)
-			.leftJoin(
-				dontLikeRecipes,
-				and(eq(dontLikeRecipes.recipeId, recipes.key_id), eq(dontLikeRecipes.userId, userId))
-			);
+			.from(recipes);
 
 		return { recipes: all };
 	}
