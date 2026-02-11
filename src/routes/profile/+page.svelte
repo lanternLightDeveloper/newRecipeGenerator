@@ -4,9 +4,9 @@
 		user: any;
 		csrfToken: string;
 		favorites: any[];
+		userRestrictions: any[];
 	}>();
 
-	// Local reactive state
 	let name = $state(data.user.name);
 	let email = $state(data.user.email);
 	let error = $state('');
