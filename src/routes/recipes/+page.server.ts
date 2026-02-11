@@ -14,7 +14,7 @@ export async function load({ locals }) {
 	requireUser(locals);
 	const userId = locals.user.id;
 
-	// Load user restriction names
+	// Load user dietary restriction names
 	const userRestrictions = await db
 		.select({ name: dietaryRestrictions.name })
 		.from(userDietaryRestrictions)
@@ -26,8 +26,39 @@ export async function load({ locals }) {
 
 	const restrictionNames = userRestrictions.map((r) => r.name);
 
-	// Load base recipe data (shared by both paths)
-	const baseQuery = db
+	// If user has no restrictions, return all recipes
+	if (restrictionNames.length === 0) {
+		const all = await db
+			.select({
+				key_id: recipes.key_id,
+				id: recipes.id,
+				name: recipes.name,
+				servings: recipes.servings,
+				ingredients: recipes.ingredients,
+				instructions: recipes.instructions,
+				tags: recipes.tags,
+				nutrition: recipes.nutrition,
+				time: recipes.time,
+				creator: recipes.creator,
+				category: recipes.category,
+				isFavorite: favoriteRecipes.id,
+				isDontLike: dontLikeRecipes.id
+			})
+			.from(recipes)
+			.leftJoin(
+				favoriteRecipes,
+				and(eq(favoriteRecipes.recipeId, recipes.key_id), eq(favoriteRecipes.userId, userId))
+			)
+			.leftJoin(
+				dontLikeRecipes,
+				and(eq(dontLikeRecipes.recipeId, recipes.key_id), eq(dontLikeRecipes.userId, userId))
+			);
+
+		return { recipes: all };
+	}
+
+	// Filter recipes by dietary restrictions
+	const filtered = await db
 		.select({
 			key_id: recipes.key_id,
 			id: recipes.id,
@@ -51,18 +82,8 @@ export async function load({ locals }) {
 		.leftJoin(
 			dontLikeRecipes,
 			and(eq(dontLikeRecipes.recipeId, recipes.key_id), eq(dontLikeRecipes.userId, userId))
-		);
-
-	// If user has no restrictions → return all recipes
-	if (restrictionNames.length === 0) {
-		const all = await baseQuery;
-		return { recipes: all };
-	}
-
-	// Filter recipes by tag overlap
-	const filtered = await baseQuery.where(
-		sql`COALESCE(${recipes.tags}, '{}'::text[]) && ${sql`${restrictionNames}::text[]`}`
-	);
+		)
+		.where(sql`NOT (${recipes.tags} && ${sql.array(restrictionNames, 'text')})`);
 
 	return { recipes: filtered };
 }
