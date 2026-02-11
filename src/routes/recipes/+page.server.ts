@@ -1,4 +1,5 @@
 // recipes/+page.server.ts
+
 import { db } from '$lib/db';
 import {
 	recipes,
@@ -14,8 +15,6 @@ export async function load({ locals }) {
 	requireUser(locals);
 	const userId = locals.user.id;
 
-	console.log('➡️  LOAD /recipes for user:', userId);
-
 	// Load user restriction names
 	let userRestrictions;
 	try {
@@ -27,15 +26,11 @@ export async function load({ locals }) {
 				eq(userDietaryRestrictions.restrictionId, dietaryRestrictions.id)
 			)
 			.where(eq(userDietaryRestrictions.userId, userId));
-
-		console.log('📌 userRestrictions:', userRestrictions);
 	} catch (err) {
-		console.error('❌ ERROR loading userRestrictions:', err);
+		console.error('❌ ERROR loading user restrictions:', err);
 		throw err;
 	}
-
 	const restrictionNames = userRestrictions.map((r) => r.name);
-	console.log('📌 restrictionNames:', restrictionNames);
 
 	// Load base recipe data
 	let baseQuery;
@@ -65,8 +60,6 @@ export async function load({ locals }) {
 				dontLikeRecipes,
 				and(eq(dontLikeRecipes.recipeId, recipes.key_id), eq(dontLikeRecipes.userId, userId))
 			);
-
-		console.log('📌 baseQuery built');
 	} catch (err) {
 		console.error('❌ ERROR building baseQuery:', err);
 		throw err;
@@ -74,22 +67,15 @@ export async function load({ locals }) {
 
 	// If user has no restrictions → return all recipes
 	if (restrictionNames.length === 0) {
-		console.log('ℹ️ No restrictions → returning ALL recipes');
 		const all = await baseQuery;
-		console.log('📌 all recipes count:', all.length);
 		return { recipes: all };
 	}
-
-	// Filter recipes by tag overlap
-	console.log('➡️ Filtering recipes with:', restrictionNames);
 
 	let filtered;
 	try {
 		filtered = await baseQuery.where(
 			sql`COALESCE(${recipes.tags}, '{}'::text[]) && ${sql.raw(`'{${restrictionNames.join(',')}}'`)}::text[]`
 		);
-
-		console.log('📌 filtered recipes count:', filtered.length);
 	} catch (err) {
 		console.error('❌ ERROR filtering recipes:', err);
 		console.error('❌ restrictionNames:', restrictionNames);
