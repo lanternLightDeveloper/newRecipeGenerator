@@ -86,7 +86,7 @@ export async function load({ locals }) {
 	let filtered;
 	try {
 		filtered = await baseQuery.where(
-			sql`COALESCE(${recipes.tags}, '{}'::text[]) && ${sql`${restrictionNames}::text[]`}`
+			sql`COALESCE(${recipes.tags}, '{}'::text[]) && ${sql.raw(`'{${restrictionNames.join(',')}}'`)}::text[]`
 		);
 
 		console.log('📌 filtered recipes count:', filtered.length);
