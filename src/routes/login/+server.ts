@@ -3,7 +3,6 @@
 import { json } from '@sveltejs/kit';
 import { db } from '$lib/db/index';
 import { users, sessions } from '$lib/db/schema';
-// import { checkRateLimit } from '$lib/db/rateLimit';
 import { rateLimit } from '$lib/db/rateLimit';
 import { eq } from 'drizzle-orm';
 import argon2 from 'argon2';

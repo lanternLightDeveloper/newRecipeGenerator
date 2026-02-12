@@ -1,3 +1,5 @@
+// routes/admin/password-resets/+server.ts
+
 import { json } from '@sveltejs/kit';
 import { db } from '$lib/db/index';
 import { users, password_resets } from '$lib/db/schema';

@@ -1,15 +1,12 @@
+// routes/password-reset/request/+server.ts
+
 import { json } from '@sveltejs/kit';
 import { db } from '$lib/db/index';
 import { users, password_resets } from '$lib/db/schema';
 import { eq } from 'drizzle-orm';
 import crypto from 'crypto';
 
-export const POST = async ({ request, locals }) => {
-	const csrf = request.headers.get('x-csrf-token');
-	if (!csrf || csrf !== locals.csrfToken) {
-		return json({ error: 'Invalid CSRF token' }, { status: 403 });
-	}
-
+export const POST = async ({ request }) => {
 	const { email } = await request.json();
 	if (!email) return json({ error: 'Email required' }, { status: 400 });
 
@@ -26,7 +23,7 @@ export const POST = async ({ request, locals }) => {
 		userId: user.id,
 		token,
 		expiresAt,
-		used: 'false'
+		used: false // <-- FIX THIS TOO
 	});
 
 	return json({ ok: true });

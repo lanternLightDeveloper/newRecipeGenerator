@@ -1,5 +1,5 @@
+<!-- src/routes/password-reset/request/+page.svelte   -->
 <script lang="ts">
-	export let data: { csrfToken: string };
 	let email = '';
 	let error = '';
 	let success = '';
@@ -8,8 +8,7 @@
 		const res = await fetch('/password-reset/request', {
 			method: 'POST',
 			headers: {
-				'Content-Type': 'application/json',
-				'X-CSRF-Token': data.csrfToken
+				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({ email })
 		});
@@ -19,8 +18,8 @@
 			error = result.error;
 			return;
 		}
-		success =
-			'A request to reset your password has been sent. I will get back to you soon. This website does not have email password reset enabled.';
+
+		success = 'A request to reset your password has been sent.';
 		error = '';
 	}
 </script>
@@ -29,8 +28,8 @@
 	{#if error}<p style="color:red">{error}</p>{/if}
 	{#if success}<p style="color:green">{success}</p>{/if}
 
-	<label
-		>Email
+	<label>
+		Email
 		<input type="email" bind:value={email} required />
 	</label>
 

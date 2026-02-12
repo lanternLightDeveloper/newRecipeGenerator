@@ -1,11 +1,11 @@
+<!-- routes/admin/password-resets/+page.svelte  -->
+
 <script lang="ts">
 	let { data, form } = $props();
 
-	// Local reactive state
 	let error = $state('');
 	let newPassword = $state('');
 
-	// When form updates (after POST), update UI
 	$effect(() => {
 		if (form?.error) {
 			error = form.error;

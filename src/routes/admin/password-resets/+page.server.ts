@@ -1,4 +1,4 @@
-// +page.server.ts
+// /routes/admin/+page.server.ts
 import { db } from '$lib/db';
 import { password_resets, users } from '$lib/db/schema';
 import { eq } from 'drizzle-orm';
@@ -26,20 +26,16 @@ export const actions = {
 
 		if (!id) return fail(400, { error: 'Missing reset ID' });
 
-		// Fetch reset entry
 		const [reset] = await db.select().from(password_resets).where(eq(password_resets.id, id));
 
 		if (!reset) return fail(404, { error: 'Reset not found' });
 		if (reset.used) return fail(400, { error: 'Reset already used' });
 		if (reset.expiresAt < new Date()) return fail(400, { error: 'Reset expired' });
 
-		// Generate new password
 		const newPassword = crypto.randomUUID().slice(0, 8);
 
-		// Hash it
 		const hash = await Bun.password.hash(newPassword);
 
-		// Update user + mark reset used
 		await db.transaction(async (tx) => {
 			await tx.update(users).set({ passwordHash: hash }).where(eq(users.id, reset.userId));
 
