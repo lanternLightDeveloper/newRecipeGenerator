@@ -36,14 +36,11 @@ export const POST = async ({ request, locals }) => {
 	if (!reset || reset.used === 'true')
 		return json({ error: 'Invalid reset request' }, { status: 400 });
 
-	// Generate new password
-	const newPassword = crypto.randomBytes(4).toString('hex'); // 8 chars
+	const newPassword = crypto.randomBytes(4).toString('hex');
 	const passwordHash = await argon2.hash(newPassword);
 
-	// Update user password
 	await db.update(users).set({ passwordHash }).where(eq(users.id, reset.userId));
 
-	// Mark request as used
 	await db.update(password_resets).set({ used: 'true' }).where(eq(password_resets.id, reset.id));
 
 	return json({ ok: true, newPassword });

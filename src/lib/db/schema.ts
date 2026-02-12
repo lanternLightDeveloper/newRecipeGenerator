@@ -79,7 +79,7 @@ export const authorApplications = pgTable('author_applications', {
 	userId: text('user_id')
 		.notNull()
 		.references(() => users.id, { onDelete: 'cascade' }),
-	status: text('status').notNull().default('pending'), // pending | approved | rejected
+	status: text('status').notNull().default('pending'),
 	createdAt: timestamp('created_at').defaultNow(),
 	reviewedAt: timestamp('reviewed_at'),
 	reviewerId: text('reviewer_id').references(() => users.id)

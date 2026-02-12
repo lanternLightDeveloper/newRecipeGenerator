@@ -102,12 +102,18 @@
 {:else}
 	{#each data.favorites as fav}
 		<article class="card">
-			<h2 onclick={() => toggle(fav.key_id)}>
+			<button
+				type="button"
+				class="recipe-toggle"
+				aria-expanded={openRecipeId === fav.key_id}
+				aria-controls={'recipe-panel-' + fav.key_id}
+				onclick={() => toggle(fav.key_id)}
+			>
 				{fav.name}
-				<span class="arrow">
+				<span class="arrow" aria-hidden="true">
 					{openRecipeId === fav.key_id ? '▲' : '▼'}
 				</span>
-			</h2>
+			</button>
 
 			<p>
 				<strong>{fav.name}</strong>

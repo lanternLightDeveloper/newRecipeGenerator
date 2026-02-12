@@ -1,39 +1,30 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	let resets = [];
-	let error = '';
+	let { data, form } = $props();
 
-	async function fetchResets() {
-		const res = await fetch('/admin/password-resets');
-		const data = await res.json();
-		if (!res.ok) {
-			error = data.error;
-			return;
+	// Local reactive state
+	let error = $state('');
+	let newPassword = $state('');
+
+	// When form updates (after POST), update UI
+	$effect(() => {
+		if (form?.error) {
+			error = form.error;
 		}
-		resets = data.resets;
-	}
 
-	async function resetPassword(id: string) {
-		const res = await fetch('/admin/password-resets', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify({ resetId: id })
-		});
-		const data = await res.json();
-		if (!res.ok) {
-			error = data.error;
-			return;
+		if (form?.newPassword) {
+			newPassword = form.newPassword;
 		}
-		alert(`New password: ${data.newPassword}`);
-		fetchResets(); // refresh list
-	}
-
-	onMount(fetchResets);
+	});
 </script>
 
 <h1>Pending Password Resets</h1>
+
 {#if error}
 	<p style="color:red">{error}</p>
+{/if}
+
+{#if newPassword}
+	<p style="color:green">New password: <strong>{newPassword}</strong></p>
 {/if}
 
 <table>
@@ -45,15 +36,19 @@
 			<th>Action</th>
 		</tr>
 	</thead>
+
 	<tbody>
-		{#each resets as reset}
+		{#each data.resets as reset}
 			<tr>
 				<td>{reset.email}</td>
 				<td>{new Date(reset.expiresAt).toLocaleString()}</td>
-				<td>{reset.used}</td>
+				<td>{reset.used ? 'Yes' : 'No'}</td>
 				<td>
-					{#if reset.used === 'false'}
-						<button on:click={() => resetPassword(reset.id)}>Reset Password</button>
+					{#if !reset.used}
+						<form method="POST" action="?/reset">
+							<input type="hidden" name="id" value={reset.id} />
+							<button type="submit">Reset Password</button>
+						</form>
 					{/if}
 				</td>
 			</tr>
