@@ -4,10 +4,11 @@ import { json } from '@sveltejs/kit';
 import { db } from '$lib/db';
 import { dontLikeRecipes } from '$lib/db/schema';
 import { eq, and } from 'drizzle-orm';
-import { requireUser } from '$lib/db/auth';
+import { requireUser, validateCSRF } from '$lib/db/auth';
 
 export async function POST({ request, locals }) {
 	requireUser(locals);
+	validateCSRF(request, locals);
 
 	const { recipeId } = await request.json();
 	const userId = locals.user.id;

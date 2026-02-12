@@ -3,19 +3,18 @@
 	import { createEventDispatcher } from 'svelte';
 	const dispatch = createEventDispatcher();
 
-	// Props
-	let { recipeId, isFavorite } = $props<{
+	let { recipeId, isFavorite, csrfToken } = $props<{
 		recipeId: number;
-		isFavorite: boolean | number | null;
+		isFavorite: boolean;
+		csrfToken: string;
 	}>();
-
 	// Local reactive state
 	let fav = $state(Boolean(isFavorite));
 
 	async function toggle() {
 		const res = await fetch('/api/favorites/toggle', {
 			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
+			headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': csrfToken },
 			body: JSON.stringify({ recipeId })
 		});
 

@@ -52,11 +52,13 @@
 				<FavoriteButton
 					recipeId={recipe.key_id}
 					isFavorite={recipe.isFavorite}
+					csrfToken={data.csrfToken}
 					on:toggled={(e) => handleFavoriteToggle(recipe, e.detail)}
 				/>
 				<DontLikeButton
 					recipeId={recipe.key_id}
 					isDontLike={recipe.isDontLike}
+					csrfToken={data.csrfToken}
 					on:toggled={(e) => handleDontLikeToggle(recipe, e.detail)}
 				/>
 			</div>

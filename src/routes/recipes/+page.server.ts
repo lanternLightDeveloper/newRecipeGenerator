@@ -82,5 +82,5 @@ export async function load({ locals }) {
 		throw err;
 	}
 
-	return { recipes: filtered };
+	return { recipes: filtered, csrfToken: locals.csrfToken };
 }
