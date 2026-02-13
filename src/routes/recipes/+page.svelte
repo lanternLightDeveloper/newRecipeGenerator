@@ -1,7 +1,10 @@
 <!-- routes/recipes/+page.svelte  -->
 
 <script lang="ts">
-	let { data } = $props();
+	let { data } = $props<{
+		csrfToken: string;
+		recipes: any[];
+	}>();
 
 	import FavoriteButton from '$lib/FavoriteButton.svelte';
 	import DontLikeButton from '$lib/DontLikeButton.svelte';

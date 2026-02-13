@@ -3,9 +3,10 @@
 	import { createEventDispatcher } from 'svelte';
 	const dispatch = createEventDispatcher();
 
-	let { recipeId, isDontLike } = $props<{
+	let { recipeId, isDontLike, csrfToken } = $props<{
 		recipeId: number;
 		isDontLike: boolean | number | null;
+		csrfToken: string;
 	}>();
 
 	let dont = $state(Boolean(isDontLike));
@@ -13,7 +14,7 @@
 	async function toggle() {
 		const res = await fetch('/api/dont_like/toggle', {
 			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
+			headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': csrfToken },
 			body: JSON.stringify({ recipeId })
 		});
 
