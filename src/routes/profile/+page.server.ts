@@ -36,24 +36,42 @@ export const actions = {
 	applyForAuthor: async ({ locals }) => {
 		const user = locals.user;
 
-		if (user.role !== 'user') {
-			return { error: 'You already have elevated permissions.' };
+		console.log('APPLY ACTION HIT');
+		console.log('User:', user);
+
+		try {
+			if (user.role !== 'user') {
+				console.log('User already elevated');
+				return { error: 'You already have elevated permissions.' };
+			}
+
+			const existing = await db
+				.select()
+				.from(authorApplications)
+				.where(
+					and(eq(authorApplications.userId, user.id), eq(authorApplications.status, 'pending'))
+				);
+
+			console.log('Existing apps:', existing);
+
+			if (existing.length > 0) {
+				console.log('Already pending');
+				return { error: 'You already have a pending application.' };
+			}
+
+			console.log('Inserting new application…');
+
+			await db.insert(authorApplications).values({
+				userId: user.id
+			});
+
+			console.log('Insert success');
+
+			return { success: true };
+		} catch (err) {
+			console.error('APPLY ERROR:', err);
+			throw err;
 		}
-
-		const existing = await db
-			.select()
-			.from(authorApplications)
-			.where(and(eq(authorApplications.userId, user.id), eq(authorApplications.status, 'pending')));
-
-		if (existing.length > 0) {
-			return { error: 'You already have a pending application.' };
-		}
-
-		await db.insert(authorApplications).values({
-			userId: user.id
-		});
-
-		return { success: true };
 	}
 };
 
