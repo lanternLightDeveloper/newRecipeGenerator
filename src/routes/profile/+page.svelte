@@ -17,26 +17,6 @@
 		openRecipeId = openRecipeId === id ? null : id;
 	}
 
-	// async function submitForm() {
-	// 	const res = await fetch('/profile', {
-	// 		method: 'POST',
-	// 		headers: {
-	// 			'Content-Type': 'application/json',
-	// 			'X-CSRF-Token': data.csrfToken
-	// 		},
-	// 		body: JSON.stringify({ name, email })
-	// 	});
-
-	// 	const result = await res.json();
-
-	// 	if (!res.ok) {
-	// 		error = result.error;
-	// 		return;
-	// 	}
-
-	// 	alert('Profile updated!');
-	// }
-
 	let selected = $state(new Set(data.userRestrictions.map((r) => r.restrictionId)));
 
 	async function toggleRestriction(id: number) {
@@ -72,15 +52,6 @@
 		</form>
 	{/if}
 {/if}
-
-<!-- <form onsubmit={submitForm}>
-	{#if error}
-		<p style="color:red">{error}</p>
-	{/if}
-	<label>Name: <input type="text" bind:value={name} /></label>
-	<label>Email: <input type="email" bind:value={email} /></label>
-	<button type="submit">Update</button>
-</form> -->
 
 <form method="POST">
 	{#if error}

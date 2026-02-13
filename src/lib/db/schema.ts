@@ -75,7 +75,7 @@ export const dontLikeRecipes = pgTable('dont_like_recipes', {
 });
 
 export const authorApplications = pgTable('author_applications', {
-	id: serial('id').primaryKey(),
+	id: text('id').primaryKey(),
 	userId: text('user_id')
 		.notNull()
 		.references(() => users.id, { onDelete: 'cascade' }),

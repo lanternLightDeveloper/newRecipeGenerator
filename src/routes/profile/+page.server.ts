@@ -36,12 +36,10 @@ export const actions = {
 	applyForAuthor: async ({ locals }) => {
 		const user = locals.user;
 
-		// Only users can apply
 		if (user.role !== 'user') {
 			return { error: 'You already have elevated permissions.' };
 		}
 
-		// Check if already applied
 		const existing = await db
 			.select()
 			.from(authorApplications)
@@ -63,10 +61,8 @@ export async function load({ locals }) {
 	requireUser(locals);
 	const userId = locals.user.id;
 
-	// Load all restriction types
 	const allRestrictions = await db.select().from(dietaryRestrictions);
 
-	// Load user's selected restrictions
 	const userRestrictions = await db
 		.select({
 			restrictionId: userDietaryRestrictions.restrictionId
@@ -74,7 +70,6 @@ export async function load({ locals }) {
 		.from(userDietaryRestrictions)
 		.where(eq(userDietaryRestrictions.userId, userId));
 
-	// Load favorite recipes
 	const favorites = await db
 		.select({
 			key_id: recipes.key_id,
@@ -102,7 +97,6 @@ export async function load({ locals }) {
 		)
 		.where(eq(favoriteRecipes.userId, userId));
 
-	// Check for pending author application
 	const existing = await db
 		.select()
 		.from(authorApplications)
