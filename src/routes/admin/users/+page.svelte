@@ -25,51 +25,51 @@
 {/if}
 
 {#each data.users as user}
-	{#if user.applicationStatus === 'pending'}
-		<span class="badge pending">Pending Author Application</span>
+	<article class="card {user.applicationStatus === 'pending' ? 'highlight' : ''}">
+		{#if user.applicationStatus === 'pending'}
+			<span class="badge pending">Pending Author Application</span>
+		{/if}
 
-		<article class="card">
-			<h2>
-				<button
-					type="button"
-					class="user-toggle"
-					aria-expanded={openUserId === user.id}
-					aria-controls={'user-panel-' + user.id}
-					onclick={() => toggle(user.id)}
-				>
-					{user.name}
-					<span class="arrow" aria-hidden="true">
-						{openUserId === user.id ? '▲' : '▼'}
-					</span>
-				</button>
-			</h2>
+		<h2>
+			<button
+				type="button"
+				class="user-toggle"
+				aria-expanded={openUserId === user.id}
+				aria-controls={'user-panel-' + user.id}
+				onclick={() => toggle(user.id)}
+			>
+				{user.name}
+				<span class="arrow" aria-hidden="true">
+					{openUserId === user.id ? '▲' : '▼'}
+				</span>
+			</button>
+		</h2>
 
-			{#if openUserId === user.id}
-				<div id={'user-panel-' + user.id} hidden={openUserId !== user.id} class="content">
-					<p><strong>ID:</strong> {user.id}</p>
-					<p><strong>Email:</strong> {user.email}</p>
-					<p><strong>Username:</strong> {user.name}</p>
-					<p><strong>Created At:</strong> {user.createdAt}</p>
+		{#if openUserId === user.id}
+			<div id={'user-panel-' + user.id} hidden={openUserId !== user.id} class="content">
+				<p><strong>ID:</strong> {user.id}</p>
+				<p><strong>Email:</strong> {user.email}</p>
+				<p><strong>Username:</strong> {user.name}</p>
+				<p><strong>Created At:</strong> {user.createdAt}</p>
 
-					<form method="POST" action="?/updateRole">
-						<input type="hidden" name="userId" value={user.id} />
+				<form method="POST" action="?/updateRole">
+					<input type="hidden" name="userId" value={user.id} />
 
-						<label>
-							Role:
-							<select name="role" bind:value={user.role}>
-								<option value="user">User</option>
-								<option value="author">Author</option>
-								<option value="editor">Editor</option>
-								<option value="admin">Admin</option>
-							</select>
-						</label>
+					<label>
+						Role:
+						<select name="role" bind:value={user.role}>
+							<option value="user">User</option>
+							<option value="author">Author</option>
+							<option value="editor">Editor</option>
+							<option value="admin">Admin</option>
+						</select>
+					</label>
 
-						<button type="submit">Update Role</button>
-					</form>
-				</div>
-			{/if}
-		</article>
-	{/if}
+					<button type="submit">Update Role</button>
+				</form>
+			</div>
+		{/if}
+	</article>
 {/each}
 
 <style>

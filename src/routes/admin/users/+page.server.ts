@@ -2,7 +2,7 @@
 import { db } from '$lib/db';
 import { users, authorApplications } from '$lib/db/schema';
 import { requireAdmin } from '$lib/db/auth';
-import { eq } from 'drizzle-orm';
+import { eq, and } from 'drizzle-orm';
 
 export async function load({ locals }) {
 	requireAdmin(locals);
