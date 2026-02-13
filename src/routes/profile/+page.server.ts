@@ -100,18 +100,21 @@ export async function load({ locals }) {
 			dontLikeRecipes,
 			and(eq(dontLikeRecipes.recipeId, recipes.key_id), eq(dontLikeRecipes.userId, userId))
 		)
-		.where(eq(favoriteRecipes.userId, userId)); // only favorites
+		.where(eq(favoriteRecipes.userId, userId));
+
+	// Check for pending author application
+	const existing = await db
+		.select()
+		.from(authorApplications)
+		.where(and(eq(authorApplications.userId, userId), eq(authorApplications.status, 'pending')));
+
+	const hasPendingApplication = existing.length > 0;
 
 	return {
 		user: locals.user,
 		allRestrictions,
 		userRestrictions,
-		favorites
+		favorites,
+		hasPendingApplication
 	};
-
-	const existing = await db
-		.select()
-		.from(authorApplications)
-		.where(and(eq(authorApplications.userId, userId), eq(authorApplications.status, 'pending')));
-	return { user: locals.user, hasPendingApplication: existing.length > 0 };
 }

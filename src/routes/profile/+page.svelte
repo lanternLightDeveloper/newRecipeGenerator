@@ -54,8 +54,6 @@
 			} else {
 				selected.delete(id);
 			}
-
-			// Force reactivity
 			selected = new Set(selected);
 		}
 	}
