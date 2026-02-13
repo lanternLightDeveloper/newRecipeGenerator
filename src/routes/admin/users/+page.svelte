@@ -87,11 +87,9 @@
 
 	.card.highlight {
 		border: 2px solid orange;
-		background: #fff7e6;
 	}
 	.badge.pending {
 		background: orange;
-		color: white;
 		padding: 4px 8px;
 		border-radius: 4px;
 		font-size: 0.8rem;
