@@ -27,7 +27,7 @@
 {#each data.users as user}
 	<article class="card {user.applicationStatus === 'pending' ? 'highlight' : ''}">
 		{#if user.applicationStatus === 'pending'}
-			<span class="badge pending">Pending Author Application</span>
+			<span class="badge pending">Pending Application</span>
 		{/if}
 
 		<h2>
@@ -83,6 +83,18 @@
 		max-width: 100%;
 		transition: all 0.3s ease;
 		cursor: pointer;
+	}
+
+	.card.highlight {
+		border: 2px solid orange;
+		background: #fff7e6;
+	}
+	.badge.pending {
+		background: orange;
+		color: white;
+		padding: 4px 8px;
+		border-radius: 4px;
+		font-size: 0.8rem;
 	}
 
 	h2 {
