@@ -1,29 +1,27 @@
-<!-- lib/FavoriteButton.svelte -->
-
+<!-- lib/FavoriteButton  -->
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 	const dispatch = createEventDispatcher();
 
-	let { recipeId, isFavorite, csrfToken } = $props<{
+	// Props
+	let { recipeId, isFavorite } = $props<{
 		recipeId: number;
-		isFavorite: boolean;
-		csrfToken: string;
+		isFavorite: boolean | number | null;
 	}>();
 
+	// Local reactive state
 	let fav = $state(Boolean(isFavorite));
 
 	async function toggle() {
 		const res = await fetch('/api/favorites/toggle', {
 			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-				'X-CSRF-Token': csrfToken
-			},
+			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ recipeId })
 		});
 
 		if (res.ok) {
 			const result = await res.json();
+
 			fav = result.status === 'added';
 
 			dispatch('toggled', {

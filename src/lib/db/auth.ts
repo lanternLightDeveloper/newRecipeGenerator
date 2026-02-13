@@ -1,14 +1,6 @@
 // src/lib/auth.ts
 import { redirect, error } from '@sveltejs/kit';
 
-export function validateCSRF(request: Request, locals: App.Locals) {
-	const token = request.headers.get('x-csrf-token');
-
-	if (!token || token !== locals.csrfToken) {
-		throw error(403, 'Invalid CSRF token');
-	}
-}
-
 export function requireUser(locals) {
 	if (!locals.user) throw redirect(302, '/login');
 }

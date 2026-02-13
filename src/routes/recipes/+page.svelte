@@ -1,10 +1,7 @@
-<!-- routes/recipes/+page.svelte -->
+<!-- routes/recipes/+page.svelte  -->
 
 <script lang="ts">
-	let { recipes, csrfToken } = $props<{
-		recipes: any[];
-		csrfToken: string;
-	}>();
+	let { data } = $props();
 
 	import FavoriteButton from '$lib/FavoriteButton.svelte';
 	import DontLikeButton from '$lib/DontLikeButton.svelte';
@@ -16,17 +13,18 @@
 	}
 
 	function handleFavoriteToggle(recipe, detail) {
+		// Update the recipe's isFavorite value in the parent list
 		recipe.isFavorite = detail.status === 'added';
 	}
-
 	function handleDontLikeToggle(recipe, detail) {
+		// Update the recipe's isDontLike value in the parent list
 		recipe.isDontLike = detail.status === 'added';
 	}
 </script>
 
 <h1>Recipes</h1>
 
-{#each recipes as recipe}
+{#each data.recipes as recipe}
 	<article class="card">
 		<h2 onclick={() => toggle(recipe.key_id)}>
 			{recipe.name}
@@ -54,14 +52,11 @@
 				<FavoriteButton
 					recipeId={recipe.key_id}
 					isFavorite={recipe.isFavorite}
-					{csrfToken}
 					on:toggled={(e) => handleFavoriteToggle(recipe, e.detail)}
 				/>
-
 				<DontLikeButton
 					recipeId={recipe.key_id}
 					isDontLike={recipe.isDontLike}
-					{csrfToken}
 					on:toggled={(e) => handleDontLikeToggle(recipe, e.detail)}
 				/>
 			</div>
