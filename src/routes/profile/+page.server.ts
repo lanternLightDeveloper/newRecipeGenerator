@@ -14,7 +14,7 @@ import { requireUser } from '$lib/db/auth';
 import { fail } from '@sveltejs/kit';
 
 export const actions = {
-	default: async ({ request, locals }) => {
+	updateProfile: async ({ request, locals }) => {
 		requireUser(locals);
 
 		const form = await request.formData();
