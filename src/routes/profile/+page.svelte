@@ -65,6 +65,16 @@
 <p>Email: {data.user.email}</p>
 <p>Role: {data.user.role}</p>
 
+{#if data.user.role === 'user'}
+	{#if data.hasPendingApplication}
+		<p>Your application to become an author is pending review.</p>
+	{:else}
+		<form method="POST" action="?/applyForAuthor">
+			<button type="submit">Apply to Become an Author</button>
+		</form>
+	{/if}
+{/if}
+
 <!-- <form onsubmit={submitForm}>
 	{#if error}
 		<p style="color:red">{error}</p>

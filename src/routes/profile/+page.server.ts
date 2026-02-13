@@ -6,7 +6,8 @@ import {
 	dontLikeRecipes,
 	dietaryRestrictions,
 	userDietaryRestrictions,
-	users
+	users,
+	authorApplications
 } from '$lib/db/schema';
 import { eq, and } from 'drizzle-orm';
 import { requireUser } from '$lib/db/auth';
@@ -28,6 +29,31 @@ export const actions = {
 			.update(users)
 			.set({ name: String(name), email: String(email) })
 			.where(eq(users.id, locals.user.id));
+
+		return { success: true };
+	},
+
+	applyForAuthor: async ({ locals }) => {
+		const user = locals.user;
+
+		// Only users can apply
+		if (user.role !== 'user') {
+			return { error: 'You already have elevated permissions.' };
+		}
+
+		// Check if already applied
+		const existing = await db
+			.select()
+			.from(authorApplications)
+			.where(and(eq(authorApplications.userId, user.id), eq(authorApplications.status, 'pending')));
+
+		if (existing.length > 0) {
+			return { error: 'You already have a pending application.' };
+		}
+
+		await db.insert(authorApplications).values({
+			userId: user.id
+		});
 
 		return { success: true };
 	}
@@ -82,4 +108,10 @@ export async function load({ locals }) {
 		userRestrictions,
 		favorites
 	};
+
+	const existing = await db
+		.select()
+		.from(authorApplications)
+		.where(and(eq(authorApplications.userId, userId), eq(authorApplications.status, 'pending')));
+	return { user: locals.user, hasPendingApplication: existing.length > 0 };
 }
