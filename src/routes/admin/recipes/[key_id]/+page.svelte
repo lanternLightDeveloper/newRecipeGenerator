@@ -53,5 +53,39 @@
 		<input name="category" value={recipe.category} />
 	</label>
 
-	<button type="submit">Save</button>
+	<button type="submit" class="btn-Shadow">Save</button>
 </form>
+
+<style>
+	.classicForm {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+		align-items: center;
+		justify-items: center;
+
+		& label {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
+
+	.classicForm textarea {
+		height: 10rem;
+		padding: 1rem;
+		margin: 1rem;
+	}
+
+	.btn-Shadow {
+		width: fit-content;
+	}
+</style>

@@ -6,7 +6,6 @@
 	let { recipeId, isDontLike, csrfToken } = $props<{
 		recipeId: number;
 		isDontLike: boolean | number | null;
-		csrfToken: string;
 	}>();
 
 	let dont = $state(Boolean(isDontLike));
@@ -14,7 +13,7 @@
 	async function toggle() {
 		const res = await fetch('/api/dont_like/toggle', {
 			method: 'POST',
-			headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': csrfToken },
+			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ recipeId })
 		});
 

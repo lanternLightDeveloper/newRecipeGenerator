@@ -38,9 +38,8 @@
 
 /* Gradient button */
 .btn-Gradient {
-	background: linear-gradient(to right, #ff7e5f, #feb47b);
-	border: none;
-	color: white;
+	background: linear-gradient(to right, var(--accent-1),var(--accent-2));
+	border: var(--bord); 
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -70,7 +69,7 @@
 }
 
 .btn-Shadow:hover {
-	background-color: var(--hover);
+	background-color: var(--accent-2);
 }
 
 .btn-Shadow:active {

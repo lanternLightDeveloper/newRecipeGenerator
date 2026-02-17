@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { recipes } from './../lib/db/schema.ts';
 	import RecipeCard from '$lib/RecipeCard.svelte';
 	import type { Recipe } from '$lib/data/Recipes';
 
@@ -213,6 +214,15 @@
 </script>
 
 <main>
+	<button
+		class="btn-Ghost"
+		style="margin: 1rem 42%;"
+		onclick={toggleMenu}
+		onkeydown={() => (isMenuOpen = false)}
+	>
+		Control panel
+	</button>
+
 	<div class:open={isMenuOpen}>
 		{#if isMenuOpen}
 			<section class="block-Selection-List">
@@ -244,6 +254,12 @@
 						<input type="checkbox" bind:checked={easyComplete} /> Easy
 					</label>
 
+					<br />
+					<br />
+
+					<p>You can check out the full list of recipes here:</p>
+					<a href="/recipes">All Recipes</a>
+					<p>Or you can roll the dice</p>
 					<br />
 					<br />
 					<p class="double-Block">Meal Options</p>
@@ -307,15 +323,6 @@
 			</section>
 		{/if}
 	</div>
-
-	<button
-		class="btn-Ghost"
-		style="margin: 1rem 42%;"
-		onclick={toggleMenu}
-		onkeydown={() => (isMenuOpen = false)}
-	>
-		Menu
-	</button>
 
 	<section class="grid-Main">
 		{#if meal.breakTater}

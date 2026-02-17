@@ -253,7 +253,7 @@
 		height: fit-content;
 	}
 
-	& h3, p, a {
+	& p, a {
 		margin: var(--space-Sm);  
 	}
 	
@@ -282,16 +282,17 @@
 	}
 
 	@media only screen and (min-width: 1024px) { 
-		margin: var(--space-Qtr);
+		
+		grid-template-columns:1fr 1fr;
 
 		.block-List{
 			height: fit-content;
 	}
 	}
 
-	@media only screen and (min-width: 1440px) { 
+	/* @media only screen and (min-width: 1440px) { 
 		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-	}
+	} */
 }
 
 .grid-Main > div {

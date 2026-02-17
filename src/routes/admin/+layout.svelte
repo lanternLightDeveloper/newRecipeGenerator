@@ -2,10 +2,11 @@
 	let { children } = $props();
 </script>
 
+<p>Admin Panel</p>
 <ul>
-	<li><a href="/admin/users">Manage users</a></li>
-	<li><a href="/admin/recipes">Manage recipes</a></li>
-	<li><a href="/admin/settings">Manage Settings</a></li>
+	<li><a href="/admin/users">Manage Users</a></li>
+	<li><a href="/admin/recipes">Manage Recipes</a></li>
+	<!-- <li><a href="/admin/settings">Manage Settings</a></li> -->
 	<li><a href="/admin/password-resets">Pending Password Resets</a></li>
 </ul>
 <div class="app">
@@ -13,3 +14,15 @@
 		{@render children()}
 	</main>
 </div>
+
+<style>
+	ul {
+		list-style-type: none;
+		margin: 3rem;
+	}
+
+	p,
+	li {
+		margin: 0 3rem;
+	}
+</style>
