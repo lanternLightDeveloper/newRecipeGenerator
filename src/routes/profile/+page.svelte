@@ -11,8 +11,6 @@
 	let email = $state(data.user.email);
 	let error = $state('');
 
-	let openRecipeId = $state<number | null>(null);
-
 	function toggle(id: number) {
 		openRecipeId = openRecipeId === id ? null : id;
 	}
