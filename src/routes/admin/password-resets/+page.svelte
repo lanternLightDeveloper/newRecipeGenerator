@@ -30,7 +30,7 @@
 <table>
 	<thead>
 		<tr>
-			<th>Email</th>
+			<th>Username</th>
 			<th>Expires At</th>
 			<th>Used</th>
 			<th>Action</th>

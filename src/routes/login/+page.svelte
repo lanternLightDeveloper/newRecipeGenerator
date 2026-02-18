@@ -34,8 +34,8 @@
 		<p style="color:red">{error}</p>
 	{/if}
 	<label>
-		Email
-		<input type="email" bind:value={email} required />
+		Username
+		<input type="text" bind:value={email} required />
 	</label>
 	<label>
 		Password

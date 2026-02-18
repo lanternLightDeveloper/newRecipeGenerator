@@ -51,7 +51,7 @@
 </script>
 
 <h1>Welcome, {data.user.name}!</h1>
-<p>Email: {data.user.email}</p>
+<p>Username: {data.user.email}</p>
 <p>Role: {data.user.role}</p>
 
 {#if data.user.role === 'user'}
@@ -70,7 +70,7 @@
 	{/if}
 
 	<label>Name: <input type="text" name="name" bind:value={name} /></label>
-	<label>Email: <input type="email" name="email" bind:value={email} /></label>
+	<label>Username: <input type="text" name="email" bind:value={email} /></label>
 
 	<button type="submit">Update</button>
 </form>
@@ -97,41 +97,6 @@
 </ul>
 
 <h2>Your Favorite Recipes</h2>
-
-{#if data.favorites.length === 0}
-	<p>You haven't favorited any recipes yet.</p>
-{:else}
-	{#each data.favorites as fav}
-		<article class="card">
-			<button
-				type="button"
-				class="recipe-toggle"
-				aria-expanded={openRecipeId === fav.key_id}
-				aria-controls={'recipe-panel-' + fav.key_id}
-				onclick={() => toggle(fav.key_id)}
-			>
-				{fav.name}
-				<span class="arrow" aria-hidden="true">
-					{openRecipeId === fav.key_id ? '▲' : '▼'}
-				</span>
-			</button>
-
-			<p>
-				<strong>{fav.name}</strong>
-			</p>
-			<p>Servings: {fav.servings}</p>
-			<ol>
-				<li>ingredients: {fav.ingredients}</li>
-				<li>instructions: {fav.instructions}</li>
-				<li>tags: {fav.tags}</li>
-				<li>nutrition: {fav.nutrition}</li>
-				<li>Time: {fav.time}</li>
-			</ol>
-			<li>Creator: {fav.creator}</li>
-			<li>Category: {fav.category}</li>
-		</article>
-	{/each}
-{/if}
 
 {#each Object.entries(grouped) as [category, favorites]}
 	<section class="category-block">

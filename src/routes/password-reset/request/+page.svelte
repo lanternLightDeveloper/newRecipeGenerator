@@ -29,8 +29,8 @@
 	{#if success}<p style="color:green">{success}</p>{/if}
 
 	<label>
-		Email
-		<input type="email" bind:value={email} required />
+		Username
+		<input type="text" bind:value={email} required />
 	</label>
 
 	<button type="submit">Request Password Reset</button>
